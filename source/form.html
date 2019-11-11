@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Пинк2</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="navigation">
+      <a class="navigation__logo-image" href="index.html">
+        <img class="navigation__logo-image" src="https://via.placeholder.com/150x150" alt="logo pink" width="150" height="150">
+      </a>
+      <img class="navigation__burger" src="https://via.placeholder.com/150x150" alt="burger" width="150" height="150">
+      <section class="navigation__nav-bar">
+        <ul class="navigation__nav-list">
+          <li class="navigation__nav-item">Главная</li>
+          <li class="navigation__nav-item">Фотографии</li>
+          <li class="navigation__nav-item">Конкурс</li>
+          <li class="navigation__nav-item">HTML Academy</li>
+        </ul>
+      </section>
+    </nav>
+    <h1 class="header__main-title">
+      Конкурс на самое безбашенное путешествие с Пинк
+    </h1>
+  </header>
+  <main>
+    <section class="main-form">
+      <form action="url" method="get">
+        <div class="main-form__about-information about-information">
+          <h2 class="about-information__title">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          </h2>
+          <label class="about-information__label" for="surname">Фамилия:
+            <input class="about-information__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+          </label>
+          <label class="about-information__label" for="name">Имя:
+            <input class="about-information__text" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+          </label>
+          <label class="about-information__label" for="otchestvo">Отчество:
+            <input class="about-information__text" type="text" name="otchestvo" id="otchestvo" placeholder="Ну и отчество тоже">
+          </label>
+        </div>
+        <div class="main-form__achievements achievements-list">
+          <h2 class="achievements-list__title">
+            Ваши безбашенные
+            достижения в путешествии
+          </h2>
+          <label class="achievements-list__label" for="selfie">Сделал селфи с акулой
+            <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="selfie">
+          </label>
+          <label class="achievements-list__label" for="burn">Обгорел на пляже
+            <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="burn">
+          </label>
+          <label class="achievements-list__label" for="chuck">Видел Чака Норриса
+            <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="chuck">
+          </label>
+          <label class="achievements-list__label" for="souvenirs">Накупил сувениров
+            <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="souvenirs">
+          </label>
+          <label class="achievements-list__label" for="tower">Удержал башню
+            <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="tower">
+          </label>
+          <label class="achievements-list__label" for="hotel">Разгромил отель
+            <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="hotel">
+          </label>
+        </div>
+        <div class="main-form__phone-adres local-information">
+          <label class="local-information__label" for="number">Номер телефона
+            <input class="local-information__text" type="text" name="phone" id="number" placeholder="Номер, пожалуйста">
+          </label>
+          <label class="local-information__label" for="email">адрес почты
+            <input class="local-information__text" type="text" name="phone" id="email" placeholder="Введите почту *">
+          </label>
+        </div>
+        <div class="main-form__applications applications-travel">
+          <label class="applications-travel__label" for="pink-ios">Сделал селфи с акулой
+            <input class="applications-travel__checkbox" type="radio" name="pink" id="pink-ios">
+          </label>
+          <label class="applications-travel__label" for="pink-android">Pink на Android
+            <input class="applications-travel__checkbox" type="radio" name="pink" id="pink-android">
+          </label>
+          <label class="applications-travel__label" for="pink-windows">Windows Phone
+            <input class="applications-travel__checkbox" type="radio" name="pink" id="pink-windows">
+          </label>
+        </div>
+        <div class="main-form__about-emotions describe-emotions">
+          <label class="describe-emotions__label" for="emotions">Опишите свои эмоции
+            <textarea class="describe-emotions__textarea" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
+            </textarea>
+          </label>
+        </div>
+        <div class="main-form__footer">
+          <button class="main-form__button">
+            Отправить форму
+          </button>
+          <p class="main-form__importatnt-text">
+            <span class="main-form__importatnt-symbol">*</span> — обязательные поля
+          </p>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-social">
+      <div class="footer-social__wrapper">
+        <img src="https://via.placeholder.com/150x150" alt="logo-glasses" width="150" height="150">
+        <a href="index.html">
+          <img src="https://via.placeholder.com/150x150" alt="logo" width="150" height="150">
+        </a>
+      </div>
+      <div class="footer-social__lofo">
+        <a href="#">twitter</a>
+        <a href="#">facebook</a>
+        <a href="#">play</a>
+      </div>
+      <div class="footer-social__copyright">
+        <p class="footer-social__text">
+          Разработано
+        </p>
+        <a class="footer-social__link-logo" href="htmlacademy.ru"></a>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
