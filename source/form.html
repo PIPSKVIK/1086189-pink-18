@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Пинк2</title>
+</head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <a class="navigation__logo" href="index.html">
+          <img class="navigation__logo-image" src="https://via.placeholder.com/150x150" alt="logo pink" width="150" height="150">
+        </a>
+        <button class="navigation__burger" type="button">
+          <span class="visually-hidden">меню</span>
+        </button>
+        <section class="navigation__nav-bar">
+          <ul class="navigation__nav-list">
+            <li><a class="navigation__nav-item" href="index.html"></a>Главная</li>
+            <li><a class="navigation__nav-item" href="photo.html"></a>Фотографии</li>
+            <li><a class="navigation__nav-item"></a>Конкурс</li>
+            <li><a class="navigation__nav-item" href="https://htmlacademy.ru"></a>HTML Academy</li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <h1 class="main-title">
+        Конкурс на самое безбашенное путешествие с Пинк
+      </h1>
+      <section class="main-form">
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <div class="main-form__about-information about-information">
+            <h2 class="about-information__title">
+              Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            </h2>
+            <label class="about-information__label" for="surname">
+              <input class="about-information__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
+              <span class="about-information__info">Фамилия:</span>
+            </label>
+            <label class="about-information__label" for="name">
+              <input class="about-information__text" type="text" name="name" id="name" placeholder="Введите ваше имя *"required>
+              <span class="about-information__info">Имя:</span>
+            </label>
+            <label class="about-information__label" for="otchestvo">
+              <input class="about-information__text" type="text" name="otchestvo" id="otchestvo" placeholder="Ну и отчество тоже" required>
+              <span class="about-information__info">Отчество:</span>
+            </label>
+          </div>
+          <div class="main-form__achievements achievements-list">
+            <h2 class="achievements-list__title">
+              Ваши безбашенные
+              достижения в путешествии
+            </h2>
+            <label class="achievements-list__label" for="selfie">
+              <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="selfie" required>
+              <span class="achievements-list__checkbox-text">Сделал селфи с акулой</span>
+            </label>
+            <label class="achievements-list__label" for="burn">
+              <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="burn" required>
+              <span class="achievements-list__checkbox-text">Обгорел на пляже</span>
+            </label>
+            <label class="achievements-list__label" for="chuck">
+              <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="chuck" required>
+              <span class="achievements-list__checkbox-text">Видел Чака Норриса</span>
+            </label>
+            <label class="achievements-list__label" for="souvenirs">
+              <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="souvenirs" required>
+              <span class="achievements-list__checkbox-text">Накупил сувениров</span>
+            </label>
+            <label class="achievements-list__label" for="tower">
+              <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="tower" required>
+              <span class="achievements-list__checkbox-text">Удержал башню</span>
+            </label>
+            <label class="achievements-list__label" for="hotel">
+              <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="hotel" required>
+              <span class="achievements-list__checkbox-text">Разгромил отель</span>
+            </label>
+          </div>
+          <div class="main-form__phone-adres local-information">
+            <label class="local-information__label" for="number">
+              <input class="local-information__text" type="text" name="phone" id="number" placeholder="Номер, пожалуйста" required>
+              <span class="local-information__info">Номер телефона</span>
+            </label>
+            <label class="local-information__label" for="email">
+              <input class="local-information__text" type="text" name="phone" id="email" placeholder="Введите почту *" required>
+              <span class="local-information__info">адрес почты</span>
+            </label>
+          </div>
+          <div class="main-form__applications applications-travel">
+            <label class="applications-travel__label" for="pink-ios">
+              <input class="applications-travel__radio" type="radio" name="pink" id="pink-ios" required>
+              <span class="applications-travel__radio-text">Сделал селфи с акулой</span>
+            </label>
+            <label class="applications-travel__label" for="pink-android">
+              <input class="applications-travel__radio" type="radio" name="pink" id="pink-android" required>
+              <span class="applications-travel__radio-text">Pink на Android</span>
+            </label>
+            <label class="applications-travel__label" for="pink-windows">
+              <input class="applications-travel__radio" type="radio" name="pink" id="pink-windows" required>
+              <span class="applications-travel__radio-text">Windows Phone</span>
+            </label>
+          </div>
+          <div class="main-form__about-emotions describe-emotions">
+            <label class="describe-emotions__label" for="emotions">Опишите свои эмоции
+              <textarea class="describe-emotions__textarea" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
+              </textarea>
+            </label>
+          </div>
+          <div class="main-form__footer">
+            <button class="main-form__button">
+              Отправить форму
+            </button>
+            <p class="main-form__important-text">
+              <span class="main-form__important-symbol">*</span> — обязательные поля
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__wrapper">
+        <div class="footer__logo-wrapper">
+          <a href="index.html">
+            <img src="https://via.placeholder.com/150x150" alt="logo" width="150" height="150">
+          </a>
+        </div>
+        <div class="footer__social">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="#">twitter</a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#">facebook</a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#">play</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__text">
+            Разработано
+          </p>
+          <a class="footer__link-logo" href="htmlacademy.ru">
+            <span class="visually-hidden">htmlacademy.ru</span>
+          </a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
