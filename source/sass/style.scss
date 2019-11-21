@@ -1,3 +1,21 @@
-body {
-  background: red;
-}
+@import "blocks/about-application.scss";
+@import "blocks/about-information.scss";
+@import "blocks/achievements-list.scss";
+@import "blocks/advantages.scss";
+@import "blocks/applications-travel.scss";
+@import "blocks/contacts-information.scss";
+@import "blocks/describe-emotions.scss";
+@import "blocks/footer.scss";
+@import "blocks/footer-social.scss";
+@import "blocks/header.scss";
+@import "blocks/local-information.scss";
+@import "blocks/main-form.scss";
+@import "blocks/main-photo.scss";
+@import "blocks/main-title.scss";
+@import "blocks/navigation.scss";
+@import "blocks/slider-button.scss";
+@import "blocks/slider-price.scss";
+@import "blocks/slider-review.scss";
+@import "blocks/upload.scss";
+@import "blocks/user-list.scss";
+@import "blocks/main-wrapper.scss";
