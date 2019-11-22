@@ -35,9 +35,9 @@
         <div class="about-application__download">
           <a class="about-application__button-download" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
           <ul class="about-application__social">
-            <li><a href="https://www.apple.com/ru/ios/app-store/">apple</a></li>
-            <li><a href="https://play.google.com/store">android</a></li>
-            <li><a href="https://www.microsoft.com/ru-ru/store/apps">windows</a></li>
+            <li><a class="about-application__social-apple" href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">apple</span></a></li>
+            <li><a class="about-application__social-android" href="https://play.google.com/store"><span class="visually-hidden">android</span></a></li>
+            <li><a class="about-application__social-windows" href="https://www.microsoft.com/ru-ru/store/apps"><span class="visually-hidden">windows</span></a></li>
           </ul>
           <p class="about-application__text">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
@@ -77,13 +77,13 @@
               <p class="slider-review__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </li>
-          <li class="slider-review__slider-item"><!-- Копия текста для слайда -->
+          <li class="slider-review__slider-item visually-hidden"><!-- Копия текста для слайда -->
             <h4 class="slider-review__name-comment">Николай Петров2</h4>
             <blockquote cite="#">
               <p class="slider-review__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </li>
-          <li class="slider-review__slider-item"><!-- Копия текста для слайда -->
+          <li class="slider-review__slider-item visually-hidden"><!-- Копия текста для слайда -->
             <h4 class="slider-review__name-comment">Николай Петров3</h4>
             <blockquote cite="#">
               <p class="slider-review__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -149,26 +149,28 @@
         </p>
       </section>
       <section class="contacts-information">
-        <p class="contacts-information__more-questions">Остались вопросы?</p>
-        <p class="contacts-information__more-questions">Свяжитесь с нами!</p>
-        <ul class="contacts-information__list">
-          <li class="contacts-information__item">
-            <h4 class="contacts-information__call">Звоните:</h4>
-            <p class="contacts-information__phone-wrapper">
-              <a class="contacts-information__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </p>
-          </li>
-          <li class="contacts-information__item">
-            <h4 class="contacts-information__write">Пишите:</h4>
-            <p class="contacts-information__mail-wrapper">
-              <a class="contacts-information__mail" href="malto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </p>
-          </li>
-          <li class="contacts-information__item">
-            <h4 class="contacts-information__come">Приезжайте в гости:</h4>
-            <p class="contacts-information__address">ул. Большая Конюшенная, 19/8</p>
-          </li>
-        </ul>
+        <div class="contacts-information__background-wrapper">
+          <p class="contacts-information__more-questions">Остались вопросы?</p>
+          <p class="contacts-information__more-questions">Свяжитесь с нами!</p>
+          <ul class="contacts-information__list">
+            <li class="contacts-information__item">
+              <h4 class="contacts-information__title">Звоните:</h4>
+              <p class="contacts-information__phone-wrapper">
+                <a class="contacts-information__information contacts-information__information--phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              </p>
+            </li>
+            <li class="contacts-information__item">
+              <h4 class="contacts-information__title">Пишите:</h4>
+              <p class="contacts-information__mail-wrapper">
+                <a class="contacts-information__information" href="malto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </p>
+            </li>
+            <li class="contacts-information__item">
+              <h4 class="contacts-information__title">Приезжайте в гости:</h4>
+              <p class="contacts-information__information">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
   </body>

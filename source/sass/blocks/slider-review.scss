@@ -1,3 +1,60 @@
 .slider-review {
   background-color: #ffffff;
 }
+
+.slider-review__slide-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slider-price__wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-review__slide-list blockquote {
+  margin: 0;
+}
+
+.slider-review__name-comment {
+  color: #000000;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.slider-price__title {
+  background-color: #283645;
+}
+
+.slider-review__comment {
+  color: #283645;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.slider-price__standart {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.slider-price__price {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.slider-price__item {
+  margin: 0;
+  color: #283645;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}

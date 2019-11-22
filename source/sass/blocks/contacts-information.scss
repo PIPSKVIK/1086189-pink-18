@@ -1,5 +1,48 @@
 .contacts-information {
   background-image: url(../../img/bg-map-mobile@1x.png);
+  width: 320px;
+  height: 645px;
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.contacts-information__background-wrapper {
+background-color: #ffffff;
+}
+
+.contacts-information__more-questions {
+  margin: 0;
+
+  color: #283645;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+
+  text-align: center;
+}
+
+.contacts-information__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  text-align: center;
+}
+
+.contacts-information__title {
+  margin: 0;
+
+  color: #283645;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.contacts-information__information {
+  color: #d22856;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
 }
