@@ -30,8 +30,12 @@
   border-radius: 20px;
   padding: 10px 5px 10px 5px;
     &:hover {
-      color: #DA4545;
-      border-color: #DA4545;
+      background-color: #ffffff;
+      color: #d22856;
+    }
+
+    &:active {
+      color: rgba(242, 206, 213, 0.7);
     }
 }
 

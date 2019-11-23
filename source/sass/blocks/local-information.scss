@@ -1,0 +1,15 @@
+.local-information__info {
+  @include color-red;
+}
+
+.local-information__text[type="text"]::-webkit-input-placeholder {
+  color: #283645;
+  line-height: 30px;
+}
+
+.local-information__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+

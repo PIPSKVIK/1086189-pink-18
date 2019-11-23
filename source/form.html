@@ -24,73 +24,84 @@
         </section>
       </nav>
     </header>
-    <main>
-      <h1 class="main-title">
-        Конкурс на самое безбашенное путешествие с Пинк
-      </h1>
+    <main class="form-wrapper">
       <section class="main-form">
+        <div class="main-form__title-background">
+          <h1 class="main-title">
+            Конкурс на самое безбашенное путешествие с Пинк
+          </h1>
+        </div>
         <form action="https://echo.htmlacademy.ru" method="get">
           <div class="main-form__about-information about-information">
             <h2 class="about-information__title">
               Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
             </h2>
-            <label class="about-information__label" for="surname">
-              <input class="about-information__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
-              <span class="about-information__info">Фамилия:</span>
-            </label>
-            <label class="about-information__label" for="name">
-              <input class="about-information__text" type="text" name="name" id="name" placeholder="Введите ваше имя *"required>
-              <span class="about-information__info">Имя:</span>
-            </label>
-            <label class="about-information__label" for="otchestvo">
-              <input class="about-information__text" type="text" name="otchestvo" id="otchestvo" placeholder="Ну и отчество тоже" required>
-              <span class="about-information__info">Отчество:</span>
-            </label>
+            <div class="about-information__input-wrapper">
+              <label class="about-information__label" for="surname">
+                <span class="about-information__info">Фамилия:</span>
+                <input class="about-information__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
+              </label>
+              <label class="about-information__label" for="name">
+                <span class="about-information__info">Имя:</span>
+                <input class="about-information__text" type="text" name="name" id="name" placeholder="Введите ваше имя *"required>
+              </label>
+              <label class="about-information__label" for="otchestvo">
+                <span class="about-information__info">Отчество:</span>
+                <input class="about-information__text" type="text" name="otchestvo" id="otchestvo" placeholder="Ну и отчество тоже" required>
+              </label>
+            </div>
           </div>
           <div class="main-form__achievements achievements-list">
             <h2 class="achievements-list__title">
               Ваши безбашенные
               достижения в путешествии
             </h2>
-            <label class="achievements-list__label" for="selfie">
-              <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="selfie" required>
-              <span class="achievements-list__checkbox-text">Сделал селфи с акулой</span>
-            </label>
-            <label class="achievements-list__label" for="burn">
-              <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="burn" required>
-              <span class="achievements-list__checkbox-text">Обгорел на пляже</span>
-            </label>
-            <label class="achievements-list__label" for="chuck">
-              <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="chuck" required>
-              <span class="achievements-list__checkbox-text">Видел Чака Норриса</span>
-            </label>
-            <label class="achievements-list__label" for="souvenirs">
-              <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="souvenirs" required>
-              <span class="achievements-list__checkbox-text">Накупил сувениров</span>
-            </label>
-            <label class="achievements-list__label" for="tower">
-              <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="tower" required>
-              <span class="achievements-list__checkbox-text">Удержал башню</span>
-            </label>
-            <label class="achievements-list__label" for="hotel">
-              <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="hotel" required>
-              <span class="achievements-list__checkbox-text">Разгромил отель</span>
-            </label>
+            <div class="achievements-list__checkbox-wrapper">
+              <label class="achievements-list__label" for="selfie">
+                <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="selfie" required>
+                <span class="achievements-list__checkbox-text">Сделал селфи с акулой</span>
+              </label>
+              <label class="achievements-list__label" for="burn">
+                <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="burn" required>
+                <span class="achievements-list__checkbox-text">Обгорел на пляже</span>
+              </label>
+              <label class="achievements-list__label" for="chuck">
+                <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="chuck" required>
+                <span class="achievements-list__checkbox-text">Видел Чака Норриса</span>
+              </label>
+              <label class="achievements-list__label" for="souvenirs">
+                <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="souvenirs" required>
+                <span class="achievements-list__checkbox-text">Накупил сувениров</span>
+              </label>
+              <label class="achievements-list__label" for="tower">
+                <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="tower" required>
+                <span class="achievements-list__checkbox-text">Удержал башню</span>
+              </label>
+              <label class="achievements-list__label" for="hotel">
+                <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="hotel" required>
+                <span class="achievements-list__checkbox-text">Разгромил отель</span>
+              </label>
+            </div>
           </div>
           <div class="main-form__phone-adres local-information">
-            <label class="local-information__label" for="number">
-              <input class="local-information__text" type="text" name="phone" id="number" placeholder="Номер, пожалуйста" required>
-              <span class="local-information__info">Номер телефона</span>
-            </label>
-            <label class="local-information__label" for="email">
-              <input class="local-information__text" type="text" name="phone" id="email" placeholder="Введите почту *" required>
-              <span class="local-information__info">адрес почты</span>
-            </label>
+            <div class="local-information__input-wrapper">
+              <label class="local-information__label" for="number">
+                <span class="local-information__info">Номер телефона</span>
+                <input class="local-information__text" type="text" name="phone" id="number" placeholder="Номер, пожалуйста" required>
+              </label>
+              <label class="local-information__label" for="email">
+                <span class="local-information__info">адрес почты</span>
+                <input class="local-information__text" type="text" name="phone" id="email" placeholder="Введите почту *" required>
+              </label>
+            </div>
           </div>
           <div class="main-form__applications applications-travel">
+            <h3 class="applications-travel__title">
+              С каким приложением путешествовали?
+            </h3>
             <label class="applications-travel__label" for="pink-ios">
               <input class="applications-travel__radio" type="radio" name="pink" id="pink-ios" required>
-              <span class="applications-travel__radio-text">Сделал селфи с акулой</span>
+              <span class="applications-travel__radio-text">Pink для iOS</span>
             </label>
             <label class="applications-travel__label" for="pink-android">
               <input class="applications-travel__radio" type="radio" name="pink" id="pink-android" required>
@@ -102,9 +113,9 @@
             </label>
           </div>
           <div class="main-form__about-emotions describe-emotions">
-            <label class="describe-emotions__label" for="emotions">Опишите свои эмоции
-              <textarea class="describe-emotions__textarea" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
-              </textarea>
+            <label class="describe-emotions__label" for="emotions">
+              <span class="describe-emotions__textarea-title">Опишите свои эмоции</span>
+              <textarea class="describe-emotions__textarea" rows="10" cols="33" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
             </label>
           </div>
           <div class="main-form__footer">
@@ -112,7 +123,7 @@
               Отправить форму
             </button>
             <p class="main-form__important-text">
-              <span class="main-form__important-symbol">*</span> — обязательные поля
+              <span class="main-form__important-text main-form__important-text--special">*</span> — обязательные поля
             </p>
           </div>
         </form>
@@ -122,19 +133,19 @@
       <section class="footer__wrapper">
         <div class="footer__logo-wrapper">
           <a href="index.html">
-            <img src="https://via.placeholder.com/150x150" alt="logo" width="150" height="150">
+            <img src="img/logo-pink-blue-mobile.svg" alt="logo" width="147" height="40">
           </a>
         </div>
         <div class="footer__social">
           <ul class="footer__social-list">
             <li class="footer__social-item">
-              <a href="#">twitter</a>
+              <a class="footer__social-item-twitter" href="#"><span class="visually-hidden">twitter</span></a>
             </li>
             <li class="footer__social-item">
-              <a href="#">facebook</a>
+              <a class="footer__social-item-facebook" href="#"><span class="visually-hidden">facebook</span></a>
             </li>
             <li class="footer__social-item">
-              <a href="#">play</a>
+              <a class="footer__social-item-youtube" href="#"><span class="visually-hidden">youtube</span></a>
             </li>
           </ul>
         </div>
@@ -144,6 +155,9 @@
           </p>
           <a class="footer__link-logo" href="htmlacademy.ru">
             <span class="visually-hidden">htmlacademy.ru</span>
+            <svg class="footer__link-logo footer__link-logo--htmlacademy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="34">
+              <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            </svg>
           </a>
         </div>
       </section>

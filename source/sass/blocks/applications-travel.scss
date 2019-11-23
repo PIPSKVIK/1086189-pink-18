@@ -1,0 +1,14 @@
+.applications-travel {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+.applications-travel__title {
+  @include color-red;
+}
+
+.applications-travel__radio-text {
+  color: #283645;
+  line-height: 30px;
+}

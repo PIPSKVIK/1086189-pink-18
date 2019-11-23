@@ -1,0 +1,61 @@
+.main-form__title-background {
+  background-color: #283645;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -51px;
+  height: 171px;
+}
+
+.main-title {
+  text-align: center;
+  margin: 0;
+  padding-top: 35px;
+
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.main-form__about-information {
+  background-color: #ffffff;
+}
+
+.main-form__achievements {
+  background-color: #f2f2f2;
+}
+
+.main-form__button {
+  padding: 23px 46px 23px 45px;
+
+  outline: none;
+  border: none;
+
+  color: #ffffff;
+  background-color: #2aab6d;
+
+  &:hover {
+    background-color: #1c9b5e;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: #61b98f;
+  }
+}
+
+.main-form__footer {
+  text-align: center;
+}
+
+.main-form__important-text {
+  color: #283645;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  &--special {
+    color: #d22856;
+  }
+}
