@@ -1,0 +1,39 @@
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-list__background-list {
+  background-color: #f2f2f2;
+  margin: 0 20px 0 20px;
+}
+
+.user-list__nick {
+  margin: 0;
+
+  @include text-photo-userlist;
+  font-weight: 700;
+}
+
+.user-list__public-time {
+  @include text-photo-userlist;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.user-list__comment {
+  @include text-photo-userlist;
+}
+
+.user-list__like {
+  color: #d22856;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  background: inherit;
+  cursor: pointer;
+
+  border: none;
+  outline: none;
+}

@@ -4,3 +4,8 @@
   text-transform: uppercase;
 }
 
+@mixin text-photo-userlist {
+  color: #283645;
+  font-size: 12px;
+  line-height: 24px;
+}

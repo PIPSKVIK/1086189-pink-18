@@ -1,0 +1,22 @@
+
+.user-photos {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.user-photos__title-wrapper {
+  background-image: url(/img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding: 60px 0 100px 0;
+}
+
+.user-photos__title {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  margin: 0;
+  padding-right: 5px;
+  text-align: center;
+}
