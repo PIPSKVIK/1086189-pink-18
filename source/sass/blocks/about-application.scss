@@ -1,5 +1,5 @@
 .about-application__wrapper-title {
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url(/img/bg-back-mobile@1x.jpg);
 }
 
 .about-application__download {
@@ -29,6 +29,7 @@
   border: 3px solid #ffffff;
   border-radius: 20px;
   padding: 10px 5px 10px 5px;
+
     &:hover {
       background-color: #ffffff;
       color: #d22856;
