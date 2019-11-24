@@ -1,0 +1,15 @@
+.achievements-list__title {
+  @include color-red;
+
+  text-align: center;
+}
+
+.achievements-list__checkbox-text {
+  color: #283645;
+  line-height: 30px;
+}
+
+.achievements-list__checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+}

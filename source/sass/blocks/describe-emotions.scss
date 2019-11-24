@@ -1,0 +1,8 @@
+.describe-emotions__textarea-title {
+  @include color-red;
+}
+
+.describe-emotions__textarea[name="emotions"]::-webkit-input-placeholder {
+  color: #283645;
+  line-height: 30px;
+}

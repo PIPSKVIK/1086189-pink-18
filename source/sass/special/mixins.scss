@@ -1,0 +1,11 @@
+@mixin color-red {
+  font-size: 14px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+@mixin text-photo-userlist {
+  color: #283645;
+  font-size: 12px;
+  line-height: 24px;
+}

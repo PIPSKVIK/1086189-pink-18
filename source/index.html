@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -15,15 +16,15 @@
         </button>
         <section class="navigation__nav-bar">
           <ul class="navigation__nav-list">
-            <li><a class="navigation__nav-item"></a>Главная</li>
-            <li><a class="navigation__nav-item" href="photo.html"></a>Фотографии</li>
-            <li><a class="navigation__nav-item" href="form.html"></a>Конкурс</li>
-            <li><a class="navigation__nav-item" href="https://htmlacademy.ru"></a>HTML Academy</li>
+            <li><a class="navigation__nav-item">Главная</a></li>
+            <li><a class="navigation__nav-item" href="photo.html">Фотографии</a></li>
+            <li><a class="navigation__nav-item" href="form.html">Конкурс</a></li>
+            <li><a class="navigation__nav-item" href="https://htmlacademy.ru">HTML Academy</a></li>
           </ul>
         </section>
       </nav>
     </header>
-    <main>
+    <main class="main-wrapper">
       <section class="about-application">
         <div class="about-application__wrapper-title">
           <h1 class="about-application__title">
@@ -34,9 +35,9 @@
         <div class="about-application__download">
           <a class="about-application__button-download" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
           <ul class="about-application__social">
-            <li><a href="https://www.apple.com/ru/ios/app-store/">apple</a></li>
-            <li><a href="https://play.google.com/store">android</a></li>
-            <li><a href="https://www.microsoft.com/ru-ru/store/apps">windows</a></li>
+            <li><a class="about-application__social-apple" href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">apple</span></a></li>
+            <li><a class="about-application__social-android" href="https://play.google.com/store"><span class="visually-hidden">android</span></a></li>
+            <li><a class="about-application__social-windows" href="https://www.microsoft.com/ru-ru/store/apps"><span class="visually-hidden">windows</span></a></li>
           </ul>
           <p class="about-application__text">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
@@ -72,75 +73,77 @@
         <ul class="slider-review__slide-list">
           <li class="slider-review__slider-item">
             <h4 class="slider-review__name-comment">Николай Петров</h4>
-            <blockquote cite="#">
+            <blockquote class="slider-review__blockquote">
               <p class="slider-review__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </li>
-          <li class="slider-review__slider-item"><!-- Копия текста для слайда -->
+          <li class="slider-review__slider-item visually-hidden"><!-- Копия текста для слайда -->
             <h4 class="slider-review__name-comment">Николай Петров2</h4>
-            <blockquote cite="#">
+            <blockquote class="slider-review__blockquote">
               <p class="slider-review__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </li>
-          <li class="slider-review__slider-item"><!-- Копия текста для слайда -->
+          <li class="slider-review__slider-item visually-hidden"><!-- Копия текста для слайда -->
             <h4 class="slider-review__name-comment">Николай Петров3</h4>
-            <blockquote cite="#">
+            <blockquote class="slider-review__blockquote">
               <p class="slider-review__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </li>
         </ul>
-        <p class="slider-review__bytton slider-button">
-            <button class="slider-button__element-special">1</button>
-            <button class="slider-button__element">2</button>
-            <button class="slider-button__element">3</button>
-          </p>
+        <p class="slider-review__button slider-button">
+          <button class="slider-button__element-special">1</button>
+          <button class="slider-button__element">2</button>
+          <button class="slider-button__element">3</button>
+        </p>
       </section>
       <section class="slider-price">
-        <ul class="slider-price__wrapper">
-          <li class="slider-price__title">
-            <h4 class="slider-price__standart">стандарт</h4>
-            <span class="slider-price__price">3,99 usd</span>
-          </li>
-          <li class="slider-price__item">
-            <p>розовый фильтр</p>
-          </li>
-          <li class="slider-price__item">
-            <p>смайлики</p>
-          </li>
-          <li class="slider-price__item">
-            <p>комментарии</p>
-          </li>
-        </ul>
-        <ul class="slider-price__wrapper"><!-- второй слайдер -->
-          <li class="slider-price__title">
-            <h4 class="slider-price__standart">стандарт</h4>
-            <span class="slider-price__price">3,99 usd</span>
-          </li>
-          <li class="slider-price__item">
-            <p>розовый фильтр</p>
-          </li>
-          <li class="slider-price__item">
-            <p>смайлики</p>
-          </li>
-          <li class="slider-price__item">
-            <p>комментарии</p>
-          </li>
-        </ul>
-        <ul class="slider-price__wrapper"><!-- третий слайдер -->
-          <li class="slider-price__title">
-            <h4 class="slider-price__standart">стандарт</h4>
-            <span class="slider-price__price">3,99 usd</span>
-          </li>
-          <li class="slider-price__item">
-            <p>розовый фильтр</p>
-          </li>
-          <li class="slider-price__item">
-            <p>смайлики</p>
-          </li>
-          <li class="slider-price__item">
-            <p>комментарии</p>
-          </li>
-        </ul>
+        <div class="slider-price__wrapper-sliders">
+          <ul class="slider-price__wrapper">
+            <li class="slider-price__title">
+              <h4 class="slider-price__standart">стандарт</h4>
+              <span class="slider-price__price">3,99 usd</span>
+            </li>
+            <li class="slider-price__item">
+              <p>розовый фильтр</p>
+            </li>
+            <li class="slider-price__item">
+              <p>смайлики</p>
+            </li>
+            <li class="slider-price__item">
+              <p>комментарии</p>
+            </li>
+          </ul>
+          <ul class="slider-price__wrapper"><!-- второй слайдер -->
+            <li class="slider-price__title">
+              <h4 class="slider-price__standart">стандарт</h4>
+              <span class="slider-price__price">3,99 usd</span>
+            </li>
+            <li class="slider-price__item">
+              <p>розовый фильтр</p>
+            </li>
+            <li class="slider-price__item">
+              <p>смайлики</p>
+            </li>
+            <li class="slider-price__item">
+              <p>комментарии</p>
+            </li>
+          </ul>
+          <ul class="slider-price__wrapper"><!-- третий слайдер -->
+            <li class="slider-price__title">
+              <h4 class="slider-price__standart">стандарт</h4>
+              <span class="slider-price__price">3,99 usd</span>
+            </li>
+            <li class="slider-price__item">
+              <p>розовый фильтр</p>
+            </li>
+            <li class="slider-price__item">
+              <p>смайлики</p>
+            </li>
+            <li class="slider-price__item">
+              <p>комментарии</p>
+            </li>
+          </ul>
+        </div>
         <p class="slider-price__button slider-button">
           <button class="slider-button__element">1</button>
           <button class="slider-button__element-special">2</button>
@@ -148,26 +151,28 @@
         </p>
       </section>
       <section class="contacts-information">
-        <p class="contacts-information__more-questions">Остались вопросы?</p>
-        <p class="contacts-information__more-questions">Свяжитесь с нами!</p>
-        <ul class="contacts-information__list">
-          <li class="contacts-information__item">
-            <h4 class="contacts-information__call">Звоните:</h4>
-            <p class="contacts-information__phone-wrapper">
-              <a class="contacts-information__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </p>
-          </li>
-          <li class="contacts-information__item">
-            <h4 class="contacts-information__write">Пишите:</h4>
-            <p class="contacts-information__mail-wrapper">
-              <a class="contacts-information__mail" href="malto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </p>
-          </li>
-          <li class="contacts-information__item">
-            <h4 class="contacts-information__come">Приезжайте в гости:</h4>
-            <p class="contacts-information__address">ул. Большая Конюшенная, 19/8</p>
-          </li>
-        </ul>
+        <div class="contacts-information__background-wrapper">
+          <p class="contacts-information__more-questions">Остались вопросы?</p>
+          <p class="contacts-information__more-questions">Свяжитесь с нами!</p>
+          <ul class="contacts-information__list">
+            <li class="contacts-information__item">
+              <h4 class="contacts-information__title">Звоните:</h4>
+              <p class="contacts-information__phone-wrapper">
+                <a class="contacts-information__information contacts-information__information--phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              </p>
+            </li>
+            <li class="contacts-information__item">
+              <h4 class="contacts-information__title">Пишите:</h4>
+              <p class="contacts-information__mail-wrapper">
+                <a class="contacts-information__information" href="malto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </p>
+            </li>
+            <li class="contacts-information__item">
+              <h4 class="contacts-information__title">Приезжайте в гости:</h4>
+              <p class="contacts-information__information">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
   </body>

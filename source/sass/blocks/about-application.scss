@@ -1,0 +1,52 @@
+.about-application__wrapper-title {
+  background-image: url(../../img/bg-back-mobile@1x.jpg);
+}
+
+.about-application__download {
+  background-color: #1d2631;
+}
+
+.about-application__title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+}
+
+.about-application__button-download {
+  color: #ffffff;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  padding: 10px 5px 10px 5px;
+    &:hover {
+      background-color: #ffffff;
+      color: #d22856;
+    }
+
+    &:active {
+      color: rgba(242, 206, 213, 0.7);
+    }
+}
+
+.about-application__text {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300px;
+  text-align: center;
+}
