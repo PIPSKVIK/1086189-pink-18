@@ -1,26 +1,52 @@
 .about-application__wrapper-title {
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url(/img/bg-back-mobile@1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-application__background {
+  background-color: #1d2631;
 }
 
 .about-application__download {
-  background-color: #1d2631;
+  padding: 25px 20px;
 }
 
 .about-application__title {
   margin: 0;
-  padding: 0;
+  padding: 30px 0 32px 0;
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
   color: #ffffff;
   text-align: center;
+  position: relative;
+
+  padding: 30px 0 300px 0;
+
+    &::before {
+      content: ("");
+
+      position: absolute;
+
+      width: 258px;
+      height: 286px;
+      background-image: url("../../img/iphone-hand-mobile@1x.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      bottom: 0px;
+      left: 0px;
+    }
 }
 
 .about-application__button-download {
   color: #ffffff;
   display: block;
-  width: 80%;
-  margin: 0 auto;
   text-align: center;
   font-size: 18px;
   line-height: 18px;
@@ -28,7 +54,7 @@
   text-decoration: none;
   border: 3px solid #ffffff;
   border-radius: 20px;
-  padding: 10px 5px 10px 5px;
+  padding: 15px 5px 15px 5px;
     &:hover {
       background-color: #ffffff;
       color: #d22856;
@@ -49,4 +75,48 @@
   line-height: 24px;
   font-weight: 300px;
   text-align: center;
+}
+
+.about-application__img {
+  text-align: center;
+}
+
+.about-application__social {
+  @include list;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-application__social-wrapper {
+  padding-left: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 659px) {
+
+  .about-application__wrapper-background {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 959px) {
+
+  .about-application {
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 1200px;
+    height: 729px;
+  }
+
+  .about-application__wrapper-title {
+    background-image: none;
+    background-color: #1d2631;
+  }
+
+  .about-application__title {
+    padding: 40px 0 20px 0;
+  }
 }
