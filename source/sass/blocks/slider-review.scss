@@ -1,5 +1,7 @@
 .slider-review {
   background-color: #ffffff;
+  @include wrap;
+  text-align: center;
 }
 
 .slider-review__slide-list {
@@ -57,4 +59,15 @@
   line-height: 30px;
   text-transform: uppercase;
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet) {
+  .slider-review__slider-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider-review__blockquote {
+    order: -1;
+  }
 }

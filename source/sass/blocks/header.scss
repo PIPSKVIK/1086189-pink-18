@@ -2,6 +2,10 @@
   background-color: #283645;
 }
 
+.header-navigation {
+  @include wrap;
+}
+
 .header__logo-wrapper {
   height: 70px;
   display: flex;
@@ -24,7 +28,7 @@
   height: 25px;
 }
 
-@media (min-width: 659px) and (max-width: 959px) {
+@media (min-width: $tablet) {
   .header__logo {
     width: 147px;
     height: 40px;
@@ -35,15 +39,14 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop) {
 
-  .header-navigation {
+  .header-wrapper {
+    @include wrap;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 110px;
-    width: 960px;
-    margin: 0 auto;
-    padding: 0 10px;
   }
 
   .header__logo {

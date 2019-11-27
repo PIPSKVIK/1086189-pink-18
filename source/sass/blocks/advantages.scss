@@ -4,14 +4,22 @@
 
 .advantages__title-wrapper {
   background-color: #ffffff;
+  text-align: center;
 }
 
 .advantages__list-wrapper {
   background-color: #f2f2f2;
+  text-align: center;
+  @include wrap;
 }
 
 .advantages__list {
   list-style: none;
+  @include list;
+}
+
+.advantages__image-position {
+  @include list;
 }
 
 .advantages__title {
@@ -24,7 +32,7 @@
 .advantages__functional-title {
   margin: 0px;
   font-size: 18px;
-  line-height: 10px;
+  line-height: 24px;
   color: #000000;
 }
 
@@ -33,4 +41,31 @@
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+}
+
+@media (min-width: $tablet) {
+
+  .advantages__list-wrapper {
+    @include wrap;
+    display: flex;
+  }
+
+  .advantages__image-position {
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop) {
+  .advantages__list-wrapper {
+    @include wrap;
+    flex-direction: column;
+  }
+
+  .advantages__list {
+    display: flex;
+  }
+
+  .advantages__article {
+    background-color: #f2f2f2;
+  }
 }
