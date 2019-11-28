@@ -8,14 +8,19 @@
 </head>
   <body>
     <header class="header">
-      <nav class="navigation">
-        <a class="navigation__logo" href="index.html">
-          <img class="navigation__logo-image" src="https://via.placeholder.com/150x150" alt="logo pink" width="150" height="150">
-        </a>
-        <button class="navigation__burger" type="button">
-          <span class="visually-hidden">меню</span>
-        </button>
-        <section class="navigation__nav-bar">
+      <div class="header-wrapper">
+        <div class="header__logo-wrapper">
+          <a class="header__logo">
+            <span class="visually-hidden">Логотип сайта</span>
+          </a>
+          <button class="header__burger visually-hidden" type="button">
+            <span class="visually-hidden">Выподающее меню</span>
+          </button>
+          <button class="header__exit">
+            <span class="visually-hidden">Закрыть выподающее меню</span>
+          </button>
+        </div>
+        <nav class="header__navigation navigation">
           <ul class="navigation__nav-list">
             <li class="navigation__nav-wrapper">
               <a class="navigation__nav-item" href="index.html">Главная</a>
@@ -30,16 +35,16 @@
               <a class="navigation__nav-item" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
-        </section>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main class="form-wrapper">
       <section class="main-form">
-        <div class="main-form__title-background">
-          <h1 class="main-title">
-            Конкурс на самое безбашенное путешествие с Пинк
-          </h1>
-        </div>
+      <section class="competition">
+        <h1 class="competition-title">
+          Конкурс на самое безбашенное путешествие с Пинк
+        </h1>
+      </section>
         <form action="https://echo.htmlacademy.ru" method="get">
           <div class="main-form__about-information about-information">
             <h2 class="about-information__title">
@@ -94,7 +99,7 @@
           </div>
           <div class="main-form__phone-adres local-information">
             <div class="local-information__input-wrapper">
-              <label class="local-information__label" for="number">
+              <label class="local-information__label local-information__label-title" for="number">
                 <span class="local-information__info">Номер телефона</span>
                 <input class="local-information__text" type="text" name="phone" id="number" placeholder="Номер, пожалуйста" required>
               </label>

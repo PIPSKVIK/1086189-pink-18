@@ -1,6 +1,8 @@
 @import "special/variables";
 @import "special/global-scaffolding";
-@import "special/mixins.scss";
+@import "special/mixins";
+@import "special/fonts";
+@import "special/normalize";
 @import "blocks/body";
 @import "blocks/about-application";
 @import "blocks/about-information";
@@ -23,7 +25,6 @@
 @import "blocks/upload";
 @import "blocks/user-list";
 @import "blocks/main-wrapper";
-@import "special/normalize";
-@import "special/fonts";
-@import "blocks/form-wrapper.scss";
-@import "blocks/user-photos.scss";
+@import "blocks/form-wrapper";
+@import "blocks/user-photos";
+@import "blocks/competition";

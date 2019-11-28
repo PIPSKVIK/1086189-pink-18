@@ -7,21 +7,26 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header">
-      <nav class="navigation">
-        <a class="navigation__logo" href="index.html">
-          <img class="navigation__logo-image" src="https://via.placeholder.com/150x150" alt="logo pink" width="150" height="150">
-        </a>
-        <button class="navigation__burger" type="button">
-          <span class="visually-hidden">меню</span>
-        </button>
-        <section class="navigation__nav-bar">
+  <header class="header">
+      <div class="header-wrapper">
+        <div class="header__logo-wrapper">
+          <a class="header__logo">
+            <span class="visually-hidden">Логотип сайта</span>
+          </a>
+          <button class="header__burger visually-hidden" type="button">
+            <span class="visually-hidden">Выподающее меню</span>
+          </button>
+          <button class="header__exit">
+            <span class="visually-hidden">Закрыть выподающее меню</span>
+          </button>
+        </div>
+        <nav class="header__navigation navigation">
           <ul class="navigation__nav-list">
             <li class="navigation__nav-wrapper">
-              <a class="navigation__nav-item" href="index.html">Главная</a>
+              <a class="navigation__nav-item">Главная</a>
             </li>
             <li class="navigation__nav-wrapper">
-              <a class="navigation__nav-item">Фотографии</a>
+              <a class="navigation__nav-item" href="photo.html">Фотографии</a>
             </li>
             <li class="navigation__nav-wrapper">
               <a class="navigation__nav-item" href="form.html">Конкурс</a>
@@ -30,8 +35,8 @@
               <a class="navigation__nav-item" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
-        </section>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main class="user-photos">
       <div class="user-photos__title-wrapper">

@@ -1,28 +1,12 @@
-.main-form__title-background {
-  background-color: #283645;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 -51px;
-  height: 171px;
-}
-
-.main-title {
-  text-align: center;
-  margin: 0;
-  padding-top: 35px;
-
-  color: #ffffff;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 300;
-}
-
 .main-form__about-information {
   background-color: #ffffff;
 }
 
 .main-form__achievements {
+  background-color: #f2f2f2;
+}
+
+.main-form__applications {
   background-color: #f2f2f2;
 }
 
@@ -57,5 +41,11 @@
 
   &--special {
     color: #d22856;
+  }
+}
+
+@media (min-width: $tablet) {
+  .main-form__achievements {
+    background-color: inherit;
   }
 }

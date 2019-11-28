@@ -1,7 +1,11 @@
+.achievements-list {
+  @include wrap;
+}
+
 .achievements-list__title {
   @include color-red;
-
   text-align: center;
+  padding-top: 40px;
 }
 
 .achievements-list__checkbox-text {
@@ -12,4 +16,30 @@
 .achievements-list__checkbox-wrapper {
   display: flex;
   flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.achievements-list__label {
+  margin-bottom: 40px;
+}
+
+.achievements-list__checkbox-text {
+  margin-left: 30px;
+}
+
+@media (min-width: $tablet) {
+  .achievements-list__checkbox-wrapper {
+    border: 2px solid #e5e5e5;
+    padding: 10px 0 0 40px;
+    width: 100%;
+  }
+
+  .achievements-list__title {
+    padding-top: 10px;
+  }
+
+  .achievements-list__label {
+    margin-bottom: 20px;
+  }
 }
