@@ -42,4 +42,24 @@
   .achievements-list__label {
     margin-bottom: 20px;
   }
+
+  .achievements-list {
+    order: 4;
+  }
+}
+
+@media (min-width: $desktop) {
+  .achievements-list {
+    width: 100%;
+  }
+
+  .achievements-list__checkbox-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .achievements-list__label {
+    margin-right: 40px;
+  }
 }

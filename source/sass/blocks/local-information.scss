@@ -68,4 +68,28 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
+  .local-information {
+    order: 3;
+  }
+}
+
+@media (min-width: $desktop) {
+  .local-information {
+    width: 100%;
+  }
+
+  .local-information__input-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .local-information__input-wrapper label:not(:first-child) {
+    margin-top: 0px;
+    margin-left: 40px;
+  }
+
+  .local-information {
+    padding-top: 40px;
+  }
 }

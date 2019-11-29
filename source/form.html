@@ -40,29 +40,31 @@
     </header>
     <main class="form-wrapper">
       <section class="main-form">
-      <section class="competition">
-        <h1 class="competition-title">
-          Конкурс на самое безбашенное путешествие с Пинк
-        </h1>
-      </section>
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <section class="competition">
+          <h1 class="competition-title">
+            Конкурс на самое безбашенное путешествие с Пинк
+          </h1>
+        </section>
+        <form class="main-form__wrapper-form" action="https://echo.htmlacademy.ru" method="get">
           <div class="main-form__about-information about-information">
-            <h2 class="about-information__title">
-              Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-            </h2>
-            <div class="about-information__input-wrapper">
-              <label class="about-information__label" for="surname">
-                <span class="about-information__info">Фамилия:</span>
-                <input class="about-information__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
-              </label>
-              <label class="about-information__label" for="name">
-                <span class="about-information__info">Имя:</span>
-                <input class="about-information__text" type="text" name="name" id="name" placeholder="Введите ваше имя *"required>
-              </label>
-              <label class="about-information__label" for="father-name">
-                <span class="about-information__info">Отчество:</span>
-                <input class="about-information__text" type="text" name="father-name" id="father-name" placeholder="Ну и отчество тоже" required>
-              </label>
+            <div class="about-information__wrapper">
+              <h2 class="about-information__title">
+                Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+              </h2>
+              <div class="about-information__input-wrapper">
+                <label class="about-information__label" for="surname">
+                  <span class="about-information__info">Фамилия:</span>
+                  <input class="about-information__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
+                </label>
+                <label class="about-information__label" for="name">
+                  <span class="about-information__info">Имя:</span>
+                  <input class="about-information__text" type="text" name="name" id="name" placeholder="Введите ваше имя *"required>
+                </label>
+                <label class="about-information__label" for="father-name">
+                  <span class="about-information__info">Отчество:</span>
+                  <input class="about-information__text" type="text" name="father-name" id="father-name" placeholder="Ну и отчество тоже" required>
+                </label>
+              </div>
             </div>
           </div>
           <div class="main-form__achievements achievements-list">
@@ -113,24 +115,28 @@
             <h3 class="applications-travel__title">
               С каким приложением путешествовали?
             </h3>
-            <label class="applications-travel__label" for="pink-ios">
-              <input class="applications-travel__radio" type="radio" name="pink" id="pink-ios" required>
-              <span class="applications-travel__radio-text">Pink для iOS</span>
-            </label>
-            <label class="applications-travel__label" for="pink-android">
-              <input class="applications-travel__radio" type="radio" name="pink" id="pink-android" required>
-              <span class="applications-travel__radio-text">Pink на Android</span>
-            </label>
-            <label class="applications-travel__label" for="pink-windows">
-              <input class="applications-travel__radio" type="radio" name="pink" id="pink-windows" required>
-              <span class="applications-travel__radio-text">Windows Phone</span>
-            </label>
+            <div class="applications-travel__label-wrap">
+              <label class="applications-travel__label" for="pink-ios">
+                <input class="applications-travel__radio" type="radio" name="pink" id="pink-ios" required>
+                <span class="applications-travel__radio-text">Pink для iOS</span>
+              </label>
+              <label class="applications-travel__label" for="pink-android">
+                <input class="applications-travel__radio" type="radio" name="pink" id="pink-android" required>
+                <span class="applications-travel__radio-text">Pink на Android</span>
+              </label>
+              <label class="applications-travel__label" for="pink-windows">
+                <input class="applications-travel__radio" type="radio" name="pink" id="pink-windows" required>
+                <span class="applications-travel__radio-text">Windows Phone</span>
+              </label>
+            </div>
           </div>
           <div class="main-form__about-emotions describe-emotions">
-            <label class="describe-emotions__label" for="emotions">
-              <span class="describe-emotions__textarea-title">Опишите свои эмоции</span>
-              <textarea class="describe-emotions__textarea" rows="10" cols="33" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
-            </label>
+            <div class="describe-emotions__label-wrap">
+              <label class="describe-emotions__label" for="emotions">
+                <h3 class="describe-emotions__textarea-title">Опишите свои эмоции</h3>
+                <textarea class="describe-emotions__textarea" rows="10" cols="33" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
+              </label>
+            </div>
           </div>
           <div class="main-form__footer">
             <button class="main-form__button">

@@ -1,7 +1,8 @@
 .applications-travel {
   @include wrap;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .applications-travel__title {
@@ -11,4 +12,52 @@
 .applications-travel__radio-text {
   color: #283645;
   line-height: 30px;
+}
+
+.applications-travel__label-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet) {
+  .applications-travel__label-wrap {
+    border: 2px solid #e5e5e5;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    text-align: start;
+  }
+
+  .applications-travel__title {
+    display: none;
+  }
+
+  .applications-travel {
+    order: 2;
+    position: relative;
+
+      &::before {
+        content: ("С каким приложением путешествовали?");
+
+        position: absolute;
+        top: 30px;
+        left: 26%;
+        background: #ffffff;
+        padding: 0 5%;
+        font-size: 14px;
+        color: #d22856;
+        text-transform: uppercase;
+      }
+  }
+}
+
+@media (min-width: $desktop) {
+  .applications-travel {
+    width: 470px;
+    margin: 0;
+  }
+
+  .applications-travel__label-wrap {
+    width: 470px;
+  }
 }
