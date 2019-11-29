@@ -1,12 +1,13 @@
 .user-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  @include list;
+  @include wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .user-list__background-list {
   background-color: #f2f2f2;
-  margin: 0 20px 0 20px;
 }
 
 .user-list__nick {
@@ -36,4 +37,30 @@
 
   border: none;
   outline: none;
+}
+
+.user-list__user-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (min-width: $tablet) {
+  .user-list__wrapper {
+    @include wrap;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .user-list__user-wrapper {
+    margin-left: 20px;
+    width: 280px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .user-list__user-wrapper {
+    width: 280px;
+  }
 }
