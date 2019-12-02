@@ -2,16 +2,15 @@
   background-color: #283645;
 }
 
-.header-navigation {
+.header__navigation {
   @include wrap;
 }
 
 .header__logo-wrapper {
-  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 20px 20px;
 }
 
 .header__logo {
@@ -41,12 +40,13 @@
 
 @media (min-width: $desktop) {
 
-  .header-wrapper {
-    @include wrap;
+  .header__wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 25px 10px 40px 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 110px;
+    align-items: baseline;
   }
 
   .header__logo {
@@ -64,5 +64,13 @@
 
   .header__exit{
     display: none;
+  }
+
+  .header__burger {
+    display: none;
+  }
+
+  .header__navigation {
+    margin: 0;
   }
 }

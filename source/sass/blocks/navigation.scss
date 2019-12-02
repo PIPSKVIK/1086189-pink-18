@@ -17,7 +17,11 @@
   border-bottom: 1px solid #000000;
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop) {
+
+  .navigation {
+    width: 650px;
+  }
 
   .navigation__nav-wrapper {
     border: none;
@@ -28,11 +32,11 @@
   }
 
   .navigation__nav-list li:not(:first-child) {
-    margin-left: 80px;
+    margin-left: 50px;
   }
 
   .navigation__nav-item {
-    padding: 20px 12px;
+    
       &:hover {
         background-color: #295E97;
       }
