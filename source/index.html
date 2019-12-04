@@ -132,6 +132,9 @@
         </article>
       </section>
       <section class="slider-review">
+        <svg class="slider-review__arrow slider-review__arrow--left"version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+          <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+        </svg>
         <ul class="slider-review__slide-list">
           <li class="slider-review__slider-item">
             <h4 class="slider-review__name-comment">Николай Петров</h4>
@@ -152,6 +155,9 @@
             </blockquote>
           </li>
         </ul>
+        <svg class="slider-review__arrow slider-review__arrow--right" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+          <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+        </svg>
         <p class="slider-review__button slider-button">
           <button class="slider-button__element-special">1</button>
           <button class="slider-button__element">2</button>
@@ -159,53 +165,69 @@
         </p>
       </section>
       <section class="slider-price">
-        <div class="slider-price__wrapper">
-          <ul class="slider-price__wrapper-standart"><!-- Первый слайдер -->
-            <li class="slider-price__title">
-              <h4 class="slider-price__standart">стандарт</h4>
-              <span class="slider-price__price">3,99 usd</span>
-            </li>
-            <li class="slider-price__item">
-              <p>розовый фильтр</p>
-            </li>
-            <li class="slider-price__item">
-              <p>смайлики</p>
-            </li>
-            <li class="slider-price__item">
-              <p>комментарии</p>
-            </li>
-          </ul>
-          <ul class="slider-price__wrapper-base"><!-- второй слайдер -->
-            <li class="slider-price__title">
-              <h4 class="slider-price__standart">База</h4>
-              <span class="slider-price__price">1,99 usd</span>
-            </li>
-            <li class="slider-price__item">
-              <p>розовый фильтр</p>
-            </li>
-            <li class="slider-price__item">
-              <p>смайлики</p>
-            </li>
-            <li class="slider-price__item">
-              <p>комментарии</p>
-            </li>
-          </ul>
-          <ul class="slider-price__wrapper-anlim"><!-- третий слайдер -->
-            <li class="slider-price__title">
-              <h4 class="slider-price__standart">анлим</h4>
-              <span class="slider-price__price">9,99 usd</span>
-            </li>
-            <li class="slider-price__item">
-              <p>розовый фильтр</p>
-            </li>
-            <li class="slider-price__item">
-              <p>смайлики</p>
-            </li>
-            <li class="slider-price__item">
-              <p>комментарии</p>
-            </li>
-          </ul>
-        </div>
+        <ul class="slider-price__wrapper">
+          <li class="slider-price__item-wrapper slider-price__item-wrapper--hidden">
+            <table class="slider-price__type">
+              <tr class="slider-price__item-wrapper">
+                <td class="slider-price__item">Розовый фильтр</td>
+              </tr>
+              <tr class="slider-price__item-wrapper">
+                <td class="slider-price__item">Смайлики</td>
+              </tr>
+              <tr class="slider-price__item-wrapper">
+                <td class="slider-price__item">Комментарии</td>
+              </tr>
+            </table>
+          </li>
+          <li class="slider-price__item-wrapper">
+            <table class="slider-price__type"> <!-- первый слайдер -->
+              <tr class="slider-price__title-wrapper">
+                <th class="slider-price__title">стандарт<br> 3,99 usd</th>
+              </tr>
+              <tr class="slider-price__item-wrapper">
+                <td class="slider-price__item">розовый фильтр</td>
+              </tr>
+              <tr class="slider-price__item-wrapper">
+                <td class="slider-price__item">смайлики</td>
+              </tr>
+              <tr class="slider-price__item-wrapper">
+                <td class="slider-price__item">комментарии</td>
+              </tr>
+            </table>
+          </li>
+          <li class="slider-price__item-wrapper">
+            <table class="slider-price__type"> <!-- первый слайдер -->
+              <tr class="slider-price__title-wrapper">
+                <th class="slider-price__title">стандарт<br> 3,99 usd</th>
+              </tr>
+              <tr class="slider-price__item-wrapper">
+                <td class="slider-price__item">розовый фильтр</td>
+              </tr>
+              <tr class="slider-price__item-wrapper">
+                <td class="slider-price__item">смайлики</td>
+              </tr>
+              <tr class="slider-price__item-wrapper">
+                <td class="slider-price__item">комментарии</td>
+              </tr>
+            </table>
+          </li>
+          <li class="slider-price__item-wrapper">
+            <table class="slider-price__type"> <!-- первый слайдер -->
+              <tr class="slider-price__title-wrapper">
+                <th class="slider-price__title">стандарт<br> 3,99 usd</th>
+              </tr>
+              <tr class="slider-price__item-wrapper">
+                <td class="slider-price__item">розовый фильтр</td>
+              </tr>
+              <tr class="slider-price__item-wrapper">
+                <td class="slider-price__item">смайлики</td>
+              </tr>
+              <tr class="slider-price__item-wrapper">
+                <td class="slider-price__item">комментарии</td>
+              </tr>
+            </table>
+          </li>
+        </ul>
         <p class="slider-price__button slider-button">
           <button class="slider-button__element">1</button>
           <button class="slider-button__element-special">2</button>
@@ -231,7 +253,7 @@
                 <a class="contacts-information__information" href="malto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </p>
             </li>
-            <li class="contacts-information__item">
+            <li class="contacts-information__item contacts-information__item--come">
               <h4 class="contacts-information__title">Приезжайте в гости:</h4>
               <p class="contacts-information__information">ул. Большая Конюшенная, 19/8</p>
             </li>

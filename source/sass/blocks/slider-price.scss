@@ -1,59 +1,20 @@
-.slider-price {
-  background-color: #f2f2f2;
-  @include wrap;
-  padding: 30px 0;
-}
-
-.slider-price__wrapper-standart {
+.slider-price__wrapper {
   @include list;
+  @include wrap;
+  display: flex;
+  justify-content: center;
 }
 
-.slider-price__wrapper-base,
-.slider-price__wrapper-anlim {
-  display: none;
+.slider-price__item-wrapper {
+  text-align: center;
 }
 
 .slider-price__title {
   text-align: center;
-  padding: 25px 0 21px 0;
 }
 
-.slider-price__item {
-  padding-left: 20px;
-}
-
-.slider-price__standart {
-  margin: 0;
-}
-
-.slider-price__button {
-  text-align: center;
-}
-
-@media (min-width: $tablet) {
-    .slider-price__wrapper-base,
-    .slider-price__wrapper-anlim {
-      display: block;
-      @include list;
-  }
-
-  .slider-price__button {
+.slider-price__item-wrapper {
+  &--hidden {
     display: none;
-  }
-
-  .slider-price__wrapper {
-    display: flex;
-  }
-  .slider-price__wrapper-base,
-  .slider-price__wrapper-anlim,
-  .slider-price__wrapper-standart {
-    width: 100%;
-    border: 2px solid #e5e5e5;
-  }
-}
-
-@media (min-width: $desktop) {
-  .slider-price {
-    padding: 30px 0;
   }
 }
