@@ -68,9 +68,11 @@
 
 @media (min-width: $desktop) {
   .main-form__wrapper-form {
-    display: flex;
     margin: 0 auto;
     width: 960px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .main-form__footer {

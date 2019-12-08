@@ -1,18 +1,17 @@
 .user-list {
   @include list;
   @include wrap;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
 }
 
+
 .user-list__background-list {
-  background-color: #f2f2f2;
+  text-align: left;
+  padding-left: 17px;
 }
 
 .user-list__nick {
   margin: 0;
-
   @include text-photo-userlist;
   font-weight: 700;
 }
@@ -25,6 +24,7 @@
 
 .user-list__comment {
   @include text-photo-userlist;
+  margin: 0;
 }
 
 .user-list__like {
@@ -40,27 +40,44 @@
 }
 
 .user-list__user-wrapper {
-  text-align: center;
   margin-top: 20px;
+  background-color: #f2f2f2;
+}
+
+.user-list__photo {
+  width: 100%;
 }
 
 @media (min-width: $tablet) {
-  .user-list__wrapper {
-    @include wrap;
-    margin: 0 auto;
-    justify-content: center;
+  .user-list {
     display: flex;
     flex-wrap: wrap;
+      & li:nth-child(3),
+      li:nth-child(5),
+      li:nth-child(7) {
+        margin-left: 20px;
+      }
   }
 
   .user-list__user-wrapper {
-    margin-left: 20px;
-    width: 280px;
+    width: calc(50% - 10px);
+  }
+
+  .user-list__user-wrapper--panarama {
+    width: 100%;
   }
 }
 
 @media (min-width: $desktop) {
-  .user-list__user-wrapper {
-    width: 280px;
+  .user-list li:not(:first-child) {
+    width: 300px;
+    margin-left: 0;
+  }
+
+  .user-list li:nth-child(3),
+  .user-list li:nth-child(4),
+  .user-list li:nth-child(6),
+  .user-list li:nth-child(7) {
+    margin-left: 20px;
   }
 }

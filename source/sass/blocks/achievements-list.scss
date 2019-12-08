@@ -1,11 +1,16 @@
 .achievements-list {
   @include wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .achievements-list__title {
   @include color-red;
   text-align: center;
-  padding-top: 40px;
+}
+
+.achievements-list__label {
+  display: block;
 }
 
 .achievements-list__checkbox-text {
@@ -14,14 +19,11 @@
 }
 
 .achievements-list__checkbox-wrapper {
-  display: flex;
-  flex-direction: column;
   width: 280px;
   margin: 0 auto;
-}
-
-.achievements-list__label {
-  margin-bottom: 40px;
+    & label:not(:last-child) {
+      margin-bottom: 30px;
+    }
 }
 
 .achievements-list__checkbox-text {

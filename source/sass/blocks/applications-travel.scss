@@ -22,9 +22,7 @@
 @media (min-width: $tablet) {
   .applications-travel__label-wrap {
     border: 2px solid #e5e5e5;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
+    padding: 78px 40px 70px 70px;
     text-align: start;
   }
 
@@ -55,6 +53,10 @@
   .applications-travel {
     width: 470px;
     margin: 0;
+      &::before {
+        top: 0;
+        left: 15%;
+      }
   }
 
   .applications-travel__label-wrap {
