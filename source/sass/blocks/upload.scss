@@ -62,7 +62,7 @@
     padding-top: 35px;
     padding-bottom: 35px;
   }
-  
+
   .upload__block {
     display: flex;
     flex-wrap: wrap;
@@ -81,8 +81,8 @@
   .upload__range--crop,
   .upload__range--contrast {
     display: block;
-  } 
-  
+  }
+
   .upload__button-wrapper {
     display: flex;
     flex-direction: column;
@@ -102,7 +102,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+
     .user-list__like {
       order: -1;
     }
