@@ -1,9 +1,5 @@
-.about-information__title {
-  color: #283645;
-  font-size: 14px;
-  line-height: 30px;
-
-  text-align: center;
+.about-information {
+  @include wrap;
 }
 
 .about-information__info {
@@ -16,5 +12,54 @@
 .about-information__text[type="text"]::-webkit-input-placeholder {
   color: #283645;
   line-height: 30px;
-  width: 90%;
+}
+
+.about-information__label,
+.about-information__info,
+.about-information__text {
+  width: 100%;
+  display: block;
+}
+
+.about-information__text {
+  padding: 10px 0 10px 10px;
+}
+
+.about-information__input-wrapper {
+  padding: 20px 20px;
+}
+
+@media (min-width: $tablet) {
+  .about-information__label {
+    display: flex;
+    padding-bottom: 45px;
+    align-items: center;
+  }
+
+  .about-information__info {
+    width: auto;
+    padding: 0;
+    margin: 0 20px 0 0;
+    flex-shrink: 0;
+    max-width: 50%;
+  }
+
+  .about-information {
+    order: 1;
+  }
+
+  .about-information__input-wrapper {
+    padding: 20px 20px 20px 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .about-information {
+    width: calc(50% - 15px);
+    margin: 0;
+  }
+
+  .about-information__wrapper {
+    width: 470px;
+  }
 }

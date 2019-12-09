@@ -1,17 +1,34 @@
-.advantages {
-  padding-top: 1px;
-}
-
 .advantages__title-wrapper {
   background-color: #ffffff;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .advantages__list-wrapper {
   background-color: #f2f2f2;
+  text-align: center;
+    &::after {
+      content: (" ");
+
+      display: block;
+      margin: 0 auto;
+      background-image: url("/img/iphone-screen-mobile@1x.png");
+      background-repeat: no-repeat;
+      background-position: 10px 10px;
+
+      width: 180px;
+      height: 278px;
+    }
 }
 
 .advantages__list {
   list-style: none;
+  @include list;
+}
+
+.advantages__image-position {
+  @include list;
 }
 
 .advantages__title {
@@ -19,12 +36,13 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+  margin: 0;
 }
 
 .advantages__functional-title {
   margin: 0px;
   font-size: 18px;
-  line-height: 10px;
+  line-height: 24px;
   color: #000000;
 }
 
@@ -33,4 +51,83 @@
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+}
+
+.advantages__item-iphone {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .advantages__list-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .advantages__list {
+    width: 320px;
+  }
+
+  .advantages__list-wrapper {
+    &::after {
+      content: (" ");
+
+      display: block;
+      margin: 0 auto;
+      background-image: url("../../img/iphone-screen-2-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-position: 10px 10px;
+
+      width: 290px;
+      height: 480px;
+      order: -1;
+    }
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+      & li:not(:first-child) {
+        margin-top: 40px;
+      }
+  }
+}
+
+@media (min-width: $desktop) {
+  .advantages__item-iphone {
+    display: block;
+  }
+
+  .advantages__list-wrapper {
+    &::after {
+      content: (" ");
+      display: none;
+    }
+  }
+
+  .advantages__list {
+    width: 100%;
+    @include wrap;
+    flex-direction: row;
+      & li:not(:first-child) {
+        margin-top: 0px;
+    }
+      & li:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .advantages__item {
+    width: 260px;
+  }
+
+  .advantages__list-wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .advantages__item-iphone {
+    margin-bottom: 45px;
+  }
 }

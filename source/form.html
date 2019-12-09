@@ -2,53 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк2</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
   <body>
     <header class="header">
-      <nav class="navigation">
-        <a class="navigation__logo" href="index.html">
-          <img class="navigation__logo-image" src="https://via.placeholder.com/150x150" alt="logo pink" width="150" height="150">
-        </a>
-        <button class="navigation__burger" type="button">
-          <span class="visually-hidden">меню</span>
-        </button>
-        <section class="navigation__nav-bar">
+      <div class="header__wrapper">
+        <div class="header__logo-wrapper">
+          <a class="header__logo">
+            <span class="visually-hidden">Логотип сайта</span>
+          </a>
+          <button class="header__burger" type="button">
+            <span class="visually-hidden">Выподающее меню</span>
+          </button>
+        </div>
+        <nav class="header__navigation navigation">
           <ul class="navigation__nav-list">
-            <li><a class="navigation__nav-item" href="index.html">Главная</a></li>
-            <li><a class="navigation__nav-item" href="photo.html">Фотографии</a></li>
-            <li><a class="navigation__nav-item">Конкурс</a></li>
-            <li><a class="navigation__nav-item" href="https://htmlacademy.ru">HTML Academy</a></li>
+            <li class="navigation__nav-wrapper">
+              <a class="navigation__nav-item" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__nav-wrapper">
+              <a class="navigation__nav-item" href="photo.html">Фотографии</a>
+            </li>
+            <li class="navigation__nav-wrapper">
+              <a class="navigation__nav-item">Конкурс</a>
+            </li>
+            <li class="navigation__nav-wrapper">
+              <a class="navigation__nav-item" href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
           </ul>
-        </section>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main class="form-wrapper">
       <section class="main-form">
-        <div class="main-form__title-background">
-          <h1 class="main-title">
+        <section class="competition">
+          <h1 class="competition-title">
             Конкурс на самое безбашенное путешествие с Пинк
           </h1>
-        </div>
-        <form action="https://echo.htmlacademy.ru" method="get">
+        </section>
+        <section class="share-story">
+          <h2 class="share-story__title">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+          </h2>
+        </section>
+        <form class="main-form__wrapper-form" action="https://echo.htmlacademy.ru" method="get">
           <div class="main-form__about-information about-information">
-            <h2 class="about-information__title">
-              Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-            </h2>
-            <div class="about-information__input-wrapper">
-              <label class="about-information__label" for="surname">
-                <span class="about-information__info">Фамилия:</span>
-                <input class="about-information__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
-              </label>
-              <label class="about-information__label" for="name">
-                <span class="about-information__info">Имя:</span>
-                <input class="about-information__text" type="text" name="name" id="name" placeholder="Введите ваше имя *"required>
-              </label>
-              <label class="about-information__label" for="father-name">
-                <span class="about-information__info">Отчество:</span>
-                <input class="about-information__text" type="text" name="father-name" id="father-name" placeholder="Ну и отчество тоже" required>
-              </label>
+            <div class="about-information__wrapper">
+              <div class="about-information__input-wrapper">
+                <label class="about-information__label" for="surname">
+                  <span class="about-information__info">Фамилия:</span>
+                  <input class="about-information__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
+                </label>
+                <label class="about-information__label" for="name">
+                  <span class="about-information__info">Имя:</span>
+                  <input class="about-information__text" type="text" name="name" id="name" placeholder="Введите ваше имя *"required>
+                </label>
+                <label class="about-information__label" for="father-name">
+                  <span class="about-information__info">Отчество:</span>
+                  <input class="about-information__text" type="text" name="father-name" id="father-name" placeholder="Ну и отчество тоже" required>
+                </label>
+              </div>
             </div>
           </div>
           <div class="main-form__achievements achievements-list">
@@ -85,7 +100,7 @@
           </div>
           <div class="main-form__phone-adres local-information">
             <div class="local-information__input-wrapper">
-              <label class="local-information__label" for="number">
+              <label class="local-information__label local-information__label-title" for="number">
                 <span class="local-information__info">Номер телефона</span>
                 <input class="local-information__text" type="text" name="phone" id="number" placeholder="Номер, пожалуйста" required>
               </label>
@@ -99,24 +114,28 @@
             <h3 class="applications-travel__title">
               С каким приложением путешествовали?
             </h3>
-            <label class="applications-travel__label" for="pink-ios">
-              <input class="applications-travel__radio" type="radio" name="pink" id="pink-ios" required>
-              <span class="applications-travel__radio-text">Pink для iOS</span>
-            </label>
-            <label class="applications-travel__label" for="pink-android">
-              <input class="applications-travel__radio" type="radio" name="pink" id="pink-android" required>
-              <span class="applications-travel__radio-text">Pink на Android</span>
-            </label>
-            <label class="applications-travel__label" for="pink-windows">
-              <input class="applications-travel__radio" type="radio" name="pink" id="pink-windows" required>
-              <span class="applications-travel__radio-text">Windows Phone</span>
-            </label>
+            <div class="applications-travel__label-wrap">
+              <label class="applications-travel__label" for="pink-ios">
+                <input class="applications-travel__radio" type="radio" name="pink" id="pink-ios" required>
+                <span class="applications-travel__radio-text">Pink для iOS</span>
+              </label>
+              <label class="applications-travel__label" for="pink-android">
+                <input class="applications-travel__radio" type="radio" name="pink" id="pink-android" required>
+                <span class="applications-travel__radio-text">Pink на Android</span>
+              </label>
+              <label class="applications-travel__label" for="pink-windows">
+                <input class="applications-travel__radio" type="radio" name="pink" id="pink-windows" required>
+                <span class="applications-travel__radio-text">Windows Phone</span>
+              </label>
+            </div>
           </div>
           <div class="main-form__about-emotions describe-emotions">
-            <label class="describe-emotions__label" for="emotions">
-              <span class="describe-emotions__textarea-title">Опишите свои эмоции</span>
-              <textarea class="describe-emotions__textarea" rows="10" cols="33" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
-            </label>
+            <div class="describe-emotions__label-wrap">
+              <label class="describe-emotions__label" for="emotions">
+                <h3 class="describe-emotions__textarea-title">Опишите свои эмоции</h3>
+                <textarea class="describe-emotions__textarea" rows="10" cols="33" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
+              </label>
+            </div>
           </div>
           <div class="main-form__footer">
             <button class="main-form__button">

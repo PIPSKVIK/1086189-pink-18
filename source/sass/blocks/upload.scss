@@ -1,6 +1,14 @@
 .upload {
+  @include wrap;
+  width: 100%;
   background-color: #f2f2f2;
-  padding: 20px 0 40px 0;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.upload__button-action {
+  display: flex;
+  flex-direction: column;
 }
 
 .upload__button-edit {
@@ -19,14 +27,113 @@
   border-radius: 40px;
 
   &--post {
-    padding: 15px 90px;
+    padding: 17px 0;
     border: 3px solid #d22856;
     color: #d22856;
   }
 
   &--cancel {
-    padding: 15px 104px;
+    padding: 17px 0;
     border: 3px solid #e3e4e4;
     color: #e3e4e4;
+  }
+}
+
+.upload__photo-winter {
+  width: 100%;
+}
+
+.upload__button-wrapper {
+  text-align: center;
+}
+
+.upload__range-wrapper {
+  text-align: center;
+}
+
+.upload__range--crop,
+.upload__range--contrast {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .upload {
+    display: flex;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .upload__block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+  }
+
+  .upload__button-wrapper {
+    width: 30%;
+  }
+
+  .upload__range-wrapper {
+    width: 70%;
+    text-align: left;
+  }
+
+  .upload__range--crop,
+  .upload__range--contrast {
+    display: block;
+  }
+
+  .upload__button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .upload__range {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .upload__button-action {
+    width: 100%;
+  }
+
+  .user-list__background-list--panarama {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .user-list__like {
+      order: -1;
+    }
+
+    .user-list__nick {
+      order: -1;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .upload__photo-winter {
+    width: 300px;
+    margin-left: 80px;
+  }
+
+  .upload__block {
+    margin-left: 90px;
+  }
+
+  .upload__button-action {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .upload__button-act {
+    width: 100%;
+    height: 55px;
+  }
+
+  .upload__button-act--post {
+    margin-right: 30px;
   }
 }

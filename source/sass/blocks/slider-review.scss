@@ -1,16 +1,13 @@
 .slider-review {
   background-color: #ffffff;
+  @include wrap;
+  text-align: center;
 }
 
 .slider-review__slide-list {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.slider-price__wrapper {
-  margin: 0;
-  padding: 0;
 }
 
 .slider-review__slide-list blockquote {
@@ -22,10 +19,6 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-}
-
-.slider-price__title {
-  background-color: #283645;
 }
 
 .slider-review__comment {
@@ -57,4 +50,41 @@
   line-height: 30px;
   text-transform: uppercase;
   background-color: #ffffff;
+}
+
+.slider-review__arrow {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .slider-review__slider-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider-review__blockquote {
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop) {
+  .slider-review__arrow {
+    display: block;
+    cursor: pointer;
+  }
+
+  .slider-button {
+    display: none;
+  }
+
+  .slider-review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider-review__slide-list {
+    width: 710px;
+    padding: 40px 40px;
+  }
 }

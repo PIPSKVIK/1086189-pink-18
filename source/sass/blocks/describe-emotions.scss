@@ -1,8 +1,38 @@
 .describe-emotions__textarea-title {
   @include color-red;
+  margin-top: 0;
 }
 
 .describe-emotions__textarea[name="emotions"]::-webkit-input-placeholder {
   color: #283645;
   line-height: 30px;
+}
+
+.describe-emotions {
+  @include wrap;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.describe-emotions__textarea {
+  width: 100%;
+}
+
+@media (min-width: $tablet) {
+  .describe-emotions__label-wrap {
+    border: 2px solid #e5e5e5;
+    padding: 20px 20px;
+  }
+
+  .describe-emotions {
+    order: 5;
+  }
+}
+
+@media (min-width: $desktop) {
+  .describe-emotions {
+    width: 100%;
+    padding-top: 40px;
+  }
 }

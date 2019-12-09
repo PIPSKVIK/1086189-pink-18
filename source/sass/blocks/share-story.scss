@@ -1,0 +1,25 @@
+.share-story {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.share-story__title {
+    color: #283645;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0;
+    text-align: center;
+  }
+
+@media (min-width: $tablet) {
+  .share-story {
+    width: 470px;
+    margin: 45px auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .share-story {
+    width: 675px;
+  }
+}
