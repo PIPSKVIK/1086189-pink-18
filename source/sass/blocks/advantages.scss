@@ -61,22 +61,12 @@
   .advantages__list-wrapper {
     display: flex;
     justify-content: center;
-  }
-
-  .advantages__list {
-    width: 320px;
+    padding: 0 20px;
   }
 
   .advantages__list-wrapper {
     &::after {
-      content: (" ");
-
-      display: block;
-      margin: 0 auto;
       background-image: url("../../img/iphone-screen-2-tablet@1x.png");
-      background-repeat: no-repeat;
-      background-position: 10px 10px;
-
       width: 290px;
       height: 480px;
       order: -1;
@@ -84,10 +74,8 @@
   }
 
   .advantages__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+    width: 320px;
+    margin-top: 85px;
       & li:not(:first-child) {
         margin-top: 40px;
       }
@@ -107,6 +95,7 @@
   }
 
   .advantages__list {
+    display: flex;
     width: 100%;
     @include wrap;
     flex-direction: row;

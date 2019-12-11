@@ -10,17 +10,18 @@
       content: (" ");
       background-image: url("/img/iphone-hand-mobile@1x.png");
       background-repeat: no-repeat;
-      background-position: 0 0;
+      background-position: 8px 0;
       width: 320px;
       height: 286px;
 
-      margin-top: 20px;
+      margin-top: 28px;
     }
 }
 
 .about-application__title {
   margin: 0;
-  padding-top: 25px;
+  padding-top: 22px;
+  padding-left: 14px;
   font-size: 24px;
   line-height: 29px;
   color: #ffffff;
@@ -107,14 +108,12 @@
   }
 
   .about-application__wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     @include wrap;
     position: relative;
+    z-index: 20;
       &::after {
         content: (" ");
-
+        z-index: -1;
         position: absolute;
         background-image: url(/img/iphone-hand-tablet@1x.png);
         background-repeat: no-repeat;
@@ -129,7 +128,6 @@
   .about-application__wrapper-content {
     width: 300px;
     padding: 95px 0 110px 0;
-    z-index: 20;
   }
 
   .about-application__button-wrapper {

@@ -10,18 +10,17 @@
   text-transform: uppercase;
 
   text-decoration: none;
+  padding: 0 60px 0 73px;
+  
 }
 
 .navigation__nav-wrapper {
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
+  padding: 15px 0;
 }
 
 @media (min-width: $desktop) {
-
-  .navigation {
-    width: 650px;
-  }
 
   .navigation__nav-wrapper {
     border: none;
@@ -31,13 +30,21 @@
     display: flex;
   }
 
-  .navigation__nav-list li:not(:first-child) {
-    margin-left: 50px;
+  .navigation__nav-list li:not(:last-child) {
+    margin-right: 80px;
   }
 
   .navigation__nav-item {
+    padding: 0;
       &:hover {
         background-color: #295E97;
       }
+  }
+
+  .navigation__nav-item {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: initial;
   }
 }
