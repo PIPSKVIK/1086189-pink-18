@@ -4,10 +4,9 @@
   width: 100%;
 }
 
-
 .user-list__background-list {
   text-align: left;
-  padding-left: 17px;
+  padding: 20px 30px 25px 15px;
 }
 
 .user-list__nick {
@@ -46,6 +45,13 @@
 
 .user-list__photo {
   width: 100%;
+}
+
+.user-list__photo-item {
+  &--panarama {
+    display: block;
+    margin: 0 -20px;
+  }
 }
 
 @media (min-width: $tablet) {

@@ -74,3 +74,22 @@
     align-items: center;
   }
 }
+
+.achievements-list__label {
+  
+  &--burn {
+    order: 4;
+  }
+  &--chuck {
+    order: 2;
+  }
+  &--souvenirs {
+    order: 5;
+  }
+  &--tower {
+    order: 3;
+  }
+  &--hotel {
+    order: 6;
+  }
+}
