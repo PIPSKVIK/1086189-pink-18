@@ -25,10 +25,6 @@
   padding: 10px 0 10px 10px;
 }
 
-.about-information__input-wrapper {
-  padding: 20px 20px;
-}
-
 @media (min-width: $tablet) {
   .about-information__label {
     display: flex;
@@ -47,19 +43,11 @@
   .about-information {
     order: 1;
   }
-
-  .about-information__input-wrapper {
-    padding: 20px 20px 20px 0;
-  }
 }
 
 @media (min-width: $desktop) {
   .about-information {
     width: calc(50% - 15px);
     margin: 0;
-  }
-
-  .about-information__wrapper {
-    width: 470px;
   }
 }

@@ -5,7 +5,28 @@
 .slider-price__table-header{
   line-height: 30px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #ffffff;
+  position: relative;
+    &--hit::after {
+      content: ("");
+      position: absolute;
+      background-image: url(../../img/bg-hit.svg);
+      background-repeat: no-repeat;
+      width: 73px;
+      height: 73px;
+      top: 0;
+      left: 0;
+    }
+    &--hit:before {
+      position: absolute;
+      content: ("хит");
+      top: 9px;
+      left: 9px;
+      z-index: 10;
+      font-weight: 300;
+      transform: rotate(-45deg);
+    }
 }
 
 .slider-price__table-price {
@@ -38,7 +59,7 @@
   margin-left: -100%;
 
   td {
-    width: 33.333333%;
+    width: 25%;
     border: 2px solid #e5e5e5;
     padding: 5px;
   }
@@ -67,6 +88,48 @@
   }
 }
 
+.slider-price__table-title {
+  position: relative;
+  &--pink2::after {
+    content: ("");
+    position: absolute;
+    background-image: url(/img/icon-yes.svg);
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 21px;
+    right: 0;
+  }
+  &--smile2::after {
+    content: ("");
+    position: absolute;
+    background-image: url(/img/icon-yes.svg);
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 21px;
+    right: 0;
+  }
+  &--comment2::after {
+    content: ("");
+    position: absolute;
+    background-image: url(/img/icon-no.svg);
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    right: 0;
+  }
+}
+
+.slider-price__table-title--pink1,
+.slider-price__table-title--smile1,
+.slider-price__table-title--comment1,
+.slider-price__table-title--pink3,
+.slider-price__table-title--smile3,
+.slider-price__table-title--comment3 {
+  text-align: center;
+}
+
+
+
 @media (min-width: $tablet) {
   .slider-price__table-wrap {
     margin: 0 auto;
@@ -85,5 +148,19 @@
 
   .slider-price__table-control {
     display: none;
+  }
+
+  .slider-price__table-wrapper td:nth-child(1) {
+    background-color: white;
+    border: none;
+  }
+
+  .slider-price__table-title--pink2,
+  .slider-price__table-title--smile2,
+  .slider-price__table-title--comment2 {
+    color: white;
+      &::after {
+        right: 40%;
+      }
   }
 }

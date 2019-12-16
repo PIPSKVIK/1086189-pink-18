@@ -14,38 +14,26 @@
   line-height: 30px;
 }
 
-.applications-travel__label-wrap {
-  display: flex;
-  flex-direction: column;
+.applications-travel__label {
+  display: block;
 }
 
 @media (min-width: $tablet) {
   .applications-travel__label-wrap {
     border: 2px solid #e5e5e5;
     padding: 78px 40px 70px 70px;
-    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .applications-travel__title {
-    display: none;
-  }
-
-  .applications-travel {
-    order: 2;
+    background-color: #ffffff;
+    margin-bottom: -10px;
     position: relative;
-
-      &::before {
-        content: ("С каким приложением путешествовали?");
-
-        position: absolute;
-        top: 30px;
-        left: 26%;
-        background: #ffffff;
-        padding: 0 5%;
-        font-size: 14px;
-        color: #d22856;
-        text-transform: uppercase;
-      }
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
   }
 }
 
@@ -57,9 +45,5 @@
         top: 0;
         left: 15%;
       }
-  }
-
-  .applications-travel__label-wrap {
-    width: 470px;
   }
 }

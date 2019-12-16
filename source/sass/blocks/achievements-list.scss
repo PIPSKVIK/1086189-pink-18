@@ -2,6 +2,7 @@
   @include wrap;
   padding-top: 40px;
   padding-bottom: 40px;
+  text-align: center;
 }
 
 .achievements-list__title {
@@ -19,8 +20,9 @@
 }
 
 .achievements-list__checkbox-wrapper {
-  width: 280px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
     & label:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -33,12 +35,18 @@
 @media (min-width: $tablet) {
   .achievements-list__checkbox-wrapper {
     border: 2px solid #e5e5e5;
-    padding: 10px 0 0 40px;
+    padding: 20px 20px;
     width: 100%;
   }
 
   .achievements-list__title {
-    padding-top: 10px;
+    margin: 0;
+    background-color: #ffffff;
+    padding: 0 10px;
+    margin-bottom: -10px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
   }
 
   .achievements-list__label {
@@ -58,10 +66,11 @@
   .achievements-list__checkbox-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .achievements-list__label {
-    margin-right: 40px;
+    width: 33.333%;
+    display: flex;
+    align-items: center;
   }
 }

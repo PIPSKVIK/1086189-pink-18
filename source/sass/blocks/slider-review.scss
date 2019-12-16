@@ -56,6 +56,10 @@
   display: none;
 }
 
+.slider-review__name-info {
+  display: none;
+}
+
 @media (min-width: $tablet) {
   .slider-review__slider-item {
     display: flex;
@@ -65,6 +69,13 @@
   .slider-review__blockquote {
     order: -1;
   }
+}
+
+.slider-review__name-info {
+  display: block;
+  font-size: 14px;
+  line-height: 30xp;
+  color: #283645;
 }
 
 @media (min-width: $desktop) {
@@ -78,6 +89,7 @@
   }
 
   .slider-review {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;

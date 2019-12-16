@@ -96,6 +96,11 @@
     align-items: center;
   }
 
+  .footer__logo-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+
   .footer__logo-wrapper,
   .footer__social,
   .footer__copyright {
