@@ -15,3 +15,23 @@
   padding-right: 5px;
   text-align: center;
 }
+
+@media (min-width: $tablet) {
+  .user-photos__title-wrapper {
+    background-image: url(/img/bg-back-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    height: 442px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .user-photos__title-wrapper {
+    background-image: url(/img/bg-back-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    height: 395px;
+  }
+}

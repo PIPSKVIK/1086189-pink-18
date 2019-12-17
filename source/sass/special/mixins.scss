@@ -25,3 +25,9 @@
     margin: 0 auto;
   }
 }
+
+@mixin bg-setting {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
