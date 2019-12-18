@@ -8,6 +8,7 @@
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
+  padding: 18px;
     &--hit::after {
       content: ("");
       position: absolute;
@@ -21,15 +22,17 @@
     &--hit:before {
       position: absolute;
       content: ("хит");
-      top: 9px;
+      top: 11px;
       left: 9px;
       z-index: 10;
+      font-size: 16px;
       font-weight: 300;
       transform: rotate(-45deg);
     }
 }
 
 .slider-price__table-price {
+  margin: 0;
   font-size: 24px;
   font-weight: 300;
 }
@@ -42,12 +45,14 @@
 .slider-price {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 89px 10px 45px 10px;
+  background-color: #f2f2f2;
+  clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 100%);
 }
 
 .slider-price__wrap {
   margin: 0 -10px;
-  padding: 0 10px;
+  padding: 0 20px;
   overflow: hidden;
 }
 
@@ -57,39 +62,25 @@
   border: 0;
   border-collapse: collapse;
   margin-left: -100%;
-
-  td {
-    width: 25%;
-    border: 2px solid #e5e5e5;
-    padding: 5px;
-  }
+    td {
+      width: 25%;
+      border: 2px solid #e5e5e5;
+    }
 }
 
 .slider-price__table-control {
   display: flex;
   justify-content: center;
-  margin: 20px 0 0;
-
-  button {
-    background: none;
-    border: 2px solid #333;
-    font-size: 0;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    margin: 0 5px;
-    padding: 2px;
-    background-clip: content-box;
-    cursor: pointer;
-
-    &:active {
-      background-color: #333333;
-    }
-  }
+  align-items: center;
+  margin: 36px 0 0;
 }
 
 .slider-price__table-title {
   position: relative;
+  padding: 16px 16px 16px 23px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
   &--pink2::after {
     content: ("");
     position: absolute;
@@ -97,7 +88,7 @@
     background-repeat: no-repeat;
     width: 31px;
     height: 21px;
-    right: 0;
+    right: 17px;
   }
   &--smile2::after {
     content: ("");
@@ -106,16 +97,17 @@
     background-repeat: no-repeat;
     width: 31px;
     height: 21px;
-    right: 0;
+    right: 17px;
   }
   &--comment2::after {
     content: ("");
     position: absolute;
     background-image: url(/img/icon-no.svg);
     background-repeat: no-repeat;
-    width: 26px;
-    height: 26px;
-    right: 0;
+    width: 33px;
+    height: 30px;
+    right: 13px;
+    bottom: 17px;
   }
 }
 

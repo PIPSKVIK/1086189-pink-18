@@ -1,12 +1,10 @@
 .contacts-information__more-questions,
 .contacts-information__contact-us {
   margin: 0;
-
   color: #283645;
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
-
   text-align: center;
 }
 
@@ -21,7 +19,7 @@
 
 .contacts-information__title {
   margin: 0;
-
+  // padding-bottom: 1px;
   color: #283645;
   font-size: 18px;
   line-height: 22px;
@@ -43,6 +41,36 @@
   background-size: cover;
   height: 300px;
   margin: 0 auto;
+  position: relative;
+    &::after {
+      content: ("");
+      position: absolute;
+      background-image: url(../../img/bg-triangle-white-footer.svg);
+      background-repeat: no-repeat;
+      top: -28px;
+      left: -127px;
+      width: 1200px;
+      height: 123px;
+    }
+
+}
+
+.contacts-information__background-wrapper {
+  padding: 44px 24px 19px 24px;
+}
+
+.contacts-information__phone-wrapper,
+.contacts-information__mail-wrapper,
+.contacts-information__information {
+  margin: 0;
+}
+
+.contacts-information__heading-wrapper {
+  margin-bottom: 36px;
+}
+
+.contacts-information__item {
+  margin-bottom: 28px;
 }
 
 @media (min-width: $tablet) {
