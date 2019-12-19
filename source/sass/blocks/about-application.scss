@@ -33,6 +33,7 @@
   background-position: 0 0;
   background-size: cover;
   margin-bottom: 29px;
+  // padding-top: 69px;
 }
 
 .about-application__button-wrapper {
@@ -64,8 +65,6 @@
     }
 }
 
-
-
 .about-application__text {
   font-size: 14px;
   line-height: 24px;
@@ -82,12 +81,12 @@
     font-size: 40px;
     line-height: 48px;
     font-weight: 300;
+    padding: 28px;
   }
 
   .about-application__text {
     font-size: 18px;
     padding: 0;
-    margin-top: 20px;
   }
 
   .about-application {
@@ -99,6 +98,7 @@
 
   .about-application__wrapper-background {
     background-image: none;
+    margin-bottom: 2px;
       &::after {
         content: (" ");
         display: none;
@@ -115,9 +115,8 @@
         position: absolute;
         background-image: url(/img/iphone-hand-tablet@1x.png);
         background-repeat: no-repeat;
-
-        width: 676px;
-        height: 550px;
+        width: 680px;
+        height: 545px;
         right: 0;
         bottom: 0;
       }
@@ -125,12 +124,17 @@
 
   .about-application__wrapper-content {
     width: 300px;
-    padding: 95px 0 110px 0;
+    padding: 64px 0 110px 0;
   }
 
   .about-application__button-wrapper {
     padding: 0;
     width: 100%;
+  }
+
+  .about-application__social {
+    margin-top: 46px;
+    margin-bottom: 35px;
   }
 }
 

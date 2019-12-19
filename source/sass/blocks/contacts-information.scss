@@ -41,18 +41,6 @@
   background-size: cover;
   height: 300px;
   margin: 0 auto;
-  position: relative;
-    &::after {
-      content: ("");
-      position: absolute;
-      background-image: url(../../img/bg-triangle-white-footer.svg);
-      background-repeat: no-repeat;
-      top: -28px;
-      left: -127px;
-      width: 1200px;
-      height: 123px;
-    }
-
 }
 
 .contacts-information__background-wrapper {

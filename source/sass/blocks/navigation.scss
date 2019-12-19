@@ -1,6 +1,6 @@
-.navigation__nav-list {
-  @include list;
-  text-align: center;
+.navigation {
+  background-color: #283645;
+  position: relative;
 }
 
 .navigation__nav-item {
@@ -8,16 +8,48 @@
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-
   text-decoration: none;
   padding: 0 76px 0 73px;
-  
 }
 
 .navigation__nav-wrapper {
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
   padding: 15px 0;
+}
+
+.navigation__nav-list {
+  @include list;
+  text-align: center;
+  // display: none;
+}
+
+.navigation__toggle {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  background-image: url(../../img/icon-menu-cross.svg);
+  width: 23px;
+  height: 24px;
+  right: 20px;
+  top: -48px;
+}
+
+.navigation__toggle-active {
+  background-image: url(../../img/icon-menu-burger.svg);
+  width: 50px;
+  height: 25px;
+}
+
+.navigation__menu-activ {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+
+  .navigation__toggle {
+    top: -64px;
+  }
 }
 
 @media (min-width: $desktop) {
