@@ -66,10 +66,12 @@
   .slider-review__slider-item {
     display: flex;
     flex-direction: column;
+    padding-top: 54px;
   }
 
   .slider-review__blockquote {
     order: -1;
+    padding-bottom: 37px;
   }
 
   .slider-review__name-info {
@@ -77,6 +79,20 @@
     font-size: 14px;
     line-height: 30px;
     color: #283645;
+  }
+  
+  .slider-review {
+    margin: 10px 0 20px 0;
+  }
+
+  .slider-review__comment {
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .slider-review__name-comment {
+    font-size: 20px;
   }
 }
 

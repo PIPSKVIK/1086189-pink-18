@@ -52,6 +52,14 @@
   border: 3px solid #ffffff;
   border-radius: 28px;
   padding: 15px 0;
+    &:hover {
+      color: rgb(210, 40, 86);
+      background-color: #ffffff;
+    }
+
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+    }
 }
 
 .about-application__social {

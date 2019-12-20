@@ -21,28 +21,49 @@
 .navigation__nav-list {
   @include list;
   text-align: center;
-  // display: none;
 }
 
 .navigation__toggle {
   position: absolute;
   border: none;
+  outline: none;
   background-color: transparent;
-  background-image: url(../../img/icon-menu-cross.svg);
-  width: 23px;
-  height: 24px;
   right: 20px;
   top: -48px;
+  cursor: pointer;
+    & .navigation__cross-color:hover {
+      fill: #d22856;
+    }
+
+    & .navigation__cross-color:active {
+      fill: rgba(210, 40, 86, 0.3);
+    }
 }
 
-.navigation__toggle-active {
-  background-image: url(../../img/icon-menu-burger.svg);
-  width: 50px;
-  height: 25px;
+.navigation__toggle-open {
+  position: absolute;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  right: 20px;
+  top: -48px;
+  cursor: pointer;
+  display: none;
+    & .navigation__burger-color:hover {
+      fill: #d22856;
+    }
+
+    & .navigation__burger-color:active {
+      fill: rgba(210, 40, 86, 0.3);
+    }
 }
 
 .navigation__menu-activ {
   display: none;
+}
+
+.navigation__button-activ {
+  display: block;
 }
 
 @media (min-width: $tablet) {

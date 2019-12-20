@@ -155,4 +155,33 @@
         right: 40%;
       }
   }
+
+  .slider-price__table-header {
+    padding: 12px 5px 7px 10px;
+    font-size: 16px;
+  }
+
+  .slider-price__table-price {
+    font-size: 18px;
+  }
+
+  .slider-price__table-title {
+    padding: 5px 10px 12px 10px;
+    background-color: #ffffff;
+  }
+
+  .slider-price__table-title {
+    &--pink2::after {
+      right: 65px;
+    }
+    &--smile2::after {
+
+      right: 65px;
+    }
+    &--comment2::after {
+      position: absolute;
+      right: 62px;
+      bottom: 9px;
+    }
+  }
 }
