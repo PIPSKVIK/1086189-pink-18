@@ -34,15 +34,13 @@
   .header__wrapper {
     max-width: 960px;
     margin: 0 auto;
-    padding: 26px 5px 16px 10px;
+    padding: 27px 5px 26px 10px;
     display: flex;
-    align-items: baseline;
   }
 
   .header__logo {
     width: 147px;
     height: 40px;
-
     background-image: url("/img/logo-pink-white-desktop.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -51,6 +49,7 @@
   .header__logo-wrapper {
     padding: 0;
     margin-right: 172px;
+    background-color: transparent;
   }
 
   .header__exit{

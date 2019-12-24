@@ -157,7 +157,7 @@
   }
 
   .slider-price__table-header {
-    padding: 12px 5px 7px 10px;
+    padding: 10px 11px 8px 11px;
     font-size: 16px;
   }
 
@@ -183,5 +183,14 @@
       right: 62px;
       bottom: 9px;
     }
+  }
+
+  .slider-price__table-title--first {
+    text-transform: none;
+    padding: 10px 10px 10px 15px;
+  }
+
+  .slider-price {
+    padding: 89px 20px 45px 20px;
   }
 }

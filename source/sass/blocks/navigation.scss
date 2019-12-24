@@ -75,12 +75,17 @@
 
 @media (min-width: $desktop) {
 
+  .navigation {
+    background-color: transparent;
+  }
+
   .navigation__nav-wrapper {
     border: none;
   }
 
   .navigation__nav-list {
     display: flex;
+    margin-top: 3px;
   }
 
   .navigation__nav-list li:not(:last-child) {

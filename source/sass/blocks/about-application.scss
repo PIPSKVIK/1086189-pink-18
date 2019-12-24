@@ -162,11 +162,10 @@
       background-image: url("../../img/iphone-hand-desktop@1x.png");
       background-repeat: no-repeat;
 
-      width: 883px;
+      width: 934px;
       height: 644px;
       right: 0;
       bottom: 0;
-
     }
   }
 
@@ -176,7 +175,13 @@
   }
 
   .about-application__wrapper-background {
-    margin-bottom: 63px;
+    margin-top: 72px;
+    margin-bottom: 25px;
+  }
+
+  .about-application__title {
+    font-size: 50px;
+    line-height: 59px;
   }
 
   .about-application__button-wrapper {
@@ -185,5 +190,13 @@
 
   .about-application__social {
     margin-bottom: 61px;
+  }
+
+  .about-application__button-download {
+    font-size: 21px;
+  }
+
+  .about-application__social {
+    margin-bottom: 53px;
   }
 }

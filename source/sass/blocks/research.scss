@@ -54,6 +54,7 @@
       font-weight: 700;
       color: #000000;
       margin: 0 0 10px 0;
+      padding-right: 3px;
     }
 
     .research__text {
@@ -71,7 +72,54 @@
 }
 
 @media (min-width: $desktop) {
+  .research {
+    background-color: #f2f2f2;
+  }
+
   .research__wrapper {
-    @include wrap;
+    width: 960px;
+    padding: 0 10px 66px 10px;
+    margin: 0 auto;
+  }
+
+  .research__image-wrapper {
+    & svg {
+      width: 298px;
+      height: 345px;
+    }
+    &::before {
+      content: ("");
+      top: 70px;
+      right: 23px;
+      width: 253px;
+      height: 253px;
+    }
+    &::after {
+      content: ("24");
+      font-size: 120px;
+      line-height: 186px;
+      top: 97px;
+      left: 79px;
+    }
+  }
+
+  .research__content-wrapper {
+    padding: 92px 10px 20px 70px;
+  }
+
+  .research__title {
+    margin-bottom: 21px;
+  }
+
+  .research__text {
+    font-size: 18px;
+    line-height: 30px;
+    padding-right: 41px;
+    margin-bottom: 31px;
+  }
+
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

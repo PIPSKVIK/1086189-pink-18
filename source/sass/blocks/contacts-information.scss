@@ -91,31 +91,40 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
-    height: 400px;
-    margin: 0 auto;
+    height: 375px;
   }
 
   .contacts-information__item {
+    padding: 1px;
     &--coll {
-      padding: 1px 1px 1px 1px;
-      flex-grow: 1;
+      margin-left: 41px;
     }
     &--write {
-      padding: 1px 1px 1px 1px;
-      flex-grow: 1;
+      margin-right: 25px;
     }
-    &--mail {
-      padding: 1px 1px 1px 1px;
+    &--come {
+      margin-top: 18px;
+        & h4 {
+          padding-bottom: 8px;// Нужно уточнить можно ли так делать?
+        }
     }
   }
 
   .contacts-information__heading-wrapper {
     margin-top: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 46px;
     & p {
       font-size: 40px;
       line-height: 48px;
     }
+  }
+
+  .contacts-information__title {
+    padding-bottom: 5px;
+  }
+
+  .contacts-information__background-wrapper {
+    padding-bottom: 0px;
   }
 }
 
