@@ -32,3 +32,17 @@
       cursor: pointer;
     }
 }
+
+@media (min-width: $desktop) {
+  .slider-arrow__button--left {
+      &::before {
+        bottom: 39%;
+      }
+  }
+
+  .slider-arrow__button--right {
+    &::before {
+      bottom: 39%;
+    }
+  }
+}

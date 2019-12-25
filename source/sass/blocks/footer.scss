@@ -139,3 +139,24 @@
     margin-right: 2px;
   }
 }
+
+@media (min-width: $desktop) {
+  .footer__wrapper {
+    padding-top: 60px;
+    padding-bottom: 72px;
+  }
+
+  .footer__text {
+    font-size: 18px;
+  }
+
+  .footer__logo-item {
+    display: none;
+  }
+
+  .footer__logo-glasses {
+    background-image: url(/img/logo-pink-blue-desktop.svg);
+    width: 147px;
+    height: 40px;
+  }
+}

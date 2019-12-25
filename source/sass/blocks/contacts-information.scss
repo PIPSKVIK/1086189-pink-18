@@ -139,8 +139,9 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
-    height: 400px;
+    height: 522px;
     margin: 0 auto;
+    position: relative;
   }
 
   .contacts-information__list li::nth-child(1) {
@@ -149,5 +150,45 @@
 
   .contacts-information__list li:nth-child(2) {
     order: 1;
+  }
+  .contacts-information__heading-wrapper {
+    margin-bottom: 61px;
+  }
+
+  .contacts-information__heading-wrapper p {
+    font-size: 50px;
+  }
+
+  .contacts-information__background-wrapper {
+    padding-top: 50px;
+  }
+
+  .contacts-information__contact-us {
+    padding-top: 12px;
+  }
+
+  .contacts-information__list {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .contacts-information__item {
+    margin: 0;
+    width: 33.33333%;
+    &--come h4 {
+      padding-bottom: 27px;
+    }
+
+    &--coll {
+      padding-right: 14px;
+    }
+
+    &--write {
+      padding-left: 14px;
+    }
+  }
+
+  .contacts-information__title {
+    padding-bottom: 27px;
   }
 }
