@@ -1,8 +1,8 @@
 .upload {
   @include wrap;
   background-color: #f2f2f2;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 21px;
+  padding-bottom: 39px;
 }
 
 .upload__button-action {
@@ -28,6 +28,7 @@
     padding: 17px 0;
     border: 3px solid #d22856;
     color: #d22856;
+    margin-bottom: 6px;
   }
 
   &--cancel {
@@ -39,13 +40,15 @@
 
 .upload__photo-winter {
   width: 100%;
+  margin-bottom: 39px;
 }
 
 .upload__button-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 108px;
   position: relative;
+  align-items: center;
 }
 
 .upload__range {
@@ -60,6 +63,55 @@
 .upload__range--contrast {
   display: none;
 }
+
+.upload__control-wrapper {
+  width: 33.33333%;
+  text-align: center;
+  &--fill {
+    margin: 0 -12px;
+  }
+}
+
+.upload__range--fill {
+  display: none;
+}
+
+// кастомный range
+.upload__scale {
+  position: absolute;
+  left: 50%;
+  bottom: -37px;
+  transform: translateX(-50%);
+  width: 240px;
+  height: 2px;
+  background-color: #283645;
+    &::after {
+      content: ("");
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border: 2px solid #d22856;
+      border-radius: 50%;
+      background-color: #f2f2f2;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 35px;
+    }
+}
+// кастомный range
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: $tablet) {
   .upload {

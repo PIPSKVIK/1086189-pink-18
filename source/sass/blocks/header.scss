@@ -65,6 +65,7 @@
   }
 
   .header {
+    z-index: 100;
     position: absolute;
     width: 100%;
     background-color: rgba($color: #283645, $alpha: 0.3);

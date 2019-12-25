@@ -24,6 +24,9 @@
   padding: 0;
   display: flex;
   justify-content: center;
+    & li:nth-child(2) {
+      margin: 0 12px;
+    }
 }
 
 .footer__social-item-twitter {
@@ -77,6 +80,8 @@
 .footer__copyright {
   display: flex;
   justify-content: center;
+  margin-top: 37px;
+  align-items: center;
 }
 
 .footer__text {
@@ -89,7 +94,20 @@
 
 .footer__logo-wrapper {
   text-align: center;
+  margin-bottom: 37px;
 }
+
+.footer__link-logo--htmlacademy {
+  fill: #d22856;
+  width: 45px;
+  height: 40px;
+}
+
+
+
+
+
+
 
 @media (min-width: $tablet) {
   .footer__index {
