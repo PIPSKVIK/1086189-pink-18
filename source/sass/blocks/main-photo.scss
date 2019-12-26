@@ -17,5 +17,18 @@
 }
 
 .main-photo__afterword-wrapper {
-  padding: 0 10px 41px 10px;
+  padding: 0 10px 70px 10px;
+}
+
+@media (min-width: $tablet) {
+  .main-photo__title {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 92px 82px 76px 66px;
+  }
+
+  .main-photo__afterword {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

@@ -12,7 +12,7 @@
 }
 
 .user-list__public-time {
-  @include text-photo-userlist;
+  font-size: 13px;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -20,7 +20,7 @@
 .user-list__comment {
   @include text-photo-userlist;
   margin: 0;
-  padding-bottom: 9px;
+  padding-bottom: 11px;
 }
 
 .user-list__like {
@@ -49,7 +49,7 @@
 .user-list__user-wrapper {
   background-color: #f2f2f2;
     &--panarama {
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 }
 
@@ -128,10 +128,64 @@
   }
 }
 
+.user-list__photo {
+  &--car {
+    background-image: url(/img/photo-car-mobile@1x.jpg);
+    @include bg-setting;
+    height: 180px;
+    margin: 0;
+  }
+  &--drumset {
+    background-image: url(/img/photo-drumset-mobile@1x.jpg);
+    @include bg-setting;
+    height: 180px;
+    margin: 0;
+  }
+}
+
+.user-list__photo {
+  &--window {
+    background-image: url(/img/photo-window-mobile@1x.jpg);
+    @include bg-setting;
+    height: 180px;
+    margin: 0;
+  }
+
+  &--fair {
+    background-image: url(/img/photo-fair-mobile@1x.jpg);
+    @include bg-setting;
+    height: 180px;
+    margin: 0;
+  }
+}
+
+.user-list__photo {
+  &--pov {
+    background-image: url(/img/photo-pov-mobile@1x.jpg);
+    @include bg-setting;
+    height: 180px;
+    margin: 0;
+  }
+
+  &--wing {
+    background-image: url(/img/photo-wing-mobile@1x.jpg);
+    @include bg-setting;
+    height: 180px;
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
 @media (min-width: $tablet) {
   .user-list {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 66px;
       & li:nth-child(3),
       li:nth-child(5),
       li:nth-child(7) {
@@ -144,18 +198,170 @@
   }
 
   .user-list__user-wrapper--panarama {
+    margin-bottom: 50px;
     width: 100%;
   }
 
   .user-list__photo {
     &--panarama {
       background-image: url(/img/panorama-tablet@1x.jpg);
-      @include bg-setting;
-      width: 100%;
+      background-position: -20px 0;
       height: 509px;
     }
   }
+
+  .user-list__photo-item--panarama {
+    &::before {
+      top: 56px;
+    }
+  }
+
+  .user-list__background-list {
+    &--panarama {
+      padding: 24px 11px 12px 27px;
+    }
+  }
+
+  .user-list__like-panarama {
+    &::before {
+      content: ("");
+      position: absolute;
+      background-image: url(/img/icon-heart.svg);
+      background-repeat: no-repeat;
+      width: 13px;
+      height: 12px;
+      top: 6px;
+      right: 18px;
+    }
+  }
+
+  .user-list__like-special {
+    &::before {
+      content: ("");
+      position: absolute;
+      background-image: url(/img/icon-heart.svg);
+      background-repeat: no-repeat;
+      width: 13px;
+      height: 12px;
+      top: 6px;
+      right: -102px;
+    }
+  }
+
+  .user-list__like {
+    padding-left: 0;
+    padding-right: 48px;
+    &::after {
+      display: none;
+    }
+  }
+
+  .user-list__photo {
+    &--car {
+      background-image: url(/img/photo-car-tablet@1x.jpg);
+      height: 300px;
+    }
+
+    &--drumset {
+      background-image: url(/img/photo-drumset-tablet@1x.jpg);
+      height: 300px;
+    }
+  }
+
+  .user-list__photo {
+    &--window {
+      background-image: url(/img/photo-window-tablet@1x.jpg);
+      height: 300px;
+    }
+
+    &--fair {
+      background-image: url(/img/photo-fair-tablet@1x.jpg);
+      height: 300px;
+    }
+  }
+
+  .user-list__photo {
+    &--pov {
+      background-image: url(/img/photo-pov-tablet@1x.jpg);
+      height: 300px;
+    }
+
+    &--wing {
+      background-image: url(/img/photo-wing-tablet@1x.jpg);
+      height: 300px;
+    }
+  }
+
+  .user-list__user-wrapper {
+    &--car {
+      padding-bottom: 11px;
+    }
+
+    &--window {
+      padding-bottom: 12px;
+    }
+  }
+
+  .user-list__user-wrapper {
+    &--pov {
+      margin-bottom: 0;
+    }
+
+    &--wing {
+      margin-bottom: 0;
+    }
+  }
+
+  .user-list__background-list {
+    &--care {
+      padding: 24px 23px 13px 27px;
+    }
+
+    &--drumset {
+      padding: 24px 23px 20px 28px;
+    }
+  }
+
+  .user-list__background-list {
+    &--window {
+      padding: 24px 23px 11px 28px;
+    }
+
+    &--fair {
+      padding: 24px 23px 20px 27px;
+    }
+  }
+
+  .user-list__background-list {
+    &--pov {
+      padding: 24px 23px 11px 27px;
+    }
+
+    &--wing {
+      padding: 24px 23px 20px 27px;
+    }
+  }
+
+  .user-list__comment-drumset,
+  .user-list__comment-fair,
+  .user-list__comment-pov,
+  .user-list__comment-wing {
+    padding-bottom: 36px;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: $desktop) {
   .user-list li:not(:first-child) {
