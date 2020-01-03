@@ -106,6 +106,13 @@
 
 
 
+
+
+
+
+
+
+
 @media (min-width: $tablet) {
   .footer__index {
     display: block;
@@ -115,12 +122,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0 27px 0;
+    padding: 36px 0 27px 0;
   }
 
   .footer__logo-wrapper {
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 0;
   }
 
   .footer__logo-wrapper,
@@ -134,14 +142,11 @@
     justify-content: flex-end;
   }
 
-  .footer__social {
-    padding-top: 13px;
-  }
-
   .footer__copyright {
-    padding-top:19px;
+    padding-top: 6px;
     display: flex;
     align-items: center;
+    margin-top: 0;
   }
 
   .footer__social-list {
@@ -154,6 +159,17 @@
     margin-right: 2px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: $desktop) {
   .footer__wrapper {

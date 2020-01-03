@@ -38,11 +38,6 @@
   }
 }
 
-.upload__photo-winter {
-  width: 100%;
-  margin-bottom: 39px;
-}
-
 .upload__button-wrapper {
   display: flex;
   justify-content: center;
@@ -76,8 +71,16 @@
   display: none;
 }
 
+.upload__photo-winter {
+  margin: 0 0 41px 0;
+  background-image: url(/img/photo-road-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 374px;
+}
+
 // кастомный range
-.upload__scale {
+.upload__scale-fill {
   position: absolute;
   left: 50%;
   bottom: -37px;
@@ -100,30 +103,20 @@
 }
 // кастомный range
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: $tablet) {
   .upload {
     display: flex;
     padding-top: 35px;
-    padding-bottom: 35px;
+    padding-bottom: 52px;
+  }
+
+  .upload__button-edit {
+    padding: 0;
   }
 
   .upload__block {
     display: flex;
-    flex-wrap: wrap;
-    margin-left: 20px;
+    flex-direction: column;
     width: 50%;
   }
 
@@ -137,42 +130,132 @@
     left: 0;
   }
 
-  .upload__button-action {
-    width: 80%;
-  }
-
-  .user-list__background-list--panarama {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    .user-list__like {
-      order: -1;
-    }
-
-    .user-list__nick {
-      order: -1;
-    }
-  }
-
-  .upload__photo-winter {
-    width: 50%;
-  }
-
   .upload__button-wrapper {
-    width: 100%;
     flex-direction: column;
-    align-items: center;
-      & div:not(:last-child) {
-        margin-bottom: 10px;
+    align-items: flex-start;
+    margin: 28px 8px 93px 48px;
+      & .upload__control-wrapper:not(:last-child) {
+        margin-bottom: 49px;
       }
   }
 
   .upload__control-wrapper {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #dddfe0;
-    padding-bottom: 10px;
+    text-align: unset;
+    position: relative;
+      &::after {
+        content: ("");
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #dddfe0;
+        bottom: -24px;
+      }
+  }
+
+  .upload__photo-winter {
+    margin: 22px 0 0 0;
+    background-image: url(../../img/photo-road-tablet@1x.jpg);
+    width: 300px;
+    height: 400px;
+  }
+
+  // Установка Остальных 2 Инпутов
+  .upload__range--crop,
+  .upload__range--contrast {
+    display: none;
+  }
+
+  .upload__control-wrapper--fill {
+    margin: 0;
+  }
+
+  .upload__scale-fill {
+    bottom: 10px;
+  }
+
+  .upload__icon-crop {
+    width: 22px;
+    height: 22px;
+  }
+
+  .upload__icon-fill {
+    width: 24px;
+    height: 22px;
+    fill: #d22856;
+  }
+
+  .upload__icon-contrast {
+    width: 16px;
+    height: 16px;
+    fill: #d22856;
+  }
+
+  .upload__control-wrapper {
+    width: 100%;
+    position: relative;
+  }
+
+  .upload__scale-fill {
+    position: absolute;
+    left: unset;
+    right: 0;
+    bottom: 50%;
+    transform: none;
+    width: 202px;
+      &::after {
+        content: ("");
+        left: 25px;
+      }
+  }
+
+  .upload__scale-crop,
+  .upload__scale-contrast {
+    right: 0;
+    position: absolute;
+    width: 202px;
+    height: 2px;
+    top: 50%;
+    background-color: #283645;
+      &::after {
+        content: ("");
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        border: 2px solid #d22856;
+        border-radius: 50%;
+        background-color: #f2f2f2;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 35px;
+      }
+  }
+
+  .upload__scale-contrast {
+    &::after {
+      left: 95px;
+    }
+  }
+
+  .upload__scale-crop {
+    &::after {
+      right: 42px;
+    }
+  }
+
+  .upload__button-act {
+    width: 263px;
+    padding: 12px;
+      &--post {
+        margin-bottom: 30px;
+      }
+  }
+
+  .upload__button-action {
+    align-items: flex-end;
+  }
+
+  .upload__control-wrapper--contrast {
+    padding-left: 5px;
   }
 }
 
@@ -186,16 +269,7 @@
 
 
 
-
-
-
-
-
 @media (min-width: $desktop) {
-  .upload__photo-winter {
-    width: 300px;
-    margin-left: 80px;
-  }
 
   .upload__block {
     margin-left: 90px;

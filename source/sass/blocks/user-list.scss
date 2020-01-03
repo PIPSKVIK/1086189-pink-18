@@ -348,6 +348,20 @@
   .user-list__comment-wing {
     padding-bottom: 36px;
   }
+
+  .user-list__background-list--panarama {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .user-list__like {
+      order: -1;
+    }
+
+    .user-list__nick {
+      order: -1;
+    }
+  }
 }
 
 
