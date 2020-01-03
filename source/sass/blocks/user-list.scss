@@ -390,8 +390,79 @@
   
   .user-list__photo {
     &--panarama {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      height: 506px;
       background: url(../../img/panorama-desktop@1x.jpg) no-repeat;
       background-size: cover;
     }
+
+    &--panarama::before {
+      content: ("панорама дня");
+      position: absolute;
+      background-color: #d22856;
+      color: #ffffff;
+      font-size: 15px;
+      line-height: 24px;
+      right: 140px;
+      top: 53px;
+      padding: 6px 19px;
+    }
+  }
+
+  .user-list__user-wrapper--panarama {
+    margin-bottom: 50px;
+  }
+
+  .user-list__photo {
+    &--car {
+      background-image: url(/img/photo-car-desktop@1x.jpg);
+      height: 400px;
+    }
+
+    &--drumset {
+      background-image: url(/img/photo-drumset-desktop@1x.jpg);
+      height: 400px;
+    }
+  }
+
+  .user-list__photo {
+    &--window {
+      background-image: url(/img/photo-window-desktop@1x.jpg);
+      height: 400px;
+    }
+
+    &--fair {
+      background-image: url(/img/photo-fair-desktop@1x.jpg);
+      height: 400px;
+    }
+  }
+
+  .user-list__photo {
+    &--pov {
+      background-image: url(/img/photo-pov-desktop@1x.jpg);
+      height: 400px;
+    }
+
+    &--wing {
+      background-image: url(/img/photo-wing-desktop@1x.jpg);
+      height: 400px;
+    }
+  }
+
+  .user-list__user-wrapper--car,
+  .user-list__user-wrapper--drumset,
+  .user-list__user-wrapper--window {
+    margin-bottom: 50px;
+  }
+
+  .user-list__user-wrapper--fair {
+    margin-bottom: 0;
+  }
+
+  .user-list {
+    padding-bottom: 60px;
   }
 }

@@ -36,3 +36,11 @@
     padding-bottom: 70px;
   }
 }
+
+@media (min-width: $desktop) {
+  .main-photo__title {
+    width: 580px;
+    margin: 0 auto;
+    padding: 90px 0 90px 0;
+  }
+}

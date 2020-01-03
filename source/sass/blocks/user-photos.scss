@@ -41,4 +41,16 @@
     background-size: cover;
     height: 395px;
   }
+
+  .user-photos__title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .user-photos__title {
+    width: 360px;
+    padding: 0;
+    margin-top: 70px;
+  }
 }

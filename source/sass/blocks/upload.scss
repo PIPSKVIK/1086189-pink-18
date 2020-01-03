@@ -270,22 +270,87 @@
 
 
 @media (min-width: $desktop) {
+  .upload {
+    width: 940px;
+  }
 
   .upload__block {
-    margin-left: 90px;
+    margin-top: 16px;
+    margin-left: 89px;
+    width: 410px;
   }
 
   .upload__button-action {
     flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
   }
 
   .upload__button-act {
-    width: 100%;
-    height: 55px;
+    width: 183px;
+    margin: 0;
   }
 
   .upload__button-act--post {
     margin-right: 30px;
+  }
+
+  .upload__icon-crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  .upload__icon-fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .upload__icon-contrast {
+    width: 32px;
+    height: 32px;
+  }
+
+  .upload__scale-fill,
+  .upload__scale-crop,
+  .upload__scale-contrast {
+    width: 288px;
+    right: 29px;
+  }
+
+  .upload__scale-contrast {
+    &::after {
+      right: 114px;
+      left: unset;
+    }
+  }
+
+  .upload__scale-fill {
+    &::after {
+      right: 26px;
+      left: unset;
+    }
+  }
+
+  .upload__scale-crop {
+    &::after {
+      left: 71px;
+    }
+  }
+
+  .upload__button-wrapper {
+    margin: 0 0 164px 0;
+      & .upload__control-wrapper:not(:last-child) {
+        margin-bottom: 29px;
+      }
+  }
+
+  .upload__photo-winter {
+    margin-top: 18px;
+    margin-left: 70px;
+  }
+
+  .upload__control-wrapper {
+    &::after {
+      bottom: -13px;
+    }
   }
 }
