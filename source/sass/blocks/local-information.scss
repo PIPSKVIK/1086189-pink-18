@@ -19,7 +19,19 @@
   margin-top: 30px;
 }
 
-.local-information__text[type="text"]::-webkit-input-placeholder {
+.local-information__text[type="text"]::-webkit-input-placeholder { /* Chrome / Opera / Safari / Android */
+  color: #283645;
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+.local-information__text[type="text"]:-ms-input-placeholder { /* Internet Explorer / Microsoft Edge */
+  color: #283645;
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+.local-information__text[type="text"]:-moz-placeholder { /* Firefox  */
   color: #283645;
   line-height: 30px;
   padding-left: 10px;
