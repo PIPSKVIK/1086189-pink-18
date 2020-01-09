@@ -1,12 +1,12 @@
 .local-information {
   @include wrap;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 36px;
+  padding-bottom: 43px;
 }
 
 .local-information__info {
   @include color-red;
-  padding-left: 10px;
+  padding-left: 22px;
 }
 
 .local-information__label,
@@ -16,7 +16,7 @@
 }
 
 .local-information__input-wrapper label:not(:first-child) {
-  margin-top: 30px;
+  margin-top: 22px;
 }
 
 .local-information__text[type="text"]::-webkit-input-placeholder { /* Chrome / Opera / Safari / Android */
@@ -38,14 +38,20 @@
 }
 
 .local-information__text {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 19px 0 18px 20px;
 }
 
 .local-information__input-wrapper {
   display: flex;
   flex-direction: column;
 }
+
+.local-information__label {
+  & .local-information__text {
+    margin-top: 12px;
+  }
+}
+
 
 @media (min-width: $tablet) {
   .local-information__input-wrapper {

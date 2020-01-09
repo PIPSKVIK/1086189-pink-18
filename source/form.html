@@ -142,11 +142,11 @@
           </div>
           <div class="main-form__phone-adres local-information">
             <div class="local-information__input-wrapper">
-              <label class="local-information__label local-information__label-title" for="number">
+              <label class="local-information__label local-information__label-number" for="number">
                 <span class="local-information__info">Номер телефона</span>
                 <input class="local-information__text" type="text" name="phone" id="number" placeholder="Номер, пожалуйста" required>
               </label>
-              <label class="local-information__label" for="email">
+              <label class="local-information__label local-information__label-email" for="email">
                 <span class="local-information__info">адрес почты</span>
                 <input class="local-information__text" type="text" name="phone" id="email" placeholder="Введите почту *" required>
               </label>
@@ -158,15 +158,27 @@
             </h3>
             <div class="applications-travel__label-wrap">
               <label class="applications-travel__label" for="pink-ios">
-                <input class="applications-travel__radio" type="radio" name="pink" id="pink-ios" required>
+                <input class="applications-travel__radio" type="radio" name="pink" id="pink-ios" value="ios">
+                <!-- кастомный radio -->
+                  <div class="applications-travel__radio-position applications-travel__radio-on"></div>
+                  <div class="applications-travel__radio-position applications-travel__radio-off"></div>
+                <!-- кастомный radio -->
                 <span class="applications-travel__radio-text">Pink для iOS</span>
               </label>
               <label class="applications-travel__label" for="pink-android">
-                <input class="applications-travel__radio" type="radio" name="pink" id="pink-android" required>
+                <input class="applications-travel__radio" type="radio" name="pink" id="pink-android" value="androud">
+                <!-- кастомный radio -->
+                  <div class="applications-travel__radio-on"></div>
+                  <div class="applications-travel__radio-off"></div>
+                <!-- кастомный radio -->
                 <span class="applications-travel__radio-text">Pink на Android</span>
               </label>
               <label class="applications-travel__label" for="pink-windows">
-                <input class="applications-travel__radio" type="radio" name="pink" id="pink-windows" required>
+                <input class="applications-travel__radio" type="radio" name="pink" id="pink-windows" value="windiws">
+                <!-- кастомный radio -->
+                  <div class="applications-travel__radio-on"></div>
+                  <div class="applications-travel__radio-off"></div>
+                <!-- кастомный radio -->
                 <span class="applications-travel__radio-text">Windows Phone</span>
               </label>
             </div>
