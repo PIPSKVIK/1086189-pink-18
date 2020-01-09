@@ -19,9 +19,24 @@
 
 @media (min-width: $tablet) {
   .share-story {
-    width: 470px;
-    margin: 45px auto;
+    margin-top: 93px;
+    margin-bottom: 72px;
   }
+
+  .share-story__title {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 83px;
+    letter-spacing: 0.02em;
+  }
+
+  .share-story__mobile-hidden {
+    display: inline;
+  }
+
+  .about-information__label:not(:last-child) {
+    margin-bottom: 9px;
+}
 }
 
 @media (min-width: $desktop) {

@@ -52,26 +52,21 @@
   }
 }
 
+.local-information__title {
+  display: none;
+}
+
+
+
 
 @media (min-width: $tablet) {
   .local-information__input-wrapper {
     border: 2px solid #e5e5e5;
-    padding: 40px 40px;
-    position: relative;
-
-    &::before {
-      content: ("Контактная информация");
-      position: absolute;
-      top: -11px;
-      left: 33%;
-      background: #ffffff;
-      padding: 0 5%;
-      @include color-red;
-    }
+    padding: 35px 58px;
   }
 
   .local-information__input-wrapper label:not(:first-child) {
-      margin-top: 40px;
+      margin-top: 28px;
   }
 
   .local-information__label {
@@ -88,8 +83,33 @@
 
   .local-information {
     order: 3;
+    padding-top: 24px;
+      & .local-information__title {
+        text-align: center;
+      }
+  }
+
+  .local-information__title {
+    display: inline-block;
+    vertical-align: middle;
+    color: #d22856;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: -16px;
+    text-align: center;
+    letter-spacing: 0.02em;
   }
 }
+
+
+
+
+
+
 
 @media (min-width: $desktop) {
   .local-information {
