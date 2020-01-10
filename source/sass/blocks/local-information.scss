@@ -39,6 +39,7 @@
 
 .local-information__text {
   padding: 19px 0 18px 20px;
+  border: 2px solid #e5e5e5;
 }
 
 .local-information__input-wrapper {
@@ -72,21 +73,23 @@
   .local-information__label {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   .local-information__text {
     order: -1;
     margin-bottom: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 18px;
+    padding-left: 8px;
+    padding-right: 60px;
+    padding-bottom: 23px;
   }
+
 
   .local-information {
     order: 3;
     padding-top: 24px;
-      & .local-information__title {
-        text-align: center;
-      }
+    text-align: center;
   }
 
   .local-information__title {
@@ -102,6 +105,63 @@
     margin-bottom: -16px;
     text-align: center;
     letter-spacing: 0.02em;
+    padding: 0 33px;
+  }
+
+  .local-information__input-wrapper {
+    text-align: start;
+  }
+
+  .local-information__text-phone {
+    position: relative;
+  }
+
+  .local-information__phone {
+    position: absolute;
+    width: 60px;
+    height: 62px;
+    background-color: #e5e5e5;
+    z-index: 10;
+    top: 13px;
+    right: 0;
+    pointer-events: none;
+      &::after {
+        position: absolute;
+        content: ("");
+        background-image: url(../../img/icon-phone.svg);
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        bottom: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+  }
+
+  .local-information__text-email {
+    position: relative;
+  }
+
+  .local-information__email {
+    position: absolute;
+    width: 60px;
+    height: 62px;
+    background-color: #e5e5e5;
+    z-index: 10;
+    top: 13px;
+    right: 0;
+    pointer-events: none;
+      &::after {
+        position: absolute;
+        content: ("");
+        background-image: url(../../img/icon-mail.svg);
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 13px;
+        bottom: 21px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
   }
 }
 
