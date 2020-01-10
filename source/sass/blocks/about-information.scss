@@ -69,6 +69,20 @@
 @media (min-width: $desktop) {
   .about-information {
     width: calc(50% - 15px);
-    margin: 0;
+    margin: 29px 0 0 10px;
+    padding: 0;
+  }
+
+  .about-information__text {
+    width: 336px;
+      &--name {
+        width: 376px;
+      }
+  }
+
+  .about-information__input-wrapper {
+    & label:last-child {
+      padding-bottom: 0;
+    }
   }
 }

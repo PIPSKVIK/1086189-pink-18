@@ -38,8 +38,9 @@
 
 .achievements-list__checkbox-yes {
   position: absolute;
-  left: 6px;
+  left: 8px;
   top: 10px;
+  display: none;
 }
 
 .achievements-list__checkbox-no {
@@ -53,13 +54,10 @@
 }
 
 .achievements-list__checkbox:checked ~ .achievements-list__checkbox-yes {
-  display: none;
-  position: absolute;
-  left: 10px;
+  display: inline-block;
+  vertical-align: top;
 }
 // Кастомный checkbox
-
-
 
 @media (min-width: $tablet) {
   .achievements-list__checkbox-wrapper {
@@ -111,6 +109,7 @@
   .achievements-list__checkbox-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 10px;
   }
 
   .achievements-list__label {
@@ -120,7 +119,6 @@
   }
 
   .achievements-list__label {
-  
     &--burn {
       order: 4;
     }
@@ -136,5 +134,22 @@
     &--hotel {
       order: 6;
     }
+  }
+
+  .achievements-list__label {
+    width: 260px;
+      &--selfie,
+      &--burn {
+        margin-right: 55px;
+      }
+
+      &--chuck,
+      &--souvenirs {
+        margin-right: 34px;
+      }
+  }
+
+  .achievements-list__checkbox-no {
+    margin-right: 20px;
   }
 }

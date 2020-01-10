@@ -75,7 +75,7 @@
                 </label>
                 <label class="about-information__label" for="name">
                   <span class="about-information__info">Имя:</span>
-                  <input class="about-information__text" type="text" name="name" id="name" placeholder="Введите ваше имя *"required>
+                  <input class="about-information__text about-information__text--name" type="text" name="name" id="name" placeholder="Введите ваше имя *"required>
                 </label>
                 <label class="about-information__label" for="father-name">
                   <span class="about-information__info">Отчество:</span>
@@ -91,7 +91,7 @@
             </h3>
             <div class="achievements-list__checkbox-wrapper">
               <label class="achievements-list__label achievements-list__label--selfie" for="selfie">
-                <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="selfie" required>
+                <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="selfie" required checked>
                 <svg class="achievements-list__checkbox-yes" width="22" height="16" fill="#d4305c" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                 </svg>
@@ -99,7 +99,7 @@
                 <span class="achievements-list__checkbox-text">Сделал селфи с акулой</span>
               </label>
               <label class="achievements-list__label achievements-list__label--burn" for="burn">
-                <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="burn" required>
+                <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="burn" required checked>
                 <svg class="achievements-list__checkbox-yes" width="22" height="16" fill="#d4305c" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                 </svg>
@@ -123,7 +123,7 @@
                 <span class="achievements-list__checkbox-text">Накупил сувениров</span>
               </label>
               <label class="achievements-list__label achievements-list__label--tower" for="tower">
-                <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="tower" required>
+                <input class="achievements-list__checkbox" type="checkbox" name="achievements" id="tower" required checked>
                 <svg class="achievements-list__checkbox-yes" width="22" height="16" fill="#d4305c" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                   <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                 </svg>
@@ -200,6 +200,9 @@
             </button>
             <p class="main-form__important-text">
               <span class="main-form__important-text main-form__important-text--special">*</span> — обязательные поля
+            </p>
+            <p class="main-form__important-text main-form__important-text--desktop">
+              <span class="main-form__important-text main-form__important-text--special">*</span> — обязательные для заполнения поля
             </p>
           </div>
         </form>

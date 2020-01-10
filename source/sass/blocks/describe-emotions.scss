@@ -67,6 +67,15 @@
 @media (min-width: $desktop) {
   .describe-emotions {
     width: 100%;
-    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+
+  .describe-emotions__label-wrap {
+    padding-bottom: 0;
+  }
+
+  .describe-emotions__textarea {
+    height: 125px;
+    margin-bottom: 43px;
   }
 }

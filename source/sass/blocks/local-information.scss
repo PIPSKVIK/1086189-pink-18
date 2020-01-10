@@ -165,12 +165,6 @@
   }
 }
 
-
-
-
-
-
-
 @media (min-width: $desktop) {
   .local-information {
     width: 100%;
@@ -179,14 +173,28 @@
   .local-information__input-wrapper {
     flex-direction: row;
     align-items: center;
+    padding: 28px 30px 20px 58px;
   }
 
   .local-information__input-wrapper label:not(:first-child) {
     margin-top: 0px;
-    margin-left: 40px;
+    margin-left: 77px;
   }
 
   .local-information {
-    padding-top: 40px;
+    padding-top: 38px;
+    padding-bottom: 45px;
+  }
+
+  .local-information__label {
+    width: 371px;
+  }
+
+  .local-information__text {
+    margin-bottom: 15px;
+  }
+
+  .local-information__info {
+    padding-left: 18px;
   }
 }

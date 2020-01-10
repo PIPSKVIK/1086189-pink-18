@@ -115,11 +115,16 @@
 
 @media (min-width: $desktop) {
   .applications-travel {
-    width: 470px;
-    margin: 0;
+    width: 431px;
+    padding: 0;
+    margin-left: 42px;
       &::before {
         top: 0;
         left: 15%;
       }
+  }
+
+  .applications-travel__label-wrap {
+    padding-left: 72px;
   }
 }

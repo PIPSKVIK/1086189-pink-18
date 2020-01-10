@@ -41,6 +41,19 @@
 
 @media (min-width: $desktop) {
   .share-story {
-    width: 675px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 92px;
+    margin-bottom: 57px;
+  }
+
+  .share-story__mobile-hidden {
+    & br {
+      display: none;
+    }
+  }
+
+  .share-story__title {
+    padding: 0;
   }
 }
