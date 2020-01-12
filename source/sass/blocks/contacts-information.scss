@@ -1,12 +1,10 @@
 .contacts-information__more-questions,
 .contacts-information__contact-us {
   margin: 0;
-
   color: #283645;
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
-
   text-align: center;
 }
 
@@ -21,7 +19,7 @@
 
 .contacts-information__title {
   margin: 0;
-
+  // padding-bottom: 1px;
   color: #283645;
   font-size: 18px;
   line-height: 22px;
@@ -45,11 +43,47 @@
   margin: 0 auto;
 }
 
+.contacts-information__background-wrapper {
+  padding: 44px 24px 19px 24px;
+}
+
+.contacts-information__phone-wrapper,
+.contacts-information__mail-wrapper,
+.contacts-information__information {
+  margin: 0;
+}
+
+.contacts-information__information {
+  &--phone:hover,
+  &--mail:hover {
+    color: rgb(40,54,69);
+    text-decoration: underline;
+  }
+
+  &--phone:active,
+  &--mail:active {
+    color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
+  }
+}
+
+.contacts-information__heading-wrapper {
+  margin-bottom: 36px;
+}
+
+.contacts-information__item {
+  margin-bottom: 28px;
+}
+
 @media (min-width: $tablet) {
   .contacts-information__list {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+      & li:last-child {
+        flex-grow: 1;
+      }
   }
 
   .contacts-information__background-map {
@@ -57,12 +91,40 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
-    height: 400px;
-    margin: 0 auto;
+    height: 375px;
   }
 
   .contacts-information__item {
-    padding: 20px 35px;
+    padding: 1px;
+    &--coll {
+      margin-left: 41px;
+    }
+    &--write {
+      margin-right: 25px;
+    }
+    &--come {
+      margin-top: 18px;
+        & h4 {
+          padding-bottom: 8px;// Нужно уточнить можно ли так делать?
+        }
+    }
+  }
+
+  .contacts-information__heading-wrapper {
+    margin-top: 22px;
+    margin-bottom: 46px;
+    & p {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  .contacts-information__title {
+    padding-bottom: 5px;
+  }
+
+  .contacts-information__background-wrapper {
+    padding-bottom: 0px;
   }
 }
 
@@ -77,8 +139,9 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
-    height: 400px;
+    height: 522px;
     margin: 0 auto;
+    position: relative;
   }
 
   .contacts-information__list li::nth-child(1) {
@@ -87,5 +150,45 @@
 
   .contacts-information__list li:nth-child(2) {
     order: 1;
+  }
+  .contacts-information__heading-wrapper {
+    margin-bottom: 61px;
+  }
+
+  .contacts-information__heading-wrapper p {
+    font-size: 50px;
+  }
+
+  .contacts-information__background-wrapper {
+    padding-top: 50px;
+  }
+
+  .contacts-information__contact-us {
+    padding-top: 12px;
+  }
+
+  .contacts-information__list {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .contacts-information__item {
+    margin: 0;
+    width: 33.33333%;
+    &--come h4 {
+      padding-bottom: 27px;
+    }
+
+    &--coll {
+      padding-right: 14px;
+    }
+
+    &--write {
+      padding-left: 14px;
+    }
+  }
+
+  .contacts-information__title {
+    padding-bottom: 27px;
   }
 }

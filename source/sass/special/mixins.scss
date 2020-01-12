@@ -6,7 +6,7 @@
 
 @mixin text-photo-userlist {
   color: #283645;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -24,4 +24,10 @@
     padding: 0 10px;
     margin: 0 auto;
   }
+}
+
+@mixin bg-setting {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
 }

@@ -1,0 +1,48 @@
+.slider-arrow__button--left {
+  border: none;
+  background: none;
+  outline: none;
+    &::before {
+      content: ("");
+
+      position: absolute;
+      background-image: url(/img/icon-review-arrow-left.svg);
+      width: 22px;
+      height: 41px;
+
+      left: 0;
+      bottom: 50%;
+      cursor: pointer;
+    }
+}
+
+.slider-arrow__button--right {
+  border: none;
+  background: none;
+  outline: none;
+    &::before {
+      content: ("");
+
+      position: absolute;
+      background-image: url(/img/icon-review-arrow-right.svg);
+      width: 22px;
+      height: 41px;
+      right: 0;
+      bottom: 50%;
+      cursor: pointer;
+    }
+}
+
+@media (min-width: $desktop) {
+  .slider-arrow__button--left {
+      &::before {
+        bottom: 39%;
+      }
+  }
+
+  .slider-arrow__button--right {
+    &::before {
+      bottom: 39%;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 .about-information {
   @include wrap;
+  margin-bottom: 43px;
 }
 
 .about-information__info {
@@ -7,11 +8,29 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-left: 22px;
+  margin-bottom: 6px;
 }
 
-.about-information__text[type="text"]::-webkit-input-placeholder {
+// ::placeholder - для всех Браузеров
+.about-information__text[type="text"]::-webkit-input-placeholder { /* Chrome / Opera / Safari / Android */
   color: #283645;
   line-height: 30px;
+}
+
+.about-information__text[type="text"]:-ms-input-placeholder { /* Internet Explorer / Microsoft Edge */
+  color: #283645;
+  line-height: 30px;
+}
+
+.about-information__text[type="text"]:-moz-placeholder { /* Firefox  */
+  color: #283645;
+  line-height: 30px;
+}
+// ::placeholder - для всех Браузеров
+
+.about-information__label:not(:last-child) {
+  margin-bottom: 18px;
 }
 
 .about-information__label,
@@ -22,11 +41,8 @@
 }
 
 .about-information__text {
-  padding: 10px 0 10px 10px;
-}
-
-.about-information__input-wrapper {
-  padding: 20px 20px;
+  padding: 19px 0 18px 20px;
+  border: 2px solid #e7e7e7;
 }
 
 @media (min-width: $tablet) {
@@ -46,20 +62,27 @@
 
   .about-information {
     order: 1;
-  }
-
-  .about-information__input-wrapper {
-    padding: 20px 20px 20px 0;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: $desktop) {
   .about-information {
     width: calc(50% - 15px);
-    margin: 0;
+    margin: 29px 0 0 10px;
+    padding: 0;
   }
 
-  .about-information__wrapper {
-    width: 470px;
+  .about-information__text {
+    width: 336px;
+      &--name {
+        width: 376px;
+      }
+  }
+
+  .about-information__input-wrapper {
+    & label:last-child {
+      padding-bottom: 0;
+    }
   }
 }

@@ -1,58 +1,123 @@
 .applications-travel {
   @include wrap;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 25px;
   padding-bottom: 40px;
+  order: 1;
 }
 
 .applications-travel__title {
   @include color-red;
+  font-weight: 300;
+  margin-bottom: 35px;
 }
 
 .applications-travel__radio-text {
   color: #283645;
   line-height: 30px;
+  padding-left: 26px;
 }
+
+.applications-travel__label {
+  display: block;
+
+}
+
+// кастомный radio button
+.applications-travel__radio {
+  display: none; /* Отключаем стандартный radio */
+}
+
+.applications-travel__radio-off {
+  display: inline-block;
+  vertical-align: top;
+  width: 39px;
+  height: 39px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.applications-travel__radio-on {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 39px;
+  height: 39px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  display: none;
+    &::before {
+      content: ("");
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-color: #d22856;
+      border-radius: 50%;
+      left: 10px;
+      top: 10px;
+    }
+}
+
+.applications-travel__radio:checked ~ .applications-travel__radio-on {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.applications-travel__radio:checked ~ .applications-travel__radio-off {
+  display: none;
+}
+// кастомный radio button
 
 .applications-travel__label-wrap {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+    & label:not(:last-child) {
+      margin-bottom: 36px;
+    }
 }
 
 @media (min-width: $tablet) {
+  .applications-travel {
+    padding-top: 0;
+    padding-bottom: 11px;
+  }
+
   .applications-travel__label-wrap {
     border: 2px solid #e5e5e5;
-    padding: 78px 40px 70px 70px;
-    text-align: start;
+    padding: 51px 40px 56px 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .applications-travel__title {
-    display: none;
+    background-color: #ffffff;
+    margin-bottom: -10px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 27px;
+    letter-spacing: 0.02em;
   }
 
-  .applications-travel {
-    order: 2;
-    position: relative;
+  .applications-travel__label {
+    display: flex;
+    align-items: center;
+  }
 
-      &::before {
-        content: ("С каким приложением путешествовали?");
-
-        position: absolute;
-        top: 30px;
-        left: 26%;
-        background: #ffffff;
-        padding: 0 5%;
-        font-size: 14px;
-        color: #d22856;
-        text-transform: uppercase;
-      }
+  .applications-travel__radio-text {
+    padding-left: 20px;
   }
 }
 
 @media (min-width: $desktop) {
   .applications-travel {
-    width: 470px;
-    margin: 0;
+    width: 431px;
+    padding: 0;
+    margin-left: 42px;
       &::before {
         top: 0;
         left: 15%;
@@ -60,6 +125,6 @@
   }
 
   .applications-travel__label-wrap {
-    width: 470px;
+    padding-left: 72px;
   }
 }

@@ -4,11 +4,43 @@
   line-height: 30px;
   text-align: center;
   font-weight: 300;
+  margin: 0;
+  padding: 46px 40px 48px 38px;
 }
 
 .main-photo__afterword {
   color: #283645;
   font-size: 14px;
   line-height: 30px;
+  margin: 0;
   text-align: center;
+}
+
+.main-photo__afterword-wrapper {
+  padding: 0 10px 40px 10px;
+}
+
+@media (min-width: $tablet) {
+  .main-photo__title {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 92px 82px 76px 66px;
+  }
+
+  .main-photo__afterword {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .main-photo__afterword-wrapper {
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-photo__title {
+    width: 580px;
+    margin: 0 auto;
+    padding: 90px 0 90px 0;
+  }
 }

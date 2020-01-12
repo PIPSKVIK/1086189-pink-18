@@ -13,11 +13,29 @@
           <a class="header__logo">
             <span class="visually-hidden">Логотип сайта</span>
           </a>
-          <button class="header__burger" type="button">
-            <span class="visually-hidden">Выподающее меню</span>
-          </button>
         </div>
         <nav class="header__navigation navigation">
+          <button class="navigation__toggle" type="button">
+            <svg class="navigation__cross-color" fill="#ffffff" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+              <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+            </svg>
+            <span class="visually-hidden">Кнопка меню</span>
+          </button>
+          <button class="navigation__toggle-open" type="button">
+            <svg class="navigation__burger-color" fill="#ffffff" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+              <g id="miu">
+                <g id="editor_list_view_hambuger_menu_glyph">
+                  <g>
+                    <path id="path-1" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                  </g>
+                  <g>
+                    <path id="path-1_1_" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <span class="visually-hidden">Кнопка меню</span>
+          </button>
           <ul class="navigation__nav-list">
             <li class="navigation__nav-wrapper">
               <a class="navigation__nav-item" href="index.html">Главная</a>
@@ -49,111 +67,111 @@
         <ul class="main-photo__user user-list">
           <li class="user-list__user-wrapper user-list__user-wrapper--panarama">
             <article class="user-list__user-post">
-              <a class="user-list__photo-item" href="#">
-                <img class="user-list__photo" src="https://via.placeholder.com/150x150" alt="panorama" width="320" height="137">
+              <a class="user-list__photo-item user-list__photo-item--panarama" href="#">
+                <p class="user-list__photo user-list__photo--panarama"></p>
               </a>
               <div class="user-list__background-list user-list__background-list--panarama">
                 <cite class="user-list__nick">Анна <time class="user-list__public-time">(5 минут назад)</time></cite>
                 <blockquote class="user-list__comment">
                   Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
                 </blockquote>
-                <button class="user-list__like">
+                <button class="user-list__like user-list__like-panarama">
                   нравится: 215
                 </button>
               </div>
             </article>
           </li>
-          <li class="user-list__user-wrapper">
+          <li class="user-list__user-wrapper user-list__user-wrapper--car">
             <article class="user-list__user-post">
               <a class="user-list__photo-item" href="#">
-                <img class="user-list__photo" src="https://via.placeholder.com/150x150" alt="care" width="280" height="180">
+                <p class="user-list__photo user-list__photo--car"></p>
               </a>
-              <div class="user-list__background-list">
+              <div class="user-list__background-list user-list__background-list--care">
                 <cite class="user-list__nick">Левон <time class="user-list__public-time">(5 часов назад)</time></cite>
-                <blockquote class="user-list__comment">
+                <blockquote class="user-list__comment user-list__comment-care">
                   Вчера он на луну летал, сегодня в руки к нам попал.
                 </blockquote>
-                <button class="user-list__like">
+                <button class="user-list__like user-list__like-special user-list__like--car">
                   нравится: 356
                 </button>
               </div>
             </article>
           </li>
-          <li class="user-list__user-wrapper">
+          <li class="user-list__user-wrapper user-list__user-wrapper--drumset">
             <article class="user-list__user-post">
               <a class="user-list__photo-item" href="#">
-                <img class="user-list__photo" src="https://via.placeholder.com/150x150" alt="drums" width="280" height="180">
+                <p class="user-list__photo user-list__photo--drumset"></p>
               </a>
-              <div class="user-list__background-list">
+              <div class="user-list__background-list user-list__background-list--drumset">
                 <cite class="user-list__nick">Антон <time class="user-list__public-time">(12 часов назад)</time></cite>
-                <blockquote class="user-list__comment">
+                <blockquote class="user-list__comment user-list__comment-drumset">
                   Соседи будут рады!
                 </blockquote>
-                <button class="user-list__like">
+                <button class="user-list__like user-list__like-special user-list__like--drumset">
                   нравится: 666
                 </button>
               </div>
             </article>
           </li>
-          <li class="user-list__user-wrapper">
+          <li class="user-list__user-wrapper user-list__user-wrapper--window">
             <article class="user-list__user-post">
               <a class="user-list__photo-item" href="#">
-                <img class="user-list__photo" src="https://via.placeholder.com/150x150" alt="sky" width="280" height="180">
+                <p class="user-list__photo user-list__photo--window"></p>
               </a>
-              <div class="user-list__background-list">
+              <div class="user-list__background-list user-list__background-list--window">
                 <cite class="user-list__nick">Борис <time class="user-list__public-time">(20 часов назад)</time></cite>
-                <blockquote class="user-list__comment">
+                <blockquote class="user-list__comment user-list__comment-window">
                   Здесь могла быть ваша цитата о высоком и вечном.
                 </blockquote>
-                <button class="user-list__like">
+                <button class="user-list__like user-list__like-special user-list__like--window">
                   нравится: 215
                 </button>
               </div>
             </article>
           </li>
-          <li class="user-list__user-wrapper">
+          <li class="user-list__user-wrapper user-list__user-wrapper--fair">
             <article class="user-list__user-post">
               <a class="user-list__photo-item" href="#">
-                <img class="user-list__photo" src="https://via.placeholder.com/150x150" alt="kuban" width="280" height="180">
+                <p class="user-list__photo user-list__photo--fair"></p>
               </a>
-              <div class="user-list__background-list">
+              <div class="user-list__background-list user-list__background-list--fair">
                 <cite class="user-list__nick">Сергей <time class="user-list__public-time">(25 часов назад)</time></cite>
-                <blockquote class="user-list__comment">
+                <blockquote class="user-list__comment user-list__comment-fair">
                   Самая кубанская в мире!
                 </blockquote>
-                <button class="user-list__like">
+                <button class="user-list__like user-list__like-special user-list__like--fair">
                   нравится: 4
                 </button>
               </div>
             </article>
           </li>
-          <li class="user-list__user-wrapper">
+          <li class="user-list__user-wrapper user-list__user-wrapper--pov">
             <article class="user-list__user-post">
               <a class="user-list__photo-item" href="#">
-                <img class="user-list__photo" src="https://via.placeholder.com/150x150" alt="legs over the precipice" width="280" height="180">
+                <p class="user-list__photo user-list__photo--pov"></p>
               </a>
-              <div class="user-list__background-list">
+              <div class="user-list__background-list user-list__background-list--pov">
                 <cite class="user-list__nick">Максим <time class="user-list__public-time">(40 часов назад)</time></cite>
-                <blockquote class="user-list__comment">
+                <blockquote class="user-list__comment user-list__comment-pov">
                   Где снег-то?
                 </blockquote>
-                <button class="user-list__like">
+                <button class="user-list__like user-list__like-special user-list__like--pov">
                   нравится: 150
                 </button>
               </div>
             </article>
           </li>
-          <li class="user-list__user-wrapper">
+          <li class="user-list__user-wrapper user-list__user-wrapper--wing">
             <article class="user-list__user-post">
               <a class="user-list__photo-item" href="#">
-                <img class="user-list__photo" src="https://via.placeholder.com/150x150" alt="airplane wing" width="280" height="180">
+                <p class="user-list__photo user-list__photo--wing"></p>
               </a>
-              <div class="user-list__background-list">
+              <div class="user-list__background-list user-list__background-list--wing">
                 <cite class="user-list__nick">Надежда <time class="user-list__public-time">(45 часов назад)</time></cite>
-                <blockquote class="user-list__comment">
+                <blockquote class="user-list__comment user-list__comment-wing">
                   Всем GM и взаимные лайки!
                 </blockquote>
-                <button class="user-list__like">
+                <button class="user-list__like user-list__like-special user-list__like--wing">
                   нравится: 2560
                 </button>
               </div>
@@ -161,41 +179,70 @@
           </li>
         </ul>
         <div class="main-photo__afterword-wrapper">
-          <p class="main-photo__afterword">
-            Затмите их всех!
-            Выкладывайте все, что накопилось в телефоне!
-          </p>
+          <p class="main-photo__afterword">Затмите их всех!</p>
+          <p class="main-photo__afterword">Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </section>
       <form action="https://echo.htmlacademy.ru" method="get">
         <section class="upload">
-          <img class="upload__photo-winter" src="https://via.placeholder.com/150x150" alt="winter" width="280" height="374">
+          <!-- <img class="upload__photo-winter" src="img/photo-road-mobile@1x.jpg" alt="winter" width="280" height="374"> -->
+          <p class="upload__photo-winter">
+            <span class="visually-hidden">Картинка зимней дороги</span>
+          </p>
           <div class="upload__block">
             <div class="upload__button-wrapper">
-              <button class="upload__button-edit upload__button-edit--crop" type="button"><span class="visually-hidden">crop</span>
-                <svg version="1.0" id="Layer_1" width="44px" height="44px">
-                  <path fill="none" d="M0,0h48v48H0V0z"/>
-                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-                </svg>
-              </button>
-              <button class="upload__button-edit upload__button-edit--fill" type="button"><span class="visually-hidden">fill</span>
-                <svg version="1.0" id="Layer_1"width="48px" height="43px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                  <path fill="none" d="M0,0h48v48H0V0z"/>
-                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-                  <rect y="40" width="48" height="3"/>
-                </svg>
-              </button>
-              <button class="upload__button-edit" type="button"><span class="visually-hidden">contrast</span>
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                  <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
-                </svg>
-              </button>
-            </div>
-            <div class="upload__range-wrapper">
-              <input class="upload__range upload__range--crop" type="range" id="range" name="volume" min="0" max="10">
-              <input class="upload__range" type="range" id="range" name="volume" min="0" max="10">
-              <input class="upload__range upload__range--contrast" type="range" id="range" name="volume" min="0" max="10">
+              <div class="upload__control-wrapper upload__control-wrapper--crop"> <!-- -----------1 -Инпут------------- -->
+                <button class="upload__button-edit upload__button-edit--crop" type="button"><span class="visually-hidden">crop</span>
+                  <svg fill="#d22856" class="upload__icon-crop" version="1.0" id="Layer_1" x="0px" y="0px" width="44" height="44" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z"/>
+                    <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                  </svg>
+                </button>
+                <div class="upload__range-wrapper">
+                  <input class="upload__range upload__range--crop" type="range" id="range" name="volume" min="0" max="10">
+                  <!-- Кастомный range control -->
+                  <div class="upload__range-controls">
+                    <div class="upload__scale-crop">
+                    </div>
+                  </div>
+                  <!-- Кастомный range control -->
+                </div>
+              </div>
+              <div class="upload__control-wrapper upload__control-wrapper--fill"> <!------------- 2 Инпут------------------- -->
+                <button class="upload__button-edit upload__button-edit--fill" type="button"><span class="visually-hidden">fill</span>
+                  <svg class="upload__icon-fill" width="48" height="43" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z"/>
+                    <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                    <rect y="40" width="48" height="3"/>
+                  </svg>
+                </button>
+                <div class="upload__range-wrapper">
+                  <input class="upload__range upload__range--fill" type="range" id="range" name="volume" min="0" max="10">
+                  <!-- Кастомный range control -->
+                  <div class="upload__range-controls">
+                    <div class="upload__scale-fill">
+                    </div>
+                  </div>
+                  <!-- Кастомный range control -->
+                </div>
+              </div>
+              <div class="upload__control-wrapper upload__control-wrapper--contrast"> <!-- -------------3 Инпут ---------------->
+                <button class="upload__button-edit" type="button"><span class="visually-hidden">contrast</span>
+                  <svg class="upload__icon-contrast" width="30" height="30" fill="#231F20" x="0px" y="0px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                    <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                    <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                  </svg>
+                </button>
+                <div class="upload__range-wrapper">
+                  <input class="upload__range upload__range--contrast" type="range" id="range" name="volume" min="0" max="10">
+                  <!-- Кастомный range control -->
+                  <div class="upload__range-controls">
+                    <div class="upload__scale-contrast">
+                    </div>
+                  </div>
+                  <!-- Кастомный range control -->
+                </div>
+              </div>
             </div>
             <div class="upload__button-action">
               <button class="upload__button-act upload__button-act--post" type="submit">
@@ -235,12 +282,13 @@
           </p>
           <a class="footer__link-logo" href="htmlacademy.ru">
             <span class="visually-hidden">htmlacademy.ru</span>
-            <svg class="footer__link-logo footer__link-logo--htmlacademy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="34">
-              <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            <svg fill="#2E368F" class="footer__link-logo footer__link-logo--htmlacademy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="34">
+              <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
             </svg>
           </a>
         </div>
       </section>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -2,12 +2,13 @@
   background-color: #ffffff;
   @include wrap;
   text-align: center;
+  margin-bottom: 42px;
 }
 
 .slider-review__slide-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 42px 0 25px 0;
 }
 
 .slider-review__slide-list blockquote {
@@ -19,6 +20,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  margin: 0;
 }
 
 .slider-review__comment {
@@ -56,14 +58,41 @@
   display: none;
 }
 
+.slider-review__name-info {
+  display: none;
+}
+
 @media (min-width: $tablet) {
   .slider-review__slider-item {
     display: flex;
     flex-direction: column;
+    padding-top: 54px;
   }
 
   .slider-review__blockquote {
     order: -1;
+    padding-bottom: 37px;
+  }
+
+  .slider-review__name-info {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+  }
+
+  .slider-review {
+    margin: 10px 0 20px 0;
+  }
+
+  .slider-review__comment {
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .slider-review__name-comment {
+    font-size: 20px;
   }
 }
 
@@ -78,13 +107,47 @@
   }
 
   .slider-review {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 940px;
+    padding: 184px 10px 96px 16px;
+    margin: 0 auto;
+      &::before {
+        content: ("");
+        position: absolute;
+        background-image: url(../../img/icon-quotes.svg);
+        background-repeat: no-repeat;
+        opacity: 0.3;
+        width: 79px;
+        height: 64px;
+        top: 71px;
+      }
+  }
+
+  .slider-review__slider-item {
+    padding: 0;
   }
 
   .slider-review__slide-list {
     width: 710px;
-    padding: 40px 40px;
+    margin: 0;
+  }
+
+  .slider-review__blockquote {
+    padding-left: 22px;
+  }
+
+  .slider-review__name-comment {
+    font-size: 24px;
+    line-height: 30px;
+    padding-left: 21px;
+  }
+
+  .slider-review__name-info {
+    font-size: 18px;
+    line-height: 34px;
+    padding-left: 22px;
   }
 }

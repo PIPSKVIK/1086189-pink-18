@@ -4,20 +4,15 @@
   width: 100%;
 }
 
-
-.user-list__background-list {
-  text-align: left;
-  padding-left: 17px;
-}
-
 .user-list__nick {
   margin: 0;
   @include text-photo-userlist;
   font-weight: 700;
+  font-style: unset;
 }
 
 .user-list__public-time {
-  @include text-photo-userlist;
+  font-size: 13px;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -25,6 +20,7 @@
 .user-list__comment {
   @include text-photo-userlist;
   margin: 0;
+  padding-bottom: 11px;
 }
 
 .user-list__like {
@@ -34,24 +30,162 @@
   text-transform: uppercase;
   background: inherit;
   cursor: pointer;
-
   border: none;
   outline: none;
+  padding-left: 31px;
+  position: relative;
+    &::after {
+      content: ("");
+      position: absolute;
+      background-image: url(../../img/icon-heart.svg);
+      background-repeat: no-repeat;
+      width: 13px;
+      height: 12px;
+      top: 6px;
+      left: 0;
+    }
 }
 
 .user-list__user-wrapper {
-  margin-top: 20px;
   background-color: #f2f2f2;
+    &--panarama {
+      margin-bottom: 20px;
+    }
 }
 
 .user-list__photo {
   width: 100%;
 }
 
+.user-list__photo-item {
+  &--panarama {
+    display: block;
+    margin: 0 -20px;
+  }
+}
+
+.user-list__photo {
+  &--panarama {
+    background-image: url(/img/panorama-mobile@1x.jpg);
+    @include bg-setting;
+    width: 100%;
+    height: 137px;
+    margin: 0;
+  }
+}
+
+.user-list__photo-item--panarama {
+  position: relative;
+    &::before {
+      content: ("панорама дня");
+      position: absolute;
+      background-color: #d22856;
+      color: #ffffff;
+      font-size: 15px;
+      line-height: 24px;
+      right: 20px;
+      padding: 6px 19px;
+    }
+}
+
+.user-list__background-list {
+  padding: 16px 23px 20px 18px;
+}
+
+.user-list__background-list {
+    &--panarama {
+      padding: 19px 11px 16px 18px;
+    }
+}
+
+.user-list__user-wrapper {
+  &--car {
+    margin-bottom: 18px;
+  }
+
+  &--drumset {
+    margin-bottom: 20px;
+  }
+}
+
+.user-list__user-wrapper {
+  &--window {
+    margin-bottom: 19px;
+  }
+
+  &--fair {
+    margin-bottom: 20px;
+  }
+}
+
+.user-list__user-wrapper {
+  &--pov {
+    margin-bottom: 20px;
+  }
+
+  &--wing {
+    margin-bottom: 40px;
+  }
+}
+
+.user-list__photo {
+  &--car {
+    background-image: url(/img/photo-car-mobile@1x.jpg);
+    @include bg-setting;
+    height: 180px;
+    margin: 0;
+  }
+  &--drumset {
+    background-image: url(/img/photo-drumset-mobile@1x.jpg);
+    @include bg-setting;
+    height: 180px;
+    margin: 0;
+  }
+}
+
+.user-list__photo {
+  &--window {
+    background-image: url(/img/photo-window-mobile@1x.jpg);
+    @include bg-setting;
+    height: 180px;
+    margin: 0;
+  }
+
+  &--fair {
+    background-image: url(/img/photo-fair-mobile@1x.jpg);
+    @include bg-setting;
+    height: 180px;
+    margin: 0;
+  }
+}
+
+.user-list__photo {
+  &--pov {
+    background-image: url(/img/photo-pov-mobile@1x.jpg);
+    @include bg-setting;
+    height: 180px;
+    margin: 0;
+  }
+
+  &--wing {
+    background-image: url(/img/photo-wing-mobile@1x.jpg);
+    @include bg-setting;
+    height: 180px;
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
 @media (min-width: $tablet) {
   .user-list {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 66px;
       & li:nth-child(3),
       li:nth-child(5),
       li:nth-child(7) {
@@ -64,7 +198,169 @@
   }
 
   .user-list__user-wrapper--panarama {
+    margin-bottom: 50px;
     width: 100%;
+  }
+
+  .user-list__photo {
+    &--panarama {
+      background-image: url(/img/panorama-tablet@1x.jpg);
+      background-position: -20px 0;
+      height: 509px;
+    }
+  }
+
+  .user-list__photo-item--panarama {
+    &::before {
+      top: 56px;
+    }
+  }
+
+  .user-list__background-list {
+    &--panarama {
+      padding: 24px 11px 12px 27px;
+    }
+  }
+
+  .user-list__like-panarama {
+    &::before {
+      content: ("");
+      position: absolute;
+      background-image: url(/img/icon-heart.svg);
+      background-repeat: no-repeat;
+      width: 13px;
+      height: 12px;
+      top: 6px;
+      right: 18px;
+    }
+  }
+
+  .user-list__like-special {
+    &::before {
+      content: ("");
+      position: absolute;
+      background-image: url(/img/icon-heart.svg);
+      background-repeat: no-repeat;
+      width: 13px;
+      height: 12px;
+      top: 6px;
+      right: -102px;
+    }
+  }
+
+  .user-list__like {
+    padding-left: 0;
+    padding-right: 48px;
+    &::after {
+      display: none;
+    }
+  }
+
+  .user-list__photo {
+    &--car {
+      background-image: url(/img/photo-car-tablet@1x.jpg);
+      height: 300px;
+    }
+
+    &--drumset {
+      background-image: url(/img/photo-drumset-tablet@1x.jpg);
+      height: 300px;
+    }
+  }
+
+  .user-list__photo {
+    &--window {
+      background-image: url(/img/photo-window-tablet@1x.jpg);
+      height: 300px;
+    }
+
+    &--fair {
+      background-image: url(/img/photo-fair-tablet@1x.jpg);
+      height: 300px;
+    }
+  }
+
+  .user-list__photo {
+    &--pov {
+      background-image: url(/img/photo-pov-tablet@1x.jpg);
+      height: 300px;
+    }
+
+    &--wing {
+      background-image: url(/img/photo-wing-tablet@1x.jpg);
+      height: 300px;
+    }
+  }
+
+  .user-list__user-wrapper {
+    &--car {
+      padding-bottom: 11px;
+    }
+
+    &--window {
+      padding-bottom: 12px;
+    }
+  }
+
+  .user-list__user-wrapper {
+    &--pov {
+      margin-bottom: 0;
+    }
+
+    &--wing {
+      margin-bottom: 0;
+    }
+  }
+
+  .user-list__background-list {
+    &--care {
+      padding: 24px 23px 13px 27px;
+    }
+
+    &--drumset {
+      padding: 24px 23px 20px 28px;
+    }
+  }
+
+  .user-list__background-list {
+    &--window {
+      padding: 24px 23px 11px 28px;
+    }
+
+    &--fair {
+      padding: 24px 23px 20px 27px;
+    }
+  }
+
+  .user-list__background-list {
+    &--pov {
+      padding: 24px 23px 11px 27px;
+    }
+
+    &--wing {
+      padding: 24px 23px 20px 27px;
+    }
+  }
+
+  .user-list__comment-drumset,
+  .user-list__comment-fair,
+  .user-list__comment-pov,
+  .user-list__comment-wing {
+    padding-bottom: 36px;
+  }
+
+  .user-list__background-list--panarama {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .user-list__like {
+      order: -1;
+    }
+
+    .user-list__nick {
+      order: -1;
+    }
   }
 }
 
@@ -74,10 +370,86 @@
     margin-left: 0;
   }
 
-  .user-list li:nth-child(3),
-  .user-list li:nth-child(4),
-  .user-list li:nth-child(6),
-  .user-list li:nth-child(7) {
+   .user-list li:nth-child(3n) {
     margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .user-list__photo {
+    &--panarama {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      height: 506px;
+      background: url(../../img/panorama-desktop@1x.jpg) no-repeat;
+      background-size: cover;
+    }
+
+    &--panarama::before {
+      content: ("панорама дня");
+      position: absolute;
+      background-color: #d22856;
+      color: #ffffff;
+      font-size: 15px;
+      line-height: 24px;
+      right: 140px;
+      top: 53px;
+      padding: 6px 19px;
+    }
+  }
+
+  .user-list__user-wrapper--panarama {
+    margin-bottom: 50px;
+  }
+
+  .user-list__photo {
+    &--car {
+      background-image: url(/img/photo-car-desktop@1x.jpg);
+      height: 400px;
+    }
+
+    &--drumset {
+      background-image: url(/img/photo-drumset-desktop@1x.jpg);
+      height: 400px;
+    }
+  }
+
+  .user-list__photo {
+    &--window {
+      background-image: url(/img/photo-window-desktop@1x.jpg);
+      height: 400px;
+    }
+
+    &--fair {
+      background-image: url(/img/photo-fair-desktop@1x.jpg);
+      height: 400px;
+    }
+  }
+
+  .user-list__photo {
+    &--pov {
+      background-image: url(/img/photo-pov-desktop@1x.jpg);
+      height: 400px;
+    }
+
+    &--wing {
+      background-image: url(/img/photo-wing-desktop@1x.jpg);
+      height: 400px;
+    }
+  }
+
+  .user-list__user-wrapper--car,
+  .user-list__user-wrapper--drumset,
+  .user-list__user-wrapper--window {
+    margin-bottom: 50px;
+  }
+
+  .user-list__user-wrapper--fair {
+    margin-bottom: 0;
+  }
+
+  .user-list {
+    padding-bottom: 60px;
   }
 }

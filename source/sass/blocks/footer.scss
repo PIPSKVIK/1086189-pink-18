@@ -14,10 +14,19 @@
   list-style: none;
 }
 
+.footer__social {
+  & ul {
+    margin: 0;
+  }
+}
+
 .footer__social-list {
   padding: 0;
   display: flex;
   justify-content: center;
+    & li:nth-child(2) {
+      margin: 0 12px;
+    }
 }
 
 .footer__social-item-twitter {
@@ -71,6 +80,8 @@
 .footer__copyright {
   display: flex;
   justify-content: center;
+  margin-top: 37px;
+  align-items: center;
 }
 
 .footer__text {
@@ -83,7 +94,24 @@
 
 .footer__logo-wrapper {
   text-align: center;
+  margin-bottom: 37px;
 }
+
+.footer__link-logo--htmlacademy {
+  fill: #d22856;
+  width: 45px;
+  height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: $tablet) {
   .footer__index {
@@ -94,6 +122,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 36px 0 27px 0;
+  }
+
+  .footer__logo-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0;
   }
 
   .footer__logo-wrapper,
@@ -105,5 +140,48 @@
   .footer__copyright {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .footer__copyright {
+    padding-top: 6px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .footer__social-list {
+    & li:nth-child(2) {
+      margin: 0 12px;
+    }
+  }
+
+  .footer__text {
+    margin-right: 2px;
+  }
+}
+
+
+
+
+
+
+@media (min-width: $desktop) {
+  .footer__wrapper {
+    padding-top: 97px;
+    padding-bottom: 84px;
+  }
+
+  .footer__text {
+    font-size: 18px;
+  }
+
+  .footer__logo-item {
+    display: none;
+  }
+
+  .footer__logo-glasses {
+    background-image: url(/img/logo-pink-blue-desktop.svg);
+    width: 147px;
+    height: 40px;
   }
 }

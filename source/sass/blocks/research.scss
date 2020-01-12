@@ -4,26 +4,48 @@
 
 @media (min-width: $tablet) {
     .research {
-      display: flex;
-      width: 100%;
+    display: block;
     }
 
     .research__wrapper {
       width: 660px;
-      padding: 0 20px;
+      padding: 0 21px;
       margin: 0 auto;
       display: flex;
-      margin-top: 40px;
+      margin-top: 60px;
       margin-bottom: 40px;
     }
 
     .research__image-wrapper {
       order: -1;
-      margin-right: 60px;
+    }
+
+    .research__image-wrapper {
+      position: relative;
+      &::before {
+        content: ("");
+        top: 55px;
+        right: 18px;
+        width: 202px;
+        height: 202px;
+        border-radius: 50%;
+        position: absolute;
+        border: 17px solid #d22856;
+      }
+      &::after {
+        position: absolute;
+        content: ("24");
+        font-size: 96px;
+        line-height: 149px;
+        font-weight: 700;
+        color: #d22856;
+        top: 77px;
+        left: 63px;
+      }
     }
 
     .research__content-wrapper {
-      width: 310px;
+      padding: 37px 10px 20px 70px;
     }
 
     .research__title {
@@ -31,12 +53,15 @@
       line-height: 36px;
       font-weight: 700;
       color: #000000;
+      margin: 0 0 10px 0;
+      padding-right: 3px;
     }
 
     .research__text {
       font-size: 14px;
       line-height: 24px;
       color: #283645;
+      margin: 0 0 10px 0;
     }
 
     .research__link {
@@ -47,7 +72,54 @@
 }
 
 @media (min-width: $desktop) {
+  .research {
+    background-color: #f2f2f2;
+  }
+
   .research__wrapper {
-    @include wrap;
+    width: 960px;
+    padding: 0 10px 66px 10px;
+    margin: 0 auto;
+  }
+
+  .research__image-wrapper {
+    & svg {
+      width: 298px;
+      height: 345px;
+    }
+    &::before {
+      content: ("");
+      top: 70px;
+      right: 23px;
+      width: 253px;
+      height: 253px;
+    }
+    &::after {
+      content: ("24");
+      font-size: 120px;
+      line-height: 186px;
+      top: 97px;
+      left: 79px;
+    }
+  }
+
+  .research__content-wrapper {
+    padding: 92px 10px 20px 70px;
+  }
+
+  .research__title {
+    margin-bottom: 21px;
+  }
+
+  .research__text {
+    font-size: 18px;
+    line-height: 30px;
+    padding-right: 41px;
+    margin-bottom: 31px;
+  }
+
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

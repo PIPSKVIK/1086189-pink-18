@@ -1,12 +1,12 @@
 .local-information {
   @include wrap;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 36px;
+  padding-bottom: 43px;
 }
 
 .local-information__info {
   @include color-red;
-  padding-left: 10px;
+  padding-left: 22px;
 }
 
 .local-information__label,
@@ -16,18 +16,30 @@
 }
 
 .local-information__input-wrapper label:not(:first-child) {
-  margin-top: 30px;
+  margin-top: 22px;
 }
 
-.local-information__text[type="text"]::-webkit-input-placeholder {
+.local-information__text[type="text"]::-webkit-input-placeholder { /* Chrome / Opera / Safari / Android */
+  color: #283645;
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+.local-information__text[type="text"]:-ms-input-placeholder { /* Internet Explorer / Microsoft Edge */
+  color: #283645;
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+.local-information__text[type="text"]:-moz-placeholder { /* Firefox  */
   color: #283645;
   line-height: 30px;
   padding-left: 10px;
 }
 
 .local-information__text {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 19px 0 18px 20px;
+  border: 2px solid #e5e5e5;
 }
 
 .local-information__input-wrapper {
@@ -35,41 +47,121 @@
   flex-direction: column;
 }
 
+.local-information__label {
+  & .local-information__text {
+    margin-top: 12px;
+  }
+}
+
+.local-information__title {
+  display: none;
+}
+
+
+
+
 @media (min-width: $tablet) {
   .local-information__input-wrapper {
     border: 2px solid #e5e5e5;
-    padding: 40px 40px;
-    position: relative;
-
-    &::before {
-      content: ("Контактная информация");
-      position: absolute;
-      top: -11px;
-      left: 33%;
-      background: #ffffff;
-      padding: 0 5%;
-      @include color-red;
-    }
+    padding: 35px 58px;
   }
 
   .local-information__input-wrapper label:not(:first-child) {
-      margin-top: 40px;
+      margin-top: 28px;
   }
 
   .local-information__label {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   .local-information__text {
     order: -1;
     margin-bottom: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 18px;
+    padding-left: 8px;
+    padding-right: 60px;
+    padding-bottom: 23px;
   }
+
 
   .local-information {
     order: 3;
+    padding-top: 24px;
+    text-align: center;
+  }
+
+  .local-information__title {
+    display: inline-block;
+    vertical-align: middle;
+    color: #d22856;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: -16px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    padding: 0 33px;
+  }
+
+  .local-information__input-wrapper {
+    text-align: start;
+  }
+
+  .local-information__text-phone {
+    position: relative;
+  }
+
+  .local-information__phone {
+    position: absolute;
+    width: 60px;
+    height: 62px;
+    background-color: #e5e5e5;
+    z-index: 10;
+    top: 13px;
+    right: 0;
+    pointer-events: none;
+      &::after {
+        position: absolute;
+        content: ("");
+        background-image: url(../../img/icon-phone.svg);
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        bottom: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+  }
+
+  .local-information__text-email {
+    position: relative;
+  }
+
+  .local-information__email {
+    position: absolute;
+    width: 60px;
+    height: 62px;
+    background-color: #e5e5e5;
+    z-index: 10;
+    top: 13px;
+    right: 0;
+    pointer-events: none;
+      &::after {
+        position: absolute;
+        content: ("");
+        background-image: url(../../img/icon-mail.svg);
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 13px;
+        bottom: 21px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
   }
 }
 
@@ -81,14 +173,28 @@
   .local-information__input-wrapper {
     flex-direction: row;
     align-items: center;
+    padding: 28px 30px 20px 58px;
   }
 
   .local-information__input-wrapper label:not(:first-child) {
     margin-top: 0px;
-    margin-left: 40px;
+    margin-left: 77px;
   }
 
   .local-information {
-    padding-top: 40px;
+    padding-top: 38px;
+    padding-bottom: 45px;
+  }
+
+  .local-information__label {
+    width: 371px;
+  }
+
+  .local-information__text {
+    margin-bottom: 15px;
+  }
+
+  .local-information__info {
+    padding-left: 18px;
   }
 }

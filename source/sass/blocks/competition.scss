@@ -6,11 +6,9 @@
   }
 
 .competition-title {
-  padding: 36px 28px 39px 28px;
-
+  padding: 30px 28px 51px 28px;
   text-align: center;
   margin: 0;
-
   color: #ffffff;
   font-size: 24px;
   line-height: 30px;
@@ -21,12 +19,14 @@
   .competition-title {
     font-size: 50px;
     line-height: 60px;
+    padding-top: 69px;
   }
 
   .competition {
     background-image: url(../../img/bg-back-tablet@1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 29px;
   }
 }
 
@@ -35,11 +35,12 @@
     background-image: url(../../img/bg-back-desktop@1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
   }
 
   .competition-title {
     max-width: 960px;
-    padding: 75px 10px 90px 10px;
+    padding: 173px 10px 72px 10px;
     margin: 0 auto;
   }
 }
