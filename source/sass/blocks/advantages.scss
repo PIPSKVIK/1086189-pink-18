@@ -30,7 +30,19 @@
 }
 
 .advantages__item {
-  margin-bottom: 31px;
+  &--mood {
+    margin-bottom: 31px;
+  }
+
+  &--change {
+    margin-bottom: 31px;
+    margin-left: 2px;
+  }
+
+  &--friends {
+    margin-left: 2px;
+    margin-bottom: 31px;
+  }
 }
 
 .advantages__image-position {
@@ -67,6 +79,10 @@
   display: none;
 }
 
+.advantages__functional-snapshot br {
+  display: none;
+}
+
 @media (min-width: $tablet) {
   .advantages__list-wrapper {
     display: flex;
@@ -76,7 +92,7 @@
 
   .advantages__list-wrapper {
     &::after {
-      background-image: url("../../img/iphone-screen-2-tablet@1x.png");
+      background-image: url("/img/iphone-screen-3-tablet@1x.png");
       background-position: 0 0;
       width: 290px;
       height: 481px;
@@ -90,9 +106,6 @@
     margin-top: 71px;
     text-align: start;
     margin-left: 27px;
-      & .advantages__item:not(:last-child) {
-        margin-bottom: 34px;
-      }
   }
 
   .advantages__title {
@@ -109,6 +122,25 @@
 
   .advantages__functional {
     padding: 0;
+  }
+
+  .advantages__functional-snapshot br {
+    display: inline;
+  }
+
+  .advantages__item {
+    &--mood {
+      margin-bottom: 34px;
+    }
+  
+    &--change {
+      margin-bottom: 35px;
+      margin-left: 2px;
+    }
+  
+    &--friends {
+      margin-left: 2px;
+    }
   }
 }
 
