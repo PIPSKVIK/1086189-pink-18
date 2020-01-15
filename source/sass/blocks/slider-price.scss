@@ -40,7 +40,7 @@
 .slider-price {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 89px 10px 48px 10px;
+  padding: 89px 10px 50px 10px;
   background-color: #f2f2f2;
   clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 100%);
 }
@@ -72,7 +72,7 @@
 
 .slider-price__table-title {
   position: relative;
-  padding: 16px 16px 16px 23px;
+  padding: 23px 16px 20px 23px;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 16px;
@@ -124,8 +124,6 @@
   background-color: #283645;
   text-align: center;
 }
-
-
 
 @media (min-width: $tablet) {
   .slider-price__table-wrap {
@@ -187,7 +185,7 @@
     &--comment2::after {
       position: absolute;
       right: 57px;
-      bottom: 9px;
+      bottom: 6px;
     }
   }
 
@@ -214,10 +212,42 @@
 
   .slider-price__table-title--pink1,
   .slider-price__table-title--pink2,
-  .slider-price__table-title--pink1 
-  .slider-price__table-title--first {
-    padding: 3px 10px 7px 15px;
-  
+  .slider-price__table-title--pink3 {
+    padding: 3px 10px 9px 15px;
+  }
+
+  .slider-price__table-title {
+    &--smile1 {
+      background: url(../../img/icon-no.svg) no-repeat center;
+      padding-bottom: 35px;
+      padding-top: 10px;
+    }
+
+    &--smile3 {
+      background: url(../../img/icon-yes.svg) no-repeat center;
+    }
+  }
+
+  .slider-price__table-title {
+    &--pink1 {
+      background: url(../../img/icon-yes.svg) no-repeat center;
+    }
+
+    &--pink3 {
+      background: url(../../img/icon-yes.svg) no-repeat center;
+    }
+  }
+
+  .slider-price__table-title {
+    &--comment1 {
+      background: url(../../img/icon-no.svg) no-repeat center;
+      padding-bottom: 35px;
+      padding-top: 10px;
+    }
+
+    &--comment3 {
+      background: url(../../img/icon-yes.svg) no-repeat center;
+    }
   }
 }
 
@@ -247,19 +277,42 @@
   .slider-price__table-title {
     font-size: 18px;
     line-height: 30px;
-    padding: 15px 10px 11px 21px;
       &--comment2::after {
         right: 98px;
+        bottom: 14px;
       }
       &--smile2::after {
-        right: 98px;
+        right: 102px;
+        bottom: 17px;
       }
       &--pink2::after {
-        right: 98px;
+        right: 102px;
+        bottom: 17px;
       }
   }
 
   .slider-price__table-header {
     padding: 16px 11px 22px 11px;
+  }
+
+  .slider-price__table-title {
+    &--pink1 {
+      padding-bottom: 37px;
+      padding-top: 20px;
+    }
+  }
+
+  .slider-price__table-title {
+    &--smile1 {
+      padding-bottom: 37px;
+      padding-top: 20px;
+    }
+  }
+
+  .slider-price__table-title {
+    &--comment1 {
+      padding-bottom: 41px;
+      padding-top: 20px;
+    }
   }
 }

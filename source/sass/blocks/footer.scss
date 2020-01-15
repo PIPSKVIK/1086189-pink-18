@@ -79,9 +79,11 @@
 
 .footer__copyright {
   display: flex;
-  justify-content: center;
   margin-top: 37px;
   align-items: center;
+  justify-content: space-between;
+  padding-left: 75px;
+  padding-right: 67px;
 }
 
 .footer__text {
@@ -140,6 +142,8 @@
   .footer__copyright {
     display: flex;
     justify-content: flex-end;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .footer__copyright {
@@ -165,13 +169,8 @@
 }
 
 
-
-
-
-
 @media (min-width: $desktop) {
   .footer__wrapper {
-    padding-top: 97px;
     padding-bottom: 84px;
   }
 

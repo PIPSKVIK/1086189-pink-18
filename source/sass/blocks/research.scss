@@ -62,6 +62,9 @@
       line-height: 24px;
       color: #283645;
       margin: 0 0 10px 0;
+        &--br1 {
+          display: none;
+        }
     }
 
     .research__link {
@@ -109,13 +112,22 @@
 
   .research__title {
     margin-bottom: 21px;
+      & br {
+        display: none;
+      }
   }
 
   .research__text {
     font-size: 18px;
     line-height: 30px;
-    padding-right: 41px;
     margin-bottom: 31px;
+      &--br1 {
+        display: inline;
+      }
+
+      &--br2 {
+        display: none;
+      }
   }
 
   .research__link {
