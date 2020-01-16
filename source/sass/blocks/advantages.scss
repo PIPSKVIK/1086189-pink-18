@@ -1,7 +1,7 @@
 .advantages__title-wrapper {
   background-color: #ffffff;
   text-align: center;
-  padding: 40px 0 18px 0;
+  padding: 40px 0 31px 0;
   position: relative;
     & .advantages__title:last-child {
       padding-top: 26px;
@@ -11,7 +11,8 @@
 .advantages__list-wrapper {
   background-color: #f2f2f2;
   text-align: center;
-  padding-top: 94px;
+  padding-top: 81px;
+  clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
     &::after {
       content: ("");
       display: block;
@@ -93,6 +94,8 @@
     display: flex;
     justify-content: center;
     padding: 0 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 45;
   }
 
   .advantages__list-wrapper {

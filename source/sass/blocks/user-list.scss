@@ -37,7 +37,7 @@
     &::after {
       content: ("");
       position: absolute;
-      background-image: url(../../img/icon-heart.svg);
+      background-image: url(/img/icon-heart.svg);
       background-repeat: no-repeat;
       width: 13px;
       height: 12px;
@@ -49,7 +49,7 @@
 .user-list__user-wrapper {
   background-color: #f2f2f2;
     &--panarama {
-      margin-bottom: 20px;
+      margin-bottom: 21px;
     }
 }
 
@@ -61,16 +61,6 @@
   &--panarama {
     display: block;
     margin: 0 -20px;
-  }
-}
-
-.user-list__photo {
-  &--panarama {
-    background-image: url(/img/panorama-mobile@1x.jpg);
-    @include bg-setting;
-    width: 100%;
-    height: 137px;
-    margin: 0;
   }
 }
 
@@ -94,33 +84,33 @@
 
 .user-list__background-list {
     &--panarama {
-      padding: 19px 11px 16px 18px;
+      padding: 16px 11px 16px 18px;
     }
 }
 
 .user-list__user-wrapper {
   &--car {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
   &--drumset {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 }
 
 .user-list__user-wrapper {
   &--window {
-    margin-bottom: 19px;
+    margin-bottom: 17px;
   }
 
   &--fair {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 }
 
 .user-list__user-wrapper {
   &--pov {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   &--wing {
@@ -130,13 +120,11 @@
 
 .user-list__photo {
   &--car {
-    background-image: url(/img/photo-car-mobile@1x.jpg);
     @include bg-setting;
     height: 180px;
     margin: 0;
   }
   &--drumset {
-    background-image: url(/img/photo-drumset-mobile@1x.jpg);
     @include bg-setting;
     height: 180px;
     margin: 0;
@@ -145,14 +133,12 @@
 
 .user-list__photo {
   &--window {
-    background-image: url(/img/photo-window-mobile@1x.jpg);
     @include bg-setting;
     height: 180px;
     margin: 0;
   }
 
   &--fair {
-    background-image: url(/img/photo-fair-mobile@1x.jpg);
     @include bg-setting;
     height: 180px;
     margin: 0;
@@ -161,14 +147,12 @@
 
 .user-list__photo {
   &--pov {
-    background-image: url(/img/photo-pov-mobile@1x.jpg);
     @include bg-setting;
     height: 180px;
     margin: 0;
   }
 
   &--wing {
-    background-image: url(/img/photo-wing-mobile@1x.jpg);
     @include bg-setting;
     height: 180px;
     margin: 0;
@@ -204,7 +188,6 @@
 
   .user-list__photo {
     &--panarama {
-      background-image: url(/img/panorama-tablet@1x.jpg);
       background-position: -20px 0;
       height: 509px;
     }
@@ -218,7 +201,7 @@
 
   .user-list__background-list {
     &--panarama {
-      padding: 24px 11px 12px 27px;
+      padding: 22px 11px 12px 27px;
     }
   }
 
@@ -258,36 +241,30 @@
 
   .user-list__photo {
     &--car {
-      background-image: url(/img/photo-car-tablet@1x.jpg);
       height: 300px;
     }
 
     &--drumset {
-      background-image: url(/img/photo-drumset-tablet@1x.jpg);
       height: 300px;
     }
   }
 
   .user-list__photo {
     &--window {
-      background-image: url(/img/photo-window-tablet@1x.jpg);
       height: 300px;
     }
 
     &--fair {
-      background-image: url(/img/photo-fair-tablet@1x.jpg);
       height: 300px;
     }
   }
 
   .user-list__photo {
     &--pov {
-      background-image: url(/img/photo-pov-tablet@1x.jpg);
       height: 300px;
     }
 
     &--wing {
-      background-image: url(/img/photo-wing-tablet@1x.jpg);
       height: 300px;
     }
   }
@@ -382,7 +359,6 @@
       transform: translateX(-50%);
       width: 100vw;
       height: 506px;
-      background: url(../../img/panorama-desktop@1x.jpg) no-repeat;
       background-size: cover;
     }
 
@@ -405,36 +381,30 @@
 
   .user-list__photo {
     &--car {
-      background-image: url(/img/photo-car-desktop@1x.jpg);
       height: 400px;
     }
 
     &--drumset {
-      background-image: url(/img/photo-drumset-desktop@1x.jpg);
       height: 400px;
     }
   }
 
   .user-list__photo {
     &--window {
-      background-image: url(/img/photo-window-desktop@1x.jpg);
       height: 400px;
     }
 
     &--fair {
-      background-image: url(/img/photo-fair-desktop@1x.jpg);
       height: 400px;
     }
   }
 
   .user-list__photo {
     &--pov {
-      background-image: url(/img/photo-pov-desktop@1x.jpg);
       height: 400px;
     }
 
     &--wing {
-      background-image: url(/img/photo-wing-desktop@1x.jpg);
       height: 400px;
     }
   }
@@ -451,5 +421,9 @@
 
   .user-list {
     padding-bottom: 60px;
+  }
+
+  .user-list__background-list--panarama {
+    padding-top: 20px;
   }
 }

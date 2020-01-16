@@ -196,6 +196,7 @@
 
   .slider-price {
     padding: 89px 20px 65px 20px;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
   }
 
   .slider-price__table-header{
