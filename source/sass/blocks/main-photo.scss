@@ -3,9 +3,9 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
-  padding: 46px 40px 48px 38px;
+  padding: 46px 38px 48px 38px;
 }
 
 .main-photo__afterword {
@@ -24,7 +24,7 @@
   .main-photo__title {
     font-size: 18px;
     line-height: 30px;
-    padding: 92px 82px 76px 66px;
+    padding: 92px 66px 76px 66px;
   }
 
   .main-photo__afterword {
@@ -42,5 +42,9 @@
     width: 580px;
     margin: 0 auto;
     padding: 90px 0 90px 0;
+  }
+
+  .main-photo {
+    overflow: hidden;
   }
 }

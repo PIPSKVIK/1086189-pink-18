@@ -1,5 +1,6 @@
 .about-application {
   background-color: #1d2631;
+  overflow: hidden;
 }
 
 .about-application__wrapper-background {
@@ -7,13 +8,18 @@
   flex-direction: column;
   align-items: center;
     &::after {
-      content: (" ");
+      content: ("");
       background-image: url("/img/iphone-hand-mobile@1x.png");
       background-repeat: no-repeat;
       background-position: 8px 0;
       width: 337px;
       height: 286px;
       margin-top: 8px;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("/img/iphone-hand-mobile@2x.png");
+        background-size: contain;
+      }
     }
 }
 
@@ -127,6 +133,11 @@
         height: 545px;
         right: 0;
         bottom: 0;
+
+        @media (min-resolution: $retina-dppx) {
+          background-image: url("/img/iphone-hand-tablet@2x.png");
+          background-size: cover;
+        }
       }
   }
 
@@ -156,16 +167,19 @@
 
   .about-application__wrapper {
     &::after {
-      content: (" ");
-
+      content: ("");
       position: absolute;
-      background-image: url("../../img/iphone-hand-desktop@1x.png");
+      background-image: url("/img/iphone-hand-desktop@1x.png");
       background-repeat: no-repeat;
-
       width: 934px;
       height: 644px;
       right: 0;
       bottom: 0;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("/img/iphone-hand-desktop@2x.png");
+        background-size: cover;
+      }
     }
   }
 
