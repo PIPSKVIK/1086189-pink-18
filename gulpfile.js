@@ -1,12 +1,24 @@
 "use strict";
 
 var gulp = require("gulp");
+var imagemin = require("gulp-imagemin"); /* Добавили Оптимизацию изображений */
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+
+/* !Оптимизация изображений! */
+gulp.task("images", function () {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  .pipe(imagemin([
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.svgo()
+  ]))
+  .pipe(gulp.dest("source/img"));
+  });
+/* Оптимизация изображений */
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")

@@ -40,9 +40,19 @@
 .slider-price {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 89px 10px 50px 10px;
+  padding: 64px 10px 50px 10px;
   background-color: #f2f2f2;
-  clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 100%);
+  position: relative;
+    &::before {
+      background: linear-gradient(to right bottom, transparent 49%, #f2f2f2f2 51%);
+      top: -28px;
+      height: 30px;
+      content: ("");
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+    }
 }
 
 .slider-price__wrap {
