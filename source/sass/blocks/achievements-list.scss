@@ -32,7 +32,7 @@
 }
 
 // Кастомный checkbox
-.achievements-list__checkbox { /* Прячем дефолтный */
+.achievements-list__checkbox {
   display: none;
 }
 
@@ -51,6 +51,13 @@
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   margin-right: 26px;
+    &:hover {
+      border-color: #283645;
+    }
+
+    &:active {
+      border-color: #d22856;
+    }
 }
 
 .achievements-list__checkbox:checked ~ .achievements-list__checkbox-yes {

@@ -3,13 +3,11 @@
   background: none;
   outline: none;
     &::before {
-      content: ("");
-
+      content: "";
       position: absolute;
       background-image: url(/img/icon-review-arrow-left.svg);
       width: 22px;
       height: 41px;
-
       left: 0;
       bottom: 50%;
       cursor: pointer;
@@ -21,8 +19,7 @@
   background: none;
   outline: none;
     &::before {
-      content: ("");
-
+      content: "";
       position: absolute;
       background-image: url(/img/icon-review-arrow-right.svg);
       width: 22px;
@@ -43,6 +40,12 @@
   .slider-arrow__button--right {
     &::before {
       bottom: 46%;
+    }
+  }
+
+  .slider-arrow__button--right:before {
+    &:hover {
+      opacity: 30;
     }
   }
 }
