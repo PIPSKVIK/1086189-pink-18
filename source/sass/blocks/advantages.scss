@@ -13,7 +13,7 @@
   text-align: center;
   padding-top: 49px;
     &::after {
-      content: ("");
+      content: "";
       display: block;
       margin: 0 auto;
       background-image: url("/img/iphone-screen-mobile@1x.png");
@@ -95,6 +95,7 @@
 }
 
 .advantages__item-iphone {
+  background-image: none;
   display: none;
 }
 
@@ -180,6 +181,7 @@
     &::after {
       content: (" ");
       display: none;
+      background-image: none;
     }
   }
 
