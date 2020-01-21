@@ -30,7 +30,6 @@
 }
 
 .footer__social-item-twitter {
-
   display: block;
   background-repeat: no-repeat;
   background-position: 14px 14px;
@@ -43,6 +42,9 @@
       border: 3px solid #283645;
     }
 
+    &:active {
+      opacity: 0.3;
+    }
 }
 
 .footer__social-item-facebook {
@@ -57,6 +59,10 @@
     &:hover {
       border: 3px solid #283645;
     }
+
+    &:active {
+      opacity: 0.3;
+    }
 }
 
 .footer__social-item-youtube {
@@ -70,6 +76,10 @@
   border-radius: 50%;
     &:hover {
       border: 3px solid #283645;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
 }
 
@@ -89,7 +99,6 @@
   position: relative;
 }
 
-
 .footer__logo-wrapper {
   text-align: center;
   margin-bottom: 37px;
@@ -99,17 +108,31 @@
   fill: #d22856;
   width: 45px;
   height: 40px;
+
+    &:hover {
+      fill: #283645;
+    }
+
+    &:active {
+      fill: #283645;
+      fill-opacity: 0.3;
+    }
 }
 
+.footer__logo-item--desctop {
+  display: none;
+}
 
+.footer__logo-item--same {
+  &:hover {
+    fill: #d22856;
+  }
 
-
-
-
-
-
-
-
+  &:active {
+    fill: #283645;
+    fill-opacity: 0.3;
+  }
+}
 
 @media (min-width: $tablet) {
   .footer__index {
@@ -162,6 +185,10 @@
   .footer__link-logo {
     margin-right: -4px;
   }
+
+  .footer__logo-item--desctop {
+    display: none;
+  }
 }
 
 
@@ -174,13 +201,23 @@
     font-size: 18px;
   }
 
-  .footer__logo-item {
+  .footer__logo-item--desctop {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .footer__logo-item--same {
     display: none;
   }
 
-  .footer__logo-glasses {
-    background-image: url(/img/logo-pink-blue-desktop.svg);
-    width: 147px;
-    height: 40px;
+  .footer__logo-item--desctop {
+    &:hover {
+      fill: #d22856;
+    }
+
+    &:active {
+      fill: #283645;
+      fill-opacity: 0.3;
+    }
   }
 }

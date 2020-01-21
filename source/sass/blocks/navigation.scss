@@ -12,6 +12,14 @@
   padding: 0 76px 0 73px;
 }
 
+.navigation__nav-wrapper a[href]:hover {
+  color: #d22856;
+}
+
+.navigation__nav-wrapper a[href]:active {
+  color: #5b3149;
+}
+
 .navigation__nav-wrapper {
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
@@ -94,10 +102,11 @@
   }
 
   .navigation__nav-item {
-    padding: 0;
-      &:hover {
-        background-color: #295E97;
-      }
+    padding: 0 0 8px 0;
+  }
+
+  .navigation__nav-wrapper a[href]:hover {
+    border-bottom: 2px solid #ffffff;
   }
 
   .navigation__nav-item {

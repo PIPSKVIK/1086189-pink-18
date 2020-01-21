@@ -40,6 +40,7 @@
   height: 200px;
   margin: 0 auto;
   position: relative;
+
     &::before {
       content: ("");
       position: absolute;
@@ -186,6 +187,10 @@
     height: 496px;
     margin: 0 auto;
     position: relative;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url(/img/bg-map-desktop@2x.jpg);
+    }
 
     &::before {
       content: ("");
