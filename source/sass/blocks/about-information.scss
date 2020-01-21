@@ -43,6 +43,36 @@
 .about-information__text {
   padding: 19px 0 18px 20px;
   border: 2px solid #e7e7e7;
+    &:hover {
+      border-color: #283645;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: #d22856;
+    }
+}
+
+.local-information__text {
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #d22856;
+  }
+}
+
+.describe-emotions__textarea {
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #d22856;
+  }
 }
 
 @media (min-width: $tablet) {

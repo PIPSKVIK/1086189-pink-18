@@ -2,7 +2,7 @@
   border: none;
   background: none;
   outline: none;
-    &::before {
+    &:before {
       content: "";
       position: absolute;
       background-image: url(/img/icon-review-arrow-left.svg);
@@ -11,6 +11,15 @@
       left: 0;
       bottom: 50%;
       cursor: pointer;
+      opacity: 0.6;
+    }
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 0.1;
     }
 }
 
@@ -18,7 +27,7 @@
   border: none;
   background: none;
   outline: none;
-    &::before {
+    &:before {
       content: "";
       position: absolute;
       background-image: url(/img/icon-review-arrow-right.svg);
@@ -27,6 +36,15 @@
       right: 0;
       bottom: 50%;
       cursor: pointer;
+      opacity: 0.6;
+    }
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 0.1;
     }
 }
 
