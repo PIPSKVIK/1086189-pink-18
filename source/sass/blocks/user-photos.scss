@@ -3,7 +3,10 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
-  // padding: 60px 0 55px 0;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url(/img/bg-back-mobile@2x.jpg);
+    }
 }
 
 .user-photos__title {
@@ -24,6 +27,10 @@
     background-position: 0 0;
     background-size: cover;
     height: 329px;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url(/img/bg-back-tablet@2x.jpg);
+      }
   }
 
   .user-photos__title {
@@ -40,6 +47,10 @@
     background-position: 0 0;
     background-size: cover;
     height: 395px;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url(/img/bg-back-desktop@2x.jpg);
+      }
   }
 
   .user-photos__title-wrapper {
