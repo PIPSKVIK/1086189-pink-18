@@ -108,18 +108,33 @@
     display: flex;
     justify-content: center;
     padding: 0 20px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     z-index: 45;
+    margin-top: -20px;
+  }
+
+  .advantages__list-mask {
+    position: relative;
+      &:after {
+        background: linear-gradient(to left top, transparent 49%, #ffffff 51%);
+        top: 0px;
+        height: 47px;
+        content: "";
+        display: block;
+        left: 0;
+        position: absolute;
+        right: 0;
+      }
   }
 
   .advantages__list-wrapper {
-    &::after {
+    &:after {
       background-image: url("/img/iphone-screen-3-tablet@1x.png");
       background-position: 0 0;
       width: 290px;
       height: 481px;
       order: -1;
       margin: 0;
+      z-index: 100;
 
       @media (min-resolution: $retina-dppx) {
         background-image: url("/img/iphone-screen-3-tablet@2x.png");
@@ -141,7 +156,7 @@
   }
 
   .advantages__title-wrapper {
-    padding: 51px 0 52px 0;
+    padding: 51px 0 71px 0;
     & .advantages__title:last-child {
       padding: 0 100px;
     }
@@ -177,9 +192,35 @@
     width: 292px;
   }
 
+  .advantages__list-mask {
+    position: relative;
+    margin-top: -50px;
+      &:after {
+        background: linear-gradient(to left top, transparent 49%, #ffffff 51%);
+        top: 42px;
+        height: 92px;
+        content: "";
+        display: block;
+        left: 0;
+        position: absolute;
+        right: 0;
+      }
+
+      &:before {
+        content: "";
+        background: linear-gradient(to top, transparent 49%, #ffffff 51%);
+        top: -3px;
+        display: block;
+        height: 92px;
+        left: 0;
+        right: 0;
+        position: absolute;
+      }
+  }
+
   .advantages__list-wrapper {
     &::after {
-      content: (" ");
+      content: "";
       display: none;
       background-image: none;
     }
@@ -195,6 +236,7 @@
   .advantages__item {
     text-align: center;
     width: 33.33333%;
+    z-index: 45;
   }
 
   .advantages__list-wrapper {
@@ -212,7 +254,7 @@
   }
 
   .advantages__title-wrapper {
-    padding: 74px 220px 36px 220px;
+    padding: 74px 220px 85px 220px;
       & .advantages__title:last-child {
         padding-top: 5px;
         line-height: 61px;

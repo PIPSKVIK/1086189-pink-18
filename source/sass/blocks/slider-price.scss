@@ -267,7 +267,8 @@
     background-color: #f2f2f2;
     margin: 0;
     max-width: none;
-    padding: 89px 20px 90px 20px;
+    padding: 144px 20px 90px 20px;
+    position: relative;
   }
 
   .slider-price__wrap {
@@ -325,5 +326,14 @@
       padding-bottom: 41px;
       padding-top: 20px;
     }
+  }
+
+  .slider-price__table-wrapper td:nth-child(1) {
+    background-color: #f2f2f2;
+    border: none;
+  }
+
+  .slider-price__table-title--first {
+    padding-left: 22px;
   }
 }
