@@ -19,19 +19,19 @@
   margin-top: 22px;
 }
 
-.local-information__text[type="text"]::-webkit-input-placeholder { /* Chrome / Opera / Safari / Android */
+.local-information__text[type="text"]::-webkit-input-placeholder {
   color: #283645;
   line-height: 30px;
   padding-left: 10px;
 }
 
-.local-information__text[type="text"]:-ms-input-placeholder { /* Internet Explorer / Microsoft Edge */
+.local-information__text[type="text"]:-ms-input-placeholder {
   color: #283645;
   line-height: 30px;
   padding-left: 10px;
 }
 
-.local-information__text[type="text"]:-moz-placeholder { /* Firefox  */
+.local-information__text[type="text"]:-moz-placeholder {
   color: #283645;
   line-height: 30px;
   padding-left: 10px;
@@ -56,9 +56,6 @@
 .local-information__title {
   display: none;
 }
-
-
-
 
 @media (min-width: $tablet) {
   .local-information__input-wrapper {
@@ -125,10 +122,10 @@
     top: 13px;
     right: 0;
     pointer-events: none;
-      &::after {
+      &:after {
         position: absolute;
-        content: ("");
-        background-image: url(../../img/icon-phone.svg);
+        content: "";
+        background-image: url("/img/icon-phone.svg");
         background-repeat: no-repeat;
         width: 20px;
         height: 20px;
@@ -151,10 +148,10 @@
     top: 13px;
     right: 0;
     pointer-events: none;
-      &::after {
+      &:after {
         position: absolute;
-        content: ("");
-        background-image: url(../../img/icon-mail.svg);
+        content: "";
+        background-image: url("/img/icon-mail.svg");
         background-repeat: no-repeat;
         width: 18px;
         height: 13px;

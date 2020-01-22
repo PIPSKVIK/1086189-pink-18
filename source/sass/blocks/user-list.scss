@@ -34,10 +34,10 @@
   outline: none;
   padding-left: 31px;
   position: relative;
-    &::after {
-      content: ("");
+    &:after {
+      content: "";
       position: absolute;
-      background-image: url(/img/icon-heart.svg);
+      background-image: url("/img/icon-heart.svg");
       background-repeat: no-repeat;
       width: 13px;
       height: 12px;
@@ -66,7 +66,7 @@
 
 .user-list__photo-item--panarama {
   position: relative;
-    &::before {
+    &:before {
       content: ("панорама дня");
       position: absolute;
       background-color: #d22856;
@@ -124,6 +124,7 @@
     height: 180px;
     margin: 0;
   }
+
   &--drumset {
     @include bg-setting;
     height: 180px;
@@ -159,21 +160,15 @@
   }
 }
 
-
-
-
-
-
-
 @media (min-width: $tablet) {
   .user-list {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 66px;
       & li:nth-child(3),
-      li:nth-child(5),
-      li:nth-child(7) {
-        margin-left: 20px;
+        li:nth-child(5),
+        li:nth-child(7) {
+          margin-left: 20px;
       }
   }
 
@@ -194,7 +189,7 @@
   }
 
   .user-list__photo-item--panarama {
-    &::before {
+    &:before {
       top: 56px;
     }
   }
@@ -206,10 +201,10 @@
   }
 
   .user-list__like-panarama {
-    &::before {
-      content: ("");
+    &:before {
+      content: "";
       position: absolute;
-      background-image: url(/img/icon-heart.svg);
+      background-image: url("/img/icon-heart.svg");
       background-repeat: no-repeat;
       width: 13px;
       height: 12px;
@@ -219,10 +214,10 @@
   }
 
   .user-list__like-special {
-    &::before {
-      content: ("");
+    &:before {
+      content: "";
       position: absolute;
-      background-image: url(/img/icon-heart.svg);
+      background-image: url("/img/icon-heart.svg");
       background-repeat: no-repeat;
       width: 13px;
       height: 12px;
@@ -234,7 +229,7 @@
   .user-list__like {
     padding-left: 0;
     padding-right: 48px;
-    &::after {
+    &:after {
       display: none;
     }
   }
@@ -354,7 +349,7 @@
 
   .user-list__user-post--panarama {
     position: relative;
-      &::before {
+      &:before {
         content: ("панорама дня");
         position: absolute;
         background-color: #d22856;

@@ -5,7 +5,7 @@
     &:before {
       content: "";
       position: absolute;
-      background-image: url(/img/icon-review-arrow-left.svg);
+      background-image: url("/img/icon-review-arrow-left.svg");
       width: 22px;
       height: 41px;
       left: 0;
@@ -30,7 +30,7 @@
     &:before {
       content: "";
       position: absolute;
-      background-image: url(/img/icon-review-arrow-right.svg);
+      background-image: url("/img/icon-review-arrow-right.svg");
       width: 22px;
       height: 41px;
       right: 0;

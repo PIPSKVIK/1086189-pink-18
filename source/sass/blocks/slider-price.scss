@@ -9,10 +9,10 @@
   color: #ffffff;
   position: relative;
   padding: 18px;
-    &--hit::after {
-      content: ("");
+    &--hit:after {
+      content: "";
       position: absolute;
-      background-image: url(../../img/bg-hit.svg);
+      background-image: url("/img/bg-hit.svg");
       background-repeat: no-repeat;
       width: 73px;
       height: 73px;
@@ -43,11 +43,11 @@
   padding: 64px 10px 50px 10px;
   background-color: #f2f2f2;
   position: relative;
-    &::before {
+    &:before {
       background: linear-gradient(to right bottom, transparent 49%, #f2f2f2f2 51%);
       top: -28px;
       height: 30px;
-      content: ("");
+      content: "";
       display: block;
       left: 0;
       position: absolute;
@@ -86,34 +86,34 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 16px;
-  &--pink2::after {
-    content: ("");
-    position: absolute;
-    background-image: url(/img/icon-yes.svg);
-    background-repeat: no-repeat;
-    width: 31px;
-    height: 21px;
-    right: 17px;
-  }
-  &--smile2::after {
-    content: ("");
-    position: absolute;
-    background-image: url(/img/icon-yes.svg);
-    background-repeat: no-repeat;
-    width: 31px;
-    height: 21px;
-    right: 17px;
-  }
-  &--comment2::after {
-    content: ("");
-    position: absolute;
-    background-image: url(/img/icon-no.svg);
-    background-repeat: no-repeat;
-    width: 33px;
-    height: 30px;
-    right: 13px;
-    bottom: 17px;
-  }
+    &--pink2:after {
+      content: "";
+      position: absolute;
+      background-image: url("/img/icon-yes.svg");
+      background-repeat: no-repeat;
+      width: 31px;
+      height: 21px;
+      right: 17px;
+    }
+    &--smile2:after {
+      content: "";
+      position: absolute;
+      background-image: url("/img/icon-yes.svg");
+      background-repeat: no-repeat;
+      width: 31px;
+      height: 21px;
+      right: 17px;
+    }
+    &--comment2:after {
+      content: "";
+      position: absolute;
+      background-image: url("/img/icon-no.svg");
+      background-repeat: no-repeat;
+      width: 33px;
+      height: 30px;
+      right: 13px;
+      bottom: 17px;
+    }
 }
 
 
@@ -164,7 +164,7 @@
   .slider-price__table-title--smile2,
   .slider-price__table-title--comment2 {
     color: white;
-      &::after {
+      &:after {
         right: 40%;
       }
   }
@@ -180,19 +180,18 @@
 
   .slider-price__table-title {
     padding: 5px 10px 12px 10px;
-    // background-color: #ffffff;
   }
 
   .slider-price__table-title {
-    &--pink2::after {
+    &--pink2:after {
       right: 62px;
       bottom: 10px;
     }
-    &--smile2::after {
+    &--smile2:after {
       right: 60px;
 
     }
-    &--comment2::after {
+    &--comment2:after {
       position: absolute;
       right: 57px;
       bottom: 6px;
@@ -210,8 +209,8 @@
   }
 
   .slider-price__table-header{
-      &--hit::after {
-        background-image: url(/img/bg-hit-tablet.svg);
+      &--hit:after {
+        background-image: url("/img/bg-hit-tablet.svg");
         top: -1px;
         left: 1px;
       }
@@ -229,35 +228,35 @@
 
   .slider-price__table-title {
     &--smile1 {
-      background: url(../../img/icon-no.svg) no-repeat center;
+      background: url("/img/icon-no.svg") no-repeat center;
       padding-bottom: 35px;
       padding-top: 10px;
     }
 
     &--smile3 {
-      background: url(../../img/icon-yes.svg) no-repeat center;
+      background: url("/img/icon-yes.svg") no-repeat center;
     }
   }
 
   .slider-price__table-title {
     &--pink1 {
-      background: url(../../img/icon-yes.svg) no-repeat center;
+      background: url("/img/icon-yes.svg") no-repeat center;
     }
 
     &--pink3 {
-      background: url(../../img/icon-yes.svg) no-repeat center;
+      background: url("/img/icon-yes.svg") no-repeat center;
     }
   }
 
   .slider-price__table-title {
     &--comment1 {
-      background: url(../../img/icon-no.svg) no-repeat center;
+      background: url("/img/icon-no.svg") no-repeat center;
       padding-bottom: 35px;
       padding-top: 10px;
     }
 
     &--comment3 {
-      background: url(../../img/icon-yes.svg) no-repeat center;
+      background: url("/img/icon-yes.svg") no-repeat center;
     }
   }
 }
@@ -289,15 +288,17 @@
   .slider-price__table-title {
     font-size: 18px;
     line-height: 30px;
-      &--comment2::after {
+      &--comment2:after {
         right: 98px;
         bottom: 14px;
       }
-      &--smile2::after {
+
+      &--smile2:after {
         right: 102px;
         bottom: 17px;
       }
-      &--pink2::after {
+      
+      &--pink2:after {
         right: 102px;
         bottom: 17px;
       }

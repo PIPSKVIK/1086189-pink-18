@@ -11,7 +11,7 @@ var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var webp = require("gulp-webp");
-var htmlmin = require('gulp-htmlmin');
+var htmlmin = require("gulp-htmlmin");
 var del = require("del");
 
 gulp.task("clean", function () {

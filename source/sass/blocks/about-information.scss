@@ -12,22 +12,20 @@
   margin-bottom: 6px;
 }
 
-// ::placeholder - для всех Браузеров
-.about-information__text[type="text"]::-webkit-input-placeholder { /* Chrome / Opera / Safari / Android */
+.about-information__text[type="text"]::-webkit-input-placeholder {
   color: #283645;
   line-height: 30px;
 }
 
-.about-information__text[type="text"]:-ms-input-placeholder { /* Internet Explorer / Microsoft Edge */
+.about-information__text[type="text"]:-ms-input-placeholder {
   color: #283645;
   line-height: 30px;
 }
 
-.about-information__text[type="text"]:-moz-placeholder { /* Firefox  */
+.about-information__text[type="text"]:-moz-placeholder {
   color: #283645;
   line-height: 30px;
 }
-// ::placeholder - для всех Браузеров
 
 .about-information__label:not(:last-child) {
   margin-bottom: 18px;

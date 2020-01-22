@@ -12,7 +12,7 @@
   background-color: #f2f2f2;
   text-align: center;
   padding-top: 49px;
-    &::after {
+    &:after {
       content: "";
       display: block;
       margin: 0 auto;
@@ -31,11 +31,11 @@
 
 .advantages__list-mask {
   position: relative;
-    &::after {
+    &:after {
       background: linear-gradient(to right bottom, transparent 49%, #f2f2f2f2 51%);
       top: -30px;
       height: 30px;
-      content: ("");
+      content: "";
       display: block;
       left: 0;
       position: absolute;
@@ -157,9 +157,9 @@
 
   .advantages__title-wrapper {
     padding: 51px 0 71px 0;
-    & .advantages__title:last-child {
-      padding: 0 100px;
-    }
+      & .advantages__title:last-child {
+        padding: 0 100px;
+      }
   }
 
   .advantages__functional {
@@ -196,10 +196,10 @@
     position: relative;
     margin-top: -50px;
       &:after {
+        content: "";
         background: linear-gradient(to left top, transparent 49%, #ffffff 51%);
         top: 42px;
         height: 92px;
-        content: "";
         display: block;
         left: 0;
         position: absolute;
@@ -222,7 +222,7 @@
     padding-top: 40px;
     padding-bottom: 18px;
     flex-direction: column;
-      &::after {
+      &:after {
         content: "";
         display: none;
         background-image: none;

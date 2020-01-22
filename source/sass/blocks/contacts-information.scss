@@ -41,10 +41,10 @@
   margin: 0 auto;
   position: relative;
 
-    &::before {
-      content: ("");
+    &:before {
+      content: "";
       position: absolute;
-      background-image: url(../../img/bg-triangle-white-footer.svg);
+      background-image: url("/img/bg-triangle-white-footer.svg");
       background-repeat: no-repeat;
       background-position: center center;
       top: -59px;
@@ -55,7 +55,7 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url(/img/icon-map-marker.svg);
+      background-image: url("/img/icon-map-marker.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
       left: 44%;
@@ -124,12 +124,12 @@
     background-position: center -311px;
     background-size: cover;
     height: 375px;
-      &::before {
+      &:before {
         background-size: contain;
         top: -28px;
       }
 
-      &::after {
+      &:after {
         left: 47%;
         top: 53%;
       }
@@ -180,7 +180,7 @@
   }
 
   .contacts-information__background-map {
-    background-image: url(/img/bg-map-desktop@1x.jpg);
+    background-image: url("/img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -390px;
     background-size: cover;
@@ -189,13 +189,13 @@
     position: relative;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url(/img/bg-map-desktop@2x.jpg);
+      background-image: url("/img/bg-map-desktop@2x.jpg");
     }
 
     &::before {
-      content: ("");
+      content: "";
       position: absolute;
-      background-image: url(../../img/bg-triangle-white-footer.svg);
+      background-image: url("/img/bg-triangle-white-footer.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: contain;
@@ -204,9 +204,9 @@
     }
 
     &::after {
-      content: ("");
+      content: "";
       position: absolute;
-      background-image: url(/img/icon-map-marker.svg);
+      background-image: url("/img/icon-map-marker.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
       left: 50%;

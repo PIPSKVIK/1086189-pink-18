@@ -62,9 +62,9 @@
 .upload__control-wrapper {
   width: 33.33333%;
   text-align: center;
-  &--fill {
-    margin: 0 -12px;
-  }
+    &--fill {
+      margin: 0 -12px;
+    }
 }
 
 .upload__range--fill {
@@ -183,8 +183,8 @@
     width: 100%;
     position: relative;
     display: flex;
-      &::after {
-        content: ("");
+      &:after {
+        content: "";
         position: absolute;
         width: 100%;
         height: 1px;
@@ -245,8 +245,8 @@
     bottom: 50%;
     transform: none;
     width: 202px;
-      &::after {
-        content: ("");
+      &:after {
+        content: "";
         left: 25px;
       }
   }
@@ -259,7 +259,7 @@
     height: 2px;
     top: 50%;
     background-color: #283645;
-      &::after {
+      &:after {
         content: "";
         position: absolute;
         width: 14px;
@@ -360,21 +360,21 @@
   }
 
   .upload__scale-contrast {
-    &::after {
+    &:after {
       right: 114px;
       left: unset;
     }
   }
 
   .upload__scale-fill {
-    &::after {
+    &:after {
       right: 26px;
       left: unset;
     }
   }
 
   .upload__scale-crop {
-    &::after {
+    &:after {
       left: 71px;
     }
   }

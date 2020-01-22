@@ -27,25 +27,25 @@
   }
 
   .competition {
-    background-image: url(/img/bg-back-tablet@1x.jpg);
+    background-image: url("/img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 29px;
 
       @media (min-resolution: $retina-dppx) {
-        background-image: url(/img/bg-back-tablet@2x.jpg);
+        background-image: url("/img/bg-back-tablet@2x.jpg");
       }
   }
 }
 
 @media (min-width: $desktop) {
   .competition {
-    background-image: url(/img/bg-back-desktop@1x.jpg);
+    background-image: url("/img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
       @media (min-resolution: $retina-dppx) {
-        background-image: url(/img/bg-back-desktop@2x.jpg);
+        background-image: url("/img/bg-back-desktop@2x.jpg");
       }
   }
 
