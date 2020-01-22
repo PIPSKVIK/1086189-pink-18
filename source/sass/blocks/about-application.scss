@@ -121,6 +121,7 @@
   .about-application__wrapper-background {
     background-image: none;
     margin-bottom: 2px;
+    flex-direction: row;
       &::after {
         content: "";
         background-image: none;

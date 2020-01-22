@@ -253,10 +253,12 @@
 
     &--coll {
       padding-right: 14px;
+      order: -1;
     }
 
     &--write {
       padding-left: 14px;
+      order: 2;
     }
   }
 

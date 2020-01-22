@@ -77,12 +77,11 @@
   height: 374px;
 }
 
-// кастомный range
 .upload__scale-fill {
   position: absolute;
   left: 50%;
-  bottom: -37px;
   transform: translateX(-50%);
+  bottom: -37px;
   width: 240px;
   height: 2px;
   background-color: #283645;
@@ -104,7 +103,6 @@
 .upload__scale-fill:active:after {
   background-color: #d22856;
 }
-// кастомный range
 
 .upload__icon-fill {
   fill-opacity: 0.3;
@@ -181,8 +179,10 @@
   }
 
   .upload__control-wrapper {
-    text-align: unset;
     position: relative;
+    width: 100%;
+    position: relative;
+    display: flex;
       &::after {
         content: ("");
         position: absolute;
@@ -199,7 +199,6 @@
     height: 400px;
   }
 
-  // Установка Остальных 2 Инпутов
   .upload__range--crop,
   .upload__range--contrast {
     display: none;
@@ -238,14 +237,10 @@
       }
   }
 
-  .upload__control-wrapper {
-    width: 100%;
-    position: relative;
-  }
-
   .upload__scale-fill {
     position: absolute;
-    left: unset;
+    left: auto;
+    transform: translateX(-50%);
     right: 0;
     bottom: 50%;
     transform: none;
@@ -265,7 +260,7 @@
     top: 50%;
     background-color: #283645;
       &::after {
-        content: ("");
+        content: "";
         position: absolute;
         width: 14px;
         height: 14px;
