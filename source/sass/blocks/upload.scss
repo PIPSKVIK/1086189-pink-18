@@ -85,7 +85,7 @@
   width: 240px;
   height: 2px;
   background-color: #283645;
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       width: 14px;
@@ -100,7 +100,7 @@
     }
 }
 
-.upload__scale-fill:active:after {
+.upload__scale-fill:active::after {
   background-color: #d22856;
 }
 
@@ -183,7 +183,7 @@
     width: 100%;
     position: relative;
     display: flex;
-      &:after {
+      &::after {
         content: "";
         position: absolute;
         width: 100%;
@@ -245,7 +245,7 @@
     bottom: 50%;
     transform: none;
     width: 202px;
-      &:after {
+      &::after {
         content: "";
         left: 25px;
       }
@@ -259,7 +259,7 @@
     height: 2px;
     top: 50%;
     background-color: #283645;
-      &:after {
+      &::after {
         content: "";
         position: absolute;
         width: 14px;
@@ -275,14 +275,14 @@
 
   .upload__scale-contrast {
     cursor: pointer;
-      &:after {
+      &::after {
         left: 95px;
       }
   }
 
   .upload__scale-crop {
     cursor: pointer;
-      &:after {
+      &::after {
         right: 42px;
       }
   }
@@ -303,11 +303,11 @@
     padding-left: 5px;
   }
 
-  .upload__scale-crop:active:after {
+  .upload__scale-crop:active::after {
     background-color: #d22856;
   }
 
-  .upload__scale-contrast:active:after {
+  .upload__scale-contrast:active::after {
     background-color: #d22856;
   }
 }
@@ -360,21 +360,21 @@
   }
 
   .upload__scale-contrast {
-    &:after {
+    &::after {
       right: 114px;
       left: unset;
     }
   }
 
   .upload__scale-fill {
-    &:after {
+    &::after {
       right: 26px;
       left: unset;
     }
   }
 
   .upload__scale-crop {
-    &:after {
+    &::after {
       left: 71px;
     }
   }

@@ -47,7 +47,7 @@
   border-radius: 50%;
   display: none;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       width: 15px;
@@ -136,7 +136,7 @@
     width: 431px;
     padding: 0;
     margin-left: 42px;
-      &:before {
+      &::before {
         top: 0;
         left: 15%;
       }

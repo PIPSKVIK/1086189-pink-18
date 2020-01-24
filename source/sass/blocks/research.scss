@@ -22,7 +22,7 @@
 
     .research__image-wrapper {
       position: relative;
-      &:before {
+      &::before {
         content: "";
         top: 55px;
         right: 18px;
@@ -32,7 +32,7 @@
         position: absolute;
         border: 17px solid #d22856;
       }
-      &:after {
+      &::after {
         position: absolute;
         content: ("24");
         font-size: 96px;
@@ -91,7 +91,7 @@
       height: 345px;
     }
 
-    &:before {
+    &::before {
       content: ("");
       top: 70px;
       right: 23px;
@@ -99,7 +99,7 @@
       height: 253px;
     }
 
-    &:after {
+    &::after {
       content: ("24");
       font-size: 120px;
       line-height: 186px;

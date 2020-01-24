@@ -34,7 +34,7 @@
   outline: none;
   padding-left: 31px;
   position: relative;
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       background-image: url("/img/icon-heart.svg");
@@ -66,7 +66,7 @@
 
 .user-list__photo-item--panarama {
   position: relative;
-    &:before {
+    &::before {
       content: ("панорама дня");
       position: absolute;
       background-color: #d22856;
@@ -189,7 +189,7 @@
   }
 
   .user-list__photo-item--panarama {
-    &:before {
+    &::before {
       top: 56px;
     }
   }
@@ -201,7 +201,7 @@
   }
 
   .user-list__like-panarama {
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       background-image: url("/img/icon-heart.svg");
@@ -214,7 +214,7 @@
   }
 
   .user-list__like-special {
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       background-image: url("/img/icon-heart.svg");
@@ -229,7 +229,7 @@
   .user-list__like {
     padding-left: 0;
     padding-right: 48px;
-    &:after {
+    &::after {
       display: none;
     }
   }
@@ -349,7 +349,7 @@
 
   .user-list__user-post--panarama {
     position: relative;
-      &:before {
+      &::before {
         content: ("панорама дня");
         position: absolute;
         background-color: #d22856;

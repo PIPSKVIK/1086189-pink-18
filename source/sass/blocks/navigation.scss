@@ -1,8 +1,3 @@
-.navigation {
-  background-color: #283645;
-  position: relative;
-}
-
 .navigation__nav-item {
   line-height: 32px;
   font-weight: 700;
@@ -31,6 +26,11 @@
   text-align: center;
 }
 
+.navigation {
+  background-color: #283645;
+  position: relative;
+}
+
 .navigation__toggle {
   position: absolute;
   border: none;
@@ -40,50 +40,57 @@
   top: -48px;
   cursor: pointer;
   padding: 0;
-    & .navigation__cross-color:hover {
-      fill: #d22856;
-    }
-
-    & .navigation__cross-color:active {
-      fill: rgba(210, 40, 86, 0.3);
-    }
-}
-
-.navigation__toggle-open {
-  position: absolute;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  right: 20px;
-  top: -48px;
-  cursor: pointer;
+  color: #ffffff;
   display: none;
-    & .navigation__burger-color:hover {
-      fill: #d22856;
-    }
 
-    & .navigation__burger-color:active {
-      fill: rgba(210, 40, 86, 0.3);
-    }
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
-.navigation__menu-activ {
+@media (max-width: 959px) {
+  .navigation__toggle {
+    .js & {
+      display: block;
+    }
+  }
+
+  .navigation__nav-list {
+    .js & {
+      display: none;
+    }
+
+    .js .navigation--active & {
+      display: block;
+    }
+  }
+}
+
+.navigation__cross {
   display: none;
+
+  .navigation--active & {
+    display: block;
+  }
 }
 
-.navigation__button-activ {
-  display: block;
+.navigation__burger {
+  .navigation--active & {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet) {
-
   .navigation__toggle {
     top: -64px;
   }
 }
 
 @media (min-width: $desktop) {
-
   .navigation {
     background-color: transparent;
   }

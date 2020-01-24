@@ -41,7 +41,7 @@
   margin: 0 auto;
   position: relative;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       background-image: url("/img/bg-triangle-white-footer.svg");
@@ -124,12 +124,12 @@
     background-position: center -311px;
     background-size: cover;
     height: 375px;
-      &:before {
+      &::before {
         background-size: contain;
         top: -28px;
       }
 
-      &:after {
+      &::after {
         left: 47%;
         top: 53%;
       }
