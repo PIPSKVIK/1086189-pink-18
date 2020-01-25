@@ -211,7 +211,7 @@
   .slider-price__table-header{
       &--hit::after {
         background-image: url("/img/bg-hit-tablet.svg");
-        top: -1px;
+        top: 0;
         left: 1px;
       }
       &--hit::before {

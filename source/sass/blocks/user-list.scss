@@ -96,9 +96,7 @@
   &--drumset {
     margin-bottom: 18px;
   }
-}
 
-.user-list__user-wrapper {
   &--window {
     margin-bottom: 17px;
   }
@@ -106,9 +104,7 @@
   &--fair {
     margin-bottom: 18px;
   }
-}
 
-.user-list__user-wrapper {
   &--pov {
     margin-bottom: 18px;
   }
@@ -121,44 +117,41 @@
 .user-list__photo {
   &--car {
     @include bg-setting;
-    height: 180px;
+    height: auto;
     margin: 0;
   }
 
   &--drumset {
     @include bg-setting;
-    height: 180px;
+    height: auto;
     margin: 0;
   }
-}
 
-.user-list__photo {
   &--window {
     @include bg-setting;
-    height: 180px;
+    height: auto;
     margin: 0;
   }
 
   &--fair {
     @include bg-setting;
-    height: 180px;
+    height: auto;
     margin: 0;
   }
-}
 
-.user-list__photo {
   &--pov {
     @include bg-setting;
-    height: 180px;
+    height: auto;
     margin: 0;
   }
 
   &--wing {
     @include bg-setting;
-    height: 180px;
+    height: auto;
     margin: 0;
   }
 }
+
 
 @media (min-width: $tablet) {
   .user-list {
@@ -236,31 +229,27 @@
 
   .user-list__photo {
     &--car {
-      height: 300px;
+      height: auto;
     }
 
     &--drumset {
-      height: 300px;
+      height: auto;
     }
-  }
 
-  .user-list__photo {
     &--window {
-      height: 300px;
+      height: auto;
     }
 
     &--fair {
-      height: 300px;
+      height: auto;
     }
-  }
 
-  .user-list__photo {
     &--pov {
-      height: 300px;
+      height: auto;
     }
 
     &--wing {
-      height: 300px;
+      height: auto;
     }
   }
 
@@ -272,9 +261,7 @@
     &--window {
       padding-bottom: 12px;
     }
-  }
 
-  .user-list__user-wrapper {
     &--pov {
       margin-bottom: 0;
     }
@@ -292,9 +279,7 @@
     &--drumset {
       padding: 24px 23px 20px 28px;
     }
-  }
 
-  .user-list__background-list {
     &--window {
       padding: 24px 23px 11px 28px;
     }
@@ -302,9 +287,7 @@
     &--fair {
       padding: 24px 23px 20px 27px;
     }
-  }
 
-  .user-list__background-list {
     &--pov {
       padding: 24px 23px 11px 27px;
     }
@@ -371,6 +354,7 @@
       width: 100vw;
       height: 506px;
       background-size: cover;
+      height: auto;
     }
   }
 
@@ -386,9 +370,7 @@
     &--drumset {
       height: 400px;
     }
-  }
 
-  .user-list__photo {
     &--window {
       height: 400px;
     }
@@ -396,9 +378,7 @@
     &--fair {
       height: 400px;
     }
-  }
 
-  .user-list__photo {
     &--pov {
       height: 400px;
     }

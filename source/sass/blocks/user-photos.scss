@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
+  background-position: center center;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("/img/bg-back-mobile@2x.jpg");

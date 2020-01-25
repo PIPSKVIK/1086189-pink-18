@@ -23,20 +23,28 @@
   @include wrap;
   text-align: center;
   padding-top: 40px;
-  padding-bottom: 43px;
+  padding-bottom: 32px;
 }
 
 .describe-emotions__textarea {
   width: 100%;
   border: 2px solid #e5e5e5;
   margin-top: 8px;
-    &::placeholder {
-      padding-left: 17px;
-      padding-top: 15px;
-    }
+}
+
+.describe-emotions__label {
+  & textarea {
+    padding-left: 20px;
+    padding-top: 15px;
+  }
 }
 
 @media (min-width: $tablet) {
+  .describe-emotions__textarea[name="emotions"]::-webkit-input-placeholder {
+    color: #283645;
+    line-height: 30px;
+  }
+
   .describe-emotions__label-wrap {
     border: 2px solid #e5e5e5;
     padding: 13px 58px 34px 58px;
@@ -45,7 +53,7 @@
   .describe-emotions {
     order: 5;
     padding-top: 65px;
-    padding-bottom: 67px;
+    padding-bottom: 58px;
   }
 
   .describe-emotions__textarea-title {
@@ -57,18 +65,13 @@
     padding: 0 40px;
     letter-spacing: 0.02em;
   }
-
-  .describe-emotions__textarea {
-    &::placeholder {
-      padding-top: 12px;
-    }
-  }
 }
 
 @media (min-width: $desktop) {
   .describe-emotions {
     width: 100%;
     padding-bottom: 24px;
+    padding-top: 71px;
   }
 
   .describe-emotions__label-wrap {

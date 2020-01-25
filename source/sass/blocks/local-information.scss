@@ -49,7 +49,7 @@
 
 .local-information__label {
   & .local-information__text {
-    margin-top: 12px;
+    margin-top: 11px;
   }
 }
 
@@ -58,35 +58,30 @@
 }
 
 @media (min-width: $tablet) {
+  .local-information__text[type="text"]::-webkit-input-placeholder {
+    color: #283645;
+    line-height: 30px;
+    padding-left: 0px;
+  }
   .local-information__input-wrapper {
     border: 2px solid #e5e5e5;
-    padding: 35px 58px;
+    padding: 43px 58px 35px 58px;
   }
 
   .local-information__input-wrapper label:not(:first-child) {
-      margin-top: 28px;
-  }
-
-  .local-information__label {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+      margin-top: 38px;
   }
 
   .local-information__text {
-    order: -1;
     margin-bottom: 10px;
-    padding-top: 18px;
-    padding-left: 8px;
-    padding-right: 60px;
-    padding-bottom: 23px;
+    padding: 19px 60px 22px 20px;
   }
-
 
   .local-information {
     order: 3;
     padding-top: 24px;
     text-align: center;
+    padding-bottom: 48px;
   }
 
   .local-information__title {
@@ -98,28 +93,24 @@
     line-height: 30px;
     font-weight: 300;
     text-transform: uppercase;
-    position: relative;
     margin-bottom: -16px;
     text-align: center;
     letter-spacing: 0.02em;
     padding: 0 33px;
   }
 
-  .local-information__input-wrapper {
-    text-align: start;
-  }
-
-  .local-information__text-phone {
+  .local-information__wrapper {
     position: relative;
+    order: -1;
   }
 
   .local-information__phone {
     position: absolute;
     width: 60px;
-    height: 62px;
+    height: 100%;
     background-color: #e5e5e5;
     z-index: 10;
-    top: 13px;
+    top: 0;
     right: 0;
     pointer-events: none;
       &::after {
@@ -136,16 +127,16 @@
   }
 
   .local-information__text-email {
-    position: relative;
+    padding-bottom: 17px;
   }
 
   .local-information__email {
     position: absolute;
     width: 60px;
-    height: 62px;
+    height: 100%;
     background-color: #e5e5e5;
     z-index: 10;
-    top: 13px;
+    top: 0;
     right: 0;
     pointer-events: none;
       &::after {
@@ -160,6 +151,27 @@
         transform: translateX(-50%);
       }
   }
+
+  .local-information__label {
+    & .local-information__text {
+      margin-top: 0;
+    }
+  }
+
+  .local-information__text {
+    margin: 0;
+    height: 100%;
+  }
+
+  .local-information__label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .local-information__info {
+    text-align: left;
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -170,12 +182,12 @@
   .local-information__input-wrapper {
     flex-direction: row;
     align-items: center;
-    padding: 28px 30px 20px 58px;
+    padding: 40px 30px 20px 58px;
   }
 
   .local-information__input-wrapper label:not(:first-child) {
     margin-top: 0px;
-    margin-left: 77px;
+    margin-left: 74px;
   }
 
   .local-information {
@@ -185,10 +197,6 @@
 
   .local-information__label {
     width: 371px;
-  }
-
-  .local-information__text {
-    margin-bottom: 15px;
   }
 
   .local-information__info {

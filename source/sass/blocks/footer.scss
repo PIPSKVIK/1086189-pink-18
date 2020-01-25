@@ -119,7 +119,7 @@
     }
 }
 
-.footer__logo-item--desctop {
+.footer__logo-item--desktop {
   display: none;
 }
 
@@ -186,7 +186,7 @@
     margin-right: -4px;
   }
 
-  .footer__logo-item--desctop {
+  .footer__logo-item--desktop {
     display: none;
   }
 }
@@ -201,7 +201,7 @@
     font-size: 18px;
   }
 
-  .footer__logo-item--desctop {
+  .footer__logo-item--desktop {
     display: inline-block;
     vertical-align: top;
   }
@@ -210,7 +210,7 @@
     display: none;
   }
 
-  .footer__logo-item--desctop {
+  .footer__logo-item--desktop {
     &:hover {
       fill: #d22856;
     }

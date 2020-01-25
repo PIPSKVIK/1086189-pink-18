@@ -50,18 +50,7 @@
       top: -59px;
       width: 100%;
       height: 123px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("/img/icon-map-marker.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      left: 44%;
-      top: 48%;
-      width: 36px;
-      height: 40px;
+      z-index: 10;
     }
 
   @media (min-resolution: $retina-dppx) {
@@ -107,6 +96,13 @@
   margin-bottom: 34px;
 }
 
+.contacts-information__map-location {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  z-index: 1;
+}
+
 @media (min-width: $tablet) {
   .contacts-information__list {
     width: 100%;
@@ -149,6 +145,7 @@
     }
     &--come {
       margin-top: 18px;
+      width: 100%;
         & h4 {
           padding-bottom: 8px;
         }
@@ -170,6 +167,10 @@
   .contacts-information__background-wrapper {
     padding-top: 22px;
     padding-bottom: 28px;
+  }
+
+  .contacts-information__map-location {
+    height: 377px;
   }
 }
 
@@ -268,5 +269,9 @@
 
   .contacts-information {
     margin-bottom: 35px;
+  }
+
+  .contacts-information__map-location {
+    height: 496px;
   }
 }
