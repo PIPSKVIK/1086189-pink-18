@@ -152,7 +152,6 @@
   }
 }
 
-
 @media (min-width: $tablet) {
   .user-list {
     display: flex;
@@ -177,11 +176,14 @@
   .user-list__photo {
     &--panarama {
       background-position: -20px 0;
-      height: 509px;
+      height: auto;
+      width: calc(100% + 40px);
+      margin-left: -20px;
     }
   }
 
   .user-list__photo-item--panarama {
+    overflow: hidden;
     &::before {
       top: 56px;
     }
@@ -355,6 +357,7 @@
       height: 506px;
       background-size: cover;
       height: auto;
+      margin-left: 0;
     }
   }
 
@@ -404,5 +407,9 @@
 
   .user-list__background-list--panarama {
     padding-top: 20px;
+  }
+
+  .user-list__photo-item--panarama {
+    overflow: visible;
   }
 }

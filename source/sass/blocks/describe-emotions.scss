@@ -4,19 +4,8 @@
   font-weight: 400;
 }
 
-.describe-emotions__textarea[name="emotions"]::-webkit-input-placeholder {
+.describe-emotions__textarea::placeholder {
   color: #283645;
-  line-height: 30px;
-}
-
-.describe-emotions__textarea[name="emotions"]:-ms-input-placeholder{
-  color: #283645;
-  line-height: 30px;
-}
-
-.describe-emotions__textarea[name="emotions"]:-moz-placeholder {
-  color: #283645;
-  line-height: 30px;
 }
 
 .describe-emotions {
@@ -40,10 +29,6 @@
 }
 
 @media (min-width: $tablet) {
-  .describe-emotions__textarea[name="emotions"]::-webkit-input-placeholder {
-    color: #283645;
-    line-height: 30px;
-  }
 
   .describe-emotions__label-wrap {
     border: 2px solid #e5e5e5;

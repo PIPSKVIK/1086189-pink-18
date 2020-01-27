@@ -226,16 +226,22 @@
         </ul>
         <div class="slider-review__arrow slider-arrow">
           <button class="slider-arrow__button slider-arrow__button--left" type="button">
-            <span class="visually-hidden">На лево</span>
+            <span class="visually-hidden">вперед</span>
           </button>
           <button class="slider-arrow__button slider-arrow__button--right" type="button">
-            <span class="visually-hidden">На право</span>
+            <span class="visually-hidden">назад</span>
           </button>
         </div>
         <p class="slider-review__button slider-button">
-          <button class="slider-button__element slider-button__element--active"></button>
-          <button class="slider-button__element slider-button__element--position"></button>
-          <button class="slider-button__element"></button>
+          <button class="slider-button__element slider-button__element--active">
+            <span class="visually-hidden">Кнопка слайдера 1</span>
+          </button>
+          <button class="slider-button__element slider-button__element--position">
+            <span class="visually-hidden">Кнопка слайдера 2</span>
+          </button>
+          <button class="slider-button__element">
+            <span class="visually-hidden">Кнопка слайдера 3</span>
+          </button>
         </p>
       </section>
       <section class="slider-price">
@@ -277,9 +283,15 @@
           </table>
         </div>
         <div class="slider-price__table-control slider-button">
-          <button class="slider-button__element"></button>
-          <button class="slider-button__element slider-button__element--active slider-button__element--price"></button>
-          <button class="slider-button__element"></button>
+          <button class="slider-button__element">
+            <span class="visually-hidden">Кнопка слайдера 1</span>
+          </button>
+          <button class="slider-button__element slider-button__element--active slider-button__element--price">
+            <span class="visually-hidden">Кнопка слайдера 2</span>
+          </button>
+          <button class="slider-button__element">
+            <span class="visually-hidden">Кнопка слайдера 3</span>
+          </button>
         </div>
       </section>
       <section class="contacts-information">
@@ -383,7 +395,7 @@
         </div>
       </section>
     </footer>
-    <script>
+    <!-- <script>
       var menuBtn = document.querySelector(".navigation__toggle");
       var menu = document.querySelector(".navigation");
 
@@ -392,6 +404,6 @@
         evt.preventDefault();
         menu.classList.toggle("navigation--active");
       });
-    </script>
+    </script> -->
   </body>
 </html>
